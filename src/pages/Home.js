@@ -7,6 +7,7 @@ import hero3 from '../assets/hero3.jpeg';
 import feat2 from '../assets/feat2.jpeg';
 import feat3 from '../assets/feat3.jpeg';
 import feat4 from '../assets/feat4.jpeg';
+import specialsImage from '../assets/specials.jpeg'; // Ensure this path and file name are correct
 import { GiCoffeeCup, GiForkKnifeSpoon } from 'react-icons/gi';
 import { FaBirthdayCake } from 'react-icons/fa';
 
@@ -22,7 +23,7 @@ function Home() {
           <h4>Taste the cuisine of the world</h4>
           <h1>Fresh Cuisine</h1>
           <p>
-            We are not afraid to experiment. Our chef combines carefully <br></br>selected ingredients and serves them on your plate <br></br> in an extraordinary way.
+            We are not afraid to experiment. Our chef combines carefully <br />selected ingredients and serves them on your plate <br /> in an extraordinary way.
           </p>
         </div>
       </section>
@@ -33,7 +34,7 @@ function Home() {
           <h4>The Story of</h4>
           <h1>Our Restaurant</h1>
           <p>
-            Discover a culinary journey with flavors from around the world,<br></br> crafted with passion and expertise.
+            Discover a culinary journey with flavors from around the world,<br /> crafted with passion and expertise.
           </p>
           <button onClick={() => window.location.href='/about'}>Learn More</button>
         </div>
@@ -94,27 +95,23 @@ function Home() {
         <button className="menu-button" onClick={() => window.location.href='/menu'}>View Full Menu</button>
       </section>
 
-      {/* Specials Section */}
-      <section className="specials">
-        <h2>We Believe Food is Important</h2>
-        <p>Our dishes are carefully crafted to perfection, offering you an unforgettable dining experience.</p>
-        <button onClick={() => window.location.href='/reservation'}>Book a Table</button>
-      </section>
-
-      {/* Customer Reviews Section */}
-      <section className="reviews">
-        <h3>What Our Customers Say</h3>
-        <div className="review">
-          <p>"Fantastic atmosphere and delicious food!"</p>
-          <span>- Jane Doe</span>
-        </div>
-        <div className="review">
-          <p>"The best Italian experience in town."</p>
-          <span>- John Smith</span>
-        </div>
-        <div className="review">
-          <p>"A perfect blend of ambiance and flavor."</p>
-          <span>- Maria Garcia</span>
+      {/* Specials Section with Inline Background Image */}
+      <section
+        className="specials"
+        style={{
+          backgroundImage: `url(${specialsImage})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center'
+        }}>
+        <div className="specials-content">
+          <h4>We Believe</h4>
+          <h2>Food is Important</h2>
+          <p>
+            Lorem ipsum dolor sit amet conse ctetur adipiscing elit the
+            stibulum sit aet purus eu lectus tristique aliquam best donec
+            maximus lacus nllec aroma pastol.
+          </p>
+          <button onClick={() => window.location.href='/reservation'}>Book a Table</button>
         </div>
       </section>
     </div>

@@ -200,6 +200,89 @@ body {
 .menu-button:hover {
   background-color: #b58447;
 }
+
+/* Specials Section */
+.specials {
+  width: 90%;
+  height: 800px;
+  margin: 40px auto;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  background-image: url('../assets/specials.jpeg');
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+/* Grainy Overlay Effect */
+.specials::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  background-blend-mode: overlay;
+  background-image: url('https://www.transparenttextures.com/patterns/asfalt-dark.png');
+  mix-blend-mode: multiply;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Specials Content */
+.specials-content {
+  max-width: 500px;
+  padding: 0 100px 0 0; /* More padding on the right to center-align elements */
+  position: relative;
+  z-index: 2;
+  text-align: right;
+  color: var(--black);
+}
+
+/* "We Believe" Text Styling */
+.specials-content h4 {
+  font-size: 2em;
+  color: var(--gold);
+  margin-bottom: -60px; 
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); 
+}
+
+/* "Food is Important" Text Styling */
+.specials-content h2 {
+  font-size: 4.4em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Paragraph Text */
+.specials-content p {
+  font-size: 1.4em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+  max-width: 500px;
+}
+
+/* Button Styling */
+.specials-content button {
+  padding: 16px 40px;
+  background-color: var(--gold);
+  color: var(--black);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s;
+}
+
+.specials-content button:hover {
+  background-color: #b58447;
+}
 /* Responsive Design for Smaller Screens */
 
 @media (max-width: 1024px) {
@@ -236,5 +319,27 @@ body {
 
   .meal-grid {
     grid-template-columns: 1fr; /* 1 column on small screens */
+  }
+
+  .specials {
+    padding: 60px 0;
+  }
+
+  .specials-content {
+    max-width: 80%;
+    margin-left: 10%;
+    padding: 20px;
+  }
+
+  .specials-content h2 {
+    font-size: 2em;
+  }
+
+  .specials-content p {
+    font-size: 0.9em;
+  }
+
+  .specials-content button {
+    padding: 10px 20px;
   }
 }
