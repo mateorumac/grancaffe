@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { FaFacebookF, FaInstagram, FaTripadvisor } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import './Footer.css';
 
@@ -14,16 +14,17 @@ function Footer() {
           </p>
           <p>
             <strong>Working Hours:</strong> <br />
-            Mon - Fri: 9 AM - 10 PM <br />
-            Sat - Sun: 10 AM - 11 PM
+            Mon - Thu: 08:00 - 20:00 <br />
+            Fri: 08:00 - 21:00 <br></br>
+            Sat: 10:00 - 21:00
           </p>
         </div>
         <div className="footer-section">
           <h4>Contact Us</h4>
-          <p>Email: info@example.com</p>
-          <p>Phone: +123 456 7890</p>
-          {/* Book Now button moved here */}
-          <Link to="/reservation" className="footer-book-button">Book Now</Link>
+          <p>Email: grancaffe.mc@gmail.com</p>
+          <p>Phone: +377 6 07 93 96 82<br></br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +377 97 97 78 88</p>
+          
         </div>
         <div className="footer-section">
           <h4>Follow Us</h4>
@@ -31,16 +32,14 @@ function Footer() {
             <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
               <FaFacebookF />
             </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-              <FaTwitter />
-            </a>
             <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
               <FaInstagram />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-              <FaLinkedin />
+            <a href="https://tripadvisor.com" target="_blank" rel="noopener noreferrer">
+              <FaTripadvisor />
             </a>
           </div>
+          <Link to="/reservation" className="footer-book-button">Book Now</Link>
         </div>
       </div>
       <div className="footer-bottom">
