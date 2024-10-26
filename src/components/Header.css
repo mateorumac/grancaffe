@@ -1,0 +1,165 @@
+/* Header Styling */
+.header {
+    width: 100%;
+    background-color: var(--white);
+    padding: 0 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    height: 130px;
+    margin: auto;
+  }
+  
+  /* Logo Styling */
+  .logo img {
+    margin-top: 15px;
+    height: 150px;
+    cursor: pointer;
+  }
+  
+  /* Centering Nav Links */
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    flex: 1;
+    justify-content: center; /* Center nav links */
+  }
+  
+  .nav-links li {
+    font-weight: bold;
+    font-size: 1.1em;
+    text-transform: capitalize;
+  }
+  
+  .nav-links a {
+    color: var(--black);
+    text-decoration: none;
+    padding: 8px 0;
+    transition: color 0.3s, border-bottom 0.3s;
+    border-bottom: 2px solid transparent;
+  }
+  
+  /* Hover effect for non-touch devices only */
+  @media (hover: hover) and (pointer: fine) {
+    .nav-links a:hover {
+      border-bottom: 2px solid var(--gold);
+    }
+  }
+  
+  /* Book Now Button Styling */
+  .book-button {
+    font-size: 1.1em;
+    color: var(--black);
+    background-color: transparent;
+    border: 2px solid var(--gold);
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s, color 0.3s;
+    margin-right: 10px; /* Positioned closer to the language icon */
+  }
+  
+  .book-button:hover {
+    background-color: var(--gold);
+    color: var(--white);
+  }
+  
+  /* Language Dropdown Icon */
+  .language-selector {
+    position: relative;
+  }
+  
+  .language-icon {
+    background: none;
+    border: none;
+    color: var(--black);
+    font-size: 1.5em;
+    cursor: pointer;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Dropdown Menu */
+  .dropdown-menu {
+    position: fixed;
+    background-color: var(--white);
+    border: 1px solid var(--gold);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    min-width: 120px;
+  }
+  
+  .dropdown-menu button {
+    background: none;
+    border: none;
+    padding: 10px 15px;
+    color: var(--black);
+    text-align: left;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.3s;
+  }
+  
+  .dropdown-menu button:hover {
+    background-color: #d3d3d3;;
+  }
+  
+  /* Mobile Menu Toggle */
+  .menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--black);
+    font-size: 1.5em;
+    cursor: pointer;
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 1024px) {
+    .navbar {
+      height: auto;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      position: absolute;
+      top: 130px;
+      left: 0;
+      right: 0;
+      background-color: var(--white);
+      display: none;
+      padding: 20px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      gap: 10px;
+    }
+  
+    .nav-links.open {
+      display: flex;
+    }
+  
+    .menu-toggle {
+      display: block;
+    }
+  
+    .language-selector {
+      position: absolute;
+      top: 130px;
+      right: 20px;
+    }
+  }
+  

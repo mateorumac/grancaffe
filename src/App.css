@@ -1,38 +1,41 @@
-.App {
-  text-align: center;
+/* Globalni stilovi za fontove i boje */
+:root {
+  --gold: #C69D57;
+  --black: #000000;
+  --white: #FFFFFF;
+  --light-gold: #D4B383;
+  --dark-gray: #333333;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--white);
+  color: var(--black);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a {
+  color: var(--gold);
+  text-decoration: none;
+  font-weight: bold;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+a:hover {
+  color: var(--light-gold);
 }
 
-.App-link {
-  color: #61dafb;
+button {
+  background-color: var(--gold);
+  color: var(--white);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button:hover {
+  background-color: var(--light-gold);
 }
+

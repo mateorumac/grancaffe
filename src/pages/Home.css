@@ -1,0 +1,94 @@
+/* Home.css */
+
+:root {
+  --gold: #C69D57;
+  --black: #000000;
+  --white: #FFFFFF;
+  --dark-gray: #333333;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.home {
+  text-align: center;
+}
+
+/* Hero Split Section */
+.hero-split {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 80vh;
+  padding: 0;
+}
+
+.hero-image {
+  flex: 1;
+  height: 100%;
+  overflow: hidden;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-text {
+  flex: 1;
+  padding: 50px;
+  text-align: left;
+  color: var(--dark-gray);
+}
+
+.hero-text h4 {
+  color: var(--gold);
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.hero-text h1 {
+  color: var(--black);
+  font-size: 3em;
+  margin: 10px 0;
+}
+
+.hero-text p {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+  color: var(--dark-gray);
+}
+
+.hero-text button {
+  background-color: var(--gold);
+  color: var(--white);
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.hero-text button:hover {
+  background-color: #b58447; /* Slightly darker gold for hover effect */
+}
+
+@media (max-width: 768px) {
+  .hero-split {
+    flex-direction: column;
+  }
+
+  .hero-text {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .hero-image img {
+    height: 50vh;
+  }
+}
