@@ -1,8 +1,6 @@
-// Contact.js
 import React from 'react';
 import './Contact.css';
-import { GiCoffeeCup, GiForkKnifeSpoon } from 'react-icons/gi';
-import { FaBirthdayCake, FaPhoneAlt, FaMapMarkerAlt, FaRegClock, FaEnvelope } from 'react-icons/fa';
+import { FaPhoneAlt, FaMapMarkerAlt, FaRegClock, FaEnvelope } from 'react-icons/fa';
 
 
 function Contact() {

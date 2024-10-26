@@ -39,10 +39,7 @@
 
 .footer-section p {
   color: var(--light-gray);
-}
-
-.footer-section a:hover {
-  color: var(--light-gold);
+  margin-bottom: 8px; /* Adjusted to reduce excessive spacing */
 }
 
 .footer-book-button {
@@ -66,7 +63,8 @@
   display: flex;
   justify-content: center;
   gap: 15px;
-  margin-top: 15px;
+  margin-top: 20px; /* Added margin to bring icons closer to content */
+  margin-bottom: 30px; /* Slightly increased for balanced spacing */
 }
 
 .social-icons a {
@@ -81,34 +79,32 @@
 }
 
 .footer-bottom {
-  margin-top: 30px;
   font-size: 0.9em;
   color: #d3d3d3;
   border-top: 1px solid var(--dark-gray);
   padding-top: 15px;
+  margin-top: 20px;
 }
 
 @media (max-width: 1024px) {
   .footer-content {
     flex-direction: column;
     align-items: center;
-    gap: 30px;
+    gap: 10px; /* Reduced gap */
   }
   .footer-section {
     text-align: center;
-  }
-  .footer-book-button {
-    padding: 10px 20px;
+    margin-bottom: 10px; /* Tighter spacing for reduced height */
   }
   .social-icons {
     margin-top: 20px;
+    margin-bottom: 20px; /* Balanced spacing */
   }
 }
 
 @media (max-width: 768px) {
   .footer-content {
     gap: 10px;
-    padding: 0 15px;
   }
   .footer-section h4 {
     font-size: 1.2em;
@@ -123,14 +119,16 @@
   .footer-book-button {
     width: 80%;
     max-width: 280px;
+    margin: 15px auto 0; /* Center-aligned button with spacing */
   }
 }
 
 @media (max-width: 480px) {
   .footer-content {
-    gap: 10px;
-    margin-top: -40px;
-    margin-bottom: -100px;
+    gap: 5px;
+  }
+  .footer-section {
+    margin-bottom: 8px; /* Tighter layout */
   }
   .footer-section h4 {
     font-size: 1.1em;
@@ -138,9 +136,17 @@
   .footer-section p,
   .footer-section a {
     font-size: 0.9em;
+    margin-bottom: 5-px; /* Reduced margin */
   }
-  .social-icons a {
-    font-size: 1.2em;
-    
+  .social-icons {
+    margin-top: 15px;
+    margin-bottom: 25px; /* Slightly increased for balance */
+  }
+  .footer-book-button {
+    width: 90%;
+    max-width: 250px;
+    margin: 0 auto; 
+    padding: 10px 20px;
+    margin-left: -10px;
   }
 }

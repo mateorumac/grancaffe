@@ -7,7 +7,7 @@ import AboutUs from './pages/AboutUs';
 import Gallery from './pages/Gallery';
 import Contact from './pages/Contact';
 import Menu from './pages/Menu';
-import ReservationForm from './components/ReservationForm';
+import Reservation from './components/Reservation';
 
 function App() {
   return (
@@ -19,6 +19,7 @@ function App() {
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/menu" element={<Menu />} />
+        <Route path="/reservation" element={<Reservation />} />
       </Routes>
       <Footer />
     </Router>

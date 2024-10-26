@@ -1,0 +1,214 @@
+:root {
+  --gold: #C69D57;
+  --black: #000000;
+  --white: #FFFFFF;
+  --dark-gray: #333333;
+  --light-gray: #f5f5f5;
+}
+
+.reservation-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 50px 20px;
+  background-color: var(--light-gray);
+}
+
+.reservation-container {
+  background-color: var(--white);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 40px 30px;
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+}
+
+.reservation-title {
+  color: var(--black);
+  font-size: 2em;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.reservation-subtitle {
+  font-size: 1em;
+  color: var(--dark-gray);
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+.reservation-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+.reservation-form button {
+  padding: 15px;
+  font-size: 1em;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  width: 100%;
+}
+.reservation-form input {
+  padding: 15px;
+  font-size: 1em;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  width: 93.7%;
+}
+.reservation-form input:focus {
+  border-color: var(--gold);
+  box-shadow: 0px 0px 8px rgba(198, 157, 87, 0.3);
+}
+
+.reservation-form button {
+  background-color: var(--gold);
+  color: var(--white);
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.reservation-form button:hover {
+  background-color: #b58447;
+  transform: translateY(-1px);
+}
+
+.reservation-form button:active {
+  transform: translateY(1px);
+}
+
+/* Alert Styles */
+.alert {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 20px;
+  border-radius: 8px;
+  max-width: 400px;
+  margin: 0 auto;
+  font-size: 1em;
+  font-weight: 600;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 1;
+}
+
+.alert-success {
+  background-color: var(--gold);
+  color: var(--white);
+}
+
+.alert-error {
+  background-color: #ff4d4d;
+  color: var(--white);
+}
+
+.alert button {
+  background: none;
+  border: none;
+  color: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  margin-left: 15px;
+  font-size: 1.2em;
+  line-height: 1;
+}
+
+
+/* Responsive styling */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .reservation-page {
+    padding: 20px 10px;
+    min-height: 75vh;
+  }
+  .reservation-container {
+    padding: 30px;
+    max-width: 80%;
+  }
+  .reservation-title {
+    font-size: 1.8em;
+  }
+  .reservation-subtitle {
+    font-size: 1em;
+    margin-bottom: 25px;
+  }
+  .reservation-form input,
+  .reservation-form button {
+    font-size: 1em;
+    padding: 12px;
+  }
+}
+
+@media (max-width: 768px) { /* Mobile screens */
+  .reservation-page {
+    padding: 10px 0; /* Minimal vertical padding for a tighter fit */
+    min-height: 70vh; 
+  }
+  .reservation-container {
+    padding: 20px; 
+    max-width: 90%; 
+  }
+  .reservation-title {
+    font-size: 1.6em;
+  }
+  .reservation-subtitle {
+    font-size: 0.9em;
+    margin-bottom: 20px;
+  }
+  .reservation-form input,
+  .reservation-form button {
+    font-size: 0.9em;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) { /* Small mobile screens */
+  .reservation-page {
+    padding: 15px 0; 
+  }
+  .reservation-title {
+    font-size: 1.5em;
+  }
+  .reservation-subtitle {
+    font-size: 0.85em;
+  }
+  .reservation-container {
+    padding: 15px;
+  }
+  .reservation-form input,
+  .reservation-form button {
+    font-size: 0.85em;
+    padding: 8px;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .reservation-page {
+    padding: 30px 20px;
+    min-height: 80vh;
+  }
+  .reservation-container {
+    padding: 35px;
+    max-width: 70%;
+  }
+  .reservation-title {
+    font-size: 2em;
+  }
+  .reservation-subtitle {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+  }
+  .reservation-form input,
+  .reservation-form button {
+    font-size: 1.1em;
+    padding: 14px;
+  }
+}
