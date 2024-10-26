@@ -20,75 +20,221 @@ body {
 /* Hero Split Section */
 .hero-split {
   display: flex;
-  flex-direction: row;
   align-items: center;
-  justify-content: space-between;
-  min-height: 80vh;
-  padding: 0;
+  justify-content: center;
+  gap: -10px;
+  padding: 40px 20px;
 }
 
 .hero-image {
   flex: 1;
-  height: 100%;
-  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  width: 90%;
+  max-height: 720px; /* Increased height for better visibility */
+  object-fit: contain; /* Display the full image without cropping */
 }
 
 .hero-text {
   flex: 1;
-  padding: 50px;
+  padding: 20px;
   text-align: left;
-  color: var(--dark-gray);
+  padding-left: 70px;
 }
 
 .hero-text h4 {
   color: var(--gold);
-  font-size: 1.2em;
+  font-size: 1.5em;
   margin-bottom: 10px;
 }
 
 .hero-text h1 {
-  color: var(--black);
-  font-size: 3em;
-  margin: 10px 0;
+  font-size: 2.5em;
+  margin-bottom: 15px;
 }
 
 .hero-text p {
   font-size: 1.1em;
+  line-height: 1.6;
   margin-bottom: 20px;
-  color: var(--dark-gray);
 }
 
 .hero-text button {
+  padding: 10px 20px;
   background-color: var(--gold);
   color: var(--white);
   border: none;
-  padding: 10px 20px;
-  font-size: 1em;
+  border-radius: 5px;
   cursor: pointer;
+  font-size: 1em;
   transition: background-color 0.3s;
 }
 
 .hero-text button:hover {
-  background-color: #b58447; /* Slightly darker gold for hover effect */
+  background-color: #b58447;
+}
+
+.hero-reversed .hero-text {
+  text-align: right;
+  margin-left: -15%; /* Push text closer to the middle */
+}
+
+.features {
+  display: flex;
+  justify-content: space-evenly; /* Spread items evenly with space in between */
+  align-items: center;
+  padding: 80px 5%; /* Add padding to the left and right to prevent items from reaching the edges */
+  max-width: 1200px;
+  margin: auto;
+}
+
+.feature {
+  text-align: center;
+  flex: 1;
+  padding: 20px;
+  color: var(--black);
+}
+
+.feature-icon {
+  font-size: 3em;
+  color: var(--gold);
+  margin-bottom: 15px;
+}
+
+.feature h3 {
+  font-size: 1.3em;
+  color: var(--gold);
+  margin-bottom: 10px;
+}
+
+.feature p {
+  font-size: 1em;
+  color: var(--dark-gray);
+  max-width: 220px;
+  margin: auto;
+  line-height: 1.5;
+}
+
+/* Add some space between each feature, but only apply the border to non-last items */
+.feature:not(:last-child) {
+  border-right: 1px solid #e0e0e0;
+  padding-right: 30px; /* Space between each feature item */
+}
+
+.feature-meals {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.feature-meals h5 {
+  font-size: 1.2em;
+  color: var(--dark-gray);
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.feature-meals h2 {
+  font-size: 2.5em;
+  color: var(--black);
+  margin-bottom: 30px;
+}
+
+.meal-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  gap: 20px;
+  max-width: 1600px;
+  margin: auto;
+}
+
+.meal {
+  overflow: hidden;
+  text-align: left;
+}
+
+.meal img {
+  width: 100%;
+  height: 500px; /* Increased height for a more prominent image */
+  object-fit: cover;
+  margin-bottom: -16px; /* Space between image and text */
+}
+
+.meal h4 {
+  font-size: 1.1em;
+  color: var(--black);
+  margin-bottom: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.meal p {
+  font-size: 0.9em;
+  color: var(--dark-gray);
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.meal span {
+  font-size: 1em;
+  color: var(--gold);
+  font-weight: bold;
+}
+
+/* Menu Button */
+.menu-button {
+  margin-top: 50px;
+  padding: 12px 30px;
+  background-color: var(--gold);
+  color: var(--white);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s;
+}
+
+.menu-button:hover {
+  background-color: #b58447;
+}
+/* Responsive Design for Smaller Screens */
+
+@media (max-width: 1024px) {
+  .meal-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+  }
 }
 
 @media (max-width: 768px) {
   .hero-split {
     flex-direction: column;
-  }
-
-  .hero-text {
-    text-align: center;
     padding: 20px;
   }
 
   .hero-image img {
-    height: 50vh;
+    width: 100%;
+    max-height: 400px; /* Adjusted for smaller screens */
+  }
+
+  .hero-text {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .features {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .feature {
+    border-right: none;
+    margin-bottom: 20px;
+  }
+
+  .meal-grid {
+    grid-template-columns: 1fr; /* 1 column on small screens */
   }
 }
