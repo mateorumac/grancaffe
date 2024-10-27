@@ -85,7 +85,6 @@
   transform: translateY(1px);
 }
 
-/* Alert Styles */
 .alert {
   display: flex;
   align-items: center;
@@ -149,7 +148,7 @@
 
 @media (max-width: 768px) { /* Mobile screens */
   .reservation-page {
-    padding: 10px 0; /* Minimal vertical padding for a tighter fit */
+    padding: 10px 0; 
     min-height: 70vh; 
   }
   .reservation-container {

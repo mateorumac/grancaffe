@@ -5,7 +5,6 @@
     --dark-gray: #333333;
   }
   
-  /* Main Contact Page Styling */
   .contact-page {
     width: 90%;
     margin: auto;
@@ -13,7 +12,6 @@
     overflow-x: hidden;
   }
   
-  /* Contact Content */
   .contact-content {
     display: flex;
     gap: 10px;
@@ -22,8 +20,6 @@
     max-width: 1200px; 
     margin: auto;
   }
-  
-  /* Contact Info Styling */
 
   .contact-info h4 {
     color: var(--gold);
@@ -78,8 +74,7 @@
   .contact-form button:hover {
     background-color: #b58447;
   }
-  
-  /* Map Container Styling */
+
   .map-container {
     flex: 1;
     max-width: 58%;
@@ -89,7 +84,6 @@
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
   }
   
-  /* Contact Details Styling */
   .contact-details {
     display: flex;
     justify-content: space-between;

@@ -81,6 +81,7 @@ body {
   margin-left: -15%; 
 }
 
+/* features section */
 .features {
   display: flex;
   justify-content: space-evenly; 
@@ -122,6 +123,7 @@ body {
   padding-right: 30px; 
 }
 
+/* featured meals section */
 .feature-meals {
   text-align: center;
   padding: 50px 20px;

@@ -6,7 +6,7 @@ import hero3 from '../assets/hero3.jpeg';
 import feat2 from '../assets/feat2.jpeg';
 import feat3 from '../assets/feat3.jpeg';
 import feat4 from '../assets/feat4.jpeg';
-import specialsImage from '../assets/specials.jpeg'; // Ensure this path and file name are correct
+import specialsImage from '../assets/specials.jpeg';
 import { GiCoffeeCup, GiForkKnifeSpoon } from 'react-icons/gi';
 import { FaBirthdayCake } from 'react-icons/fa';
 
@@ -116,5 +116,4 @@ function Home() {
     </div>
   );
 }
-
 export default Home;

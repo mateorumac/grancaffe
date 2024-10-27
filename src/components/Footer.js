@@ -29,13 +29,13 @@ function Footer() {
         <div className="footer-section">
           <h4>Follow Us</h4>
           <div className="social-icons">
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.facebook.com/gcrestaurantmonaco/" target="_blank" rel="noopener noreferrer">
               <FaFacebookF />
             </a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/grancaffe.mc/" target="_blank" rel="noopener noreferrer">
               <FaInstagram />
             </a>
-            <a href="https://tripadvisor.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.tripadvisor.com/Restaurant_Review-g190409-d8537530-Reviews-Gran_Caffe-Monte_Carlo.html" target="_blank" rel="noopener noreferrer">
               <FaTripadvisor />
             </a>
           </div>

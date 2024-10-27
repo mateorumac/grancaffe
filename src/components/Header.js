@@ -1,4 +1,3 @@
-// Header.js
 import React, { useState, useRef, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
@@ -19,7 +18,6 @@ function Header() {
     setIsDropdownOpen(false);
   };
 
-  // Position dropdown below the button dynamically
   useEffect(() => {
     if (isDropdownOpen && buttonRef.current && dropdownRef.current) {
       const buttonRect = buttonRef.current.getBoundingClientRect();
@@ -31,35 +29,27 @@ function Header() {
   return (
     <header className="header">
       <nav className="navbar">
-        {/* Logo leading to landing page */}
         <Link to="/" className="logo">
           <img src={logo} alt="Restaurant Logo" />
         </Link>
-
-        {/* Navigation Links */}
         <ul className={`nav-links ${isMenuOpen ? 'open' : ''}`}>
           <li><Link to="/">{t('Home')}</Link></li>
           <li><Link to="/about">{t('About Us')}</Link></li>
-          <li><Link to="/menu">{t('Menu')}</Link></li> {/* New Menu Link */}
+          <li><Link to="/menu">{t('Menu')}</Link></li> 
           <li><Link to="/gallery">{t('Gallery')}</Link></li>
           <li><Link to="/contact">{t('Contact')}</Link></li>
         </ul>
-
-        {/* Book a Table Button */}
         <button
           className="book-button"
-          onClick={() => navigate('/reservation')}
-        >
+          onClick={() => navigate('/reservation')}>
           {t('Book Now')}
         </button>
-
         {/* Language Dropdown with Icon */}
         <div className="language-selector">
           <button
             ref={buttonRef}
             onClick={() => setIsDropdownOpen((prev) => !prev)}
-            className="language-icon"
-          >
+            className="language-icon">
             <FaGlobe />
           </button>
           {isDropdownOpen && (
@@ -70,7 +60,6 @@ function Header() {
             </div>
           )}
         </div>
-
         {/* Hamburger Menu Icon for Mobile */}
         <button className="menu-toggle" onClick={() => setIsMenuOpen(!isMenuOpen)}>
           <FaBars />
@@ -79,5 +68,4 @@ function Header() {
     </header>
   );
 }
-
 export default Header;

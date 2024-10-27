@@ -1,4 +1,3 @@
-// Reservation.js
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 import './Reservation.css';
@@ -42,7 +41,6 @@ function Reservation() {
     .then((result) => {
       showAlert("Reservation sent successfully!", "success");
 
-      // Reset form data after successful submission
       setFormData({
         name: '',
         email: '',

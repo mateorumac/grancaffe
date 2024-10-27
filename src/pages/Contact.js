@@ -2,7 +2,6 @@ import React from 'react';
 import './Contact.css';
 import { FaPhoneAlt, FaMapMarkerAlt, FaRegClock, FaEnvelope } from 'react-icons/fa';
 
-
 function Contact() {
   return (
     <div className="contact-page">
@@ -35,7 +34,6 @@ function Contact() {
           ></iframe>
         </div>
       </div>
-
       <div className="contact-details">
         <div className="detail-item">
           <FaRegClock className="detail-icon" />
@@ -63,5 +61,4 @@ function Contact() {
     </div>
   );
 }
-
 export default Contact;
