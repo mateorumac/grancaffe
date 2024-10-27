@@ -76,8 +76,6 @@
     "the heart and soul of this vibrant principality.": "le cœur et l'âme de ce vibrant principauté.",
     "Join us at Gran Caffè and embark on a journey of taste, tradition,": "Rejoignez-nous au Gran Caffè et embarquez pour un voyage de goût, de tradition,",
     "and togetherness. We can't wait to welcome you into our world.": "et de convivialité. Nous avons hâte de vous accueillir dans notre univers.",
-    "Book a Table": "Réservez une table",
-    "Gallery": "Galerie",
     "Experience culinary excellence with our exquisite dishes and irresistible cakes, each crafted with passion and attention to detail.": 
       "Découvrez l'excellence culinaire avec nos plats exquis et nos gâteaux irrésistibles, chacun créé avec passion et souci du détail.",
     "Classic Pizza": "Pizza Classique",
@@ -123,6 +121,32 @@
     "hero": {
      "paragraph1" : "Nous n'avons pas peur d'expérimenter. Notre chef associe des ingrédients soigneusement <br />sélectionnés et les sert dans votre assiette <br /> de manière extraordinaire.", 
     "paragraph2": "Découvrez un voyage culinaire aux saveurs du monde entier,<br /> élaboré avec passion et expertise."
-  }
+  },
+  "MAIN MEALS": "PLATS PRINCIPAUX",
+    "Semi-cooked tuna in a sesame crust": "Thon mi-cuit en croûte de sésame",
+    "Sashimi tuna, sesame seeds, spinach sprouts, served with vinegared rice.": "Thon sashimi, graines de sésame, pousses d'épinards, servi avec du riz vinaigré.",
+    "Beef tartare": "Tartare de boeuf",
+    "Tender chicken accompanied by grilled seasonal vegetables for a healthy and tasty dish.": "Boeuf tendre accompagné de légumes de saison grillés pour un plat sain et savoureux.",
+    "Beef tataki with Asian sauce": "Tataki de boeuf avec sauce asiatique",
+    "Heart of rump steak, Asian sauce, sesame with vinegared rice.": "Coeur de rumsteck, sauce asiatique, sésame avec riz vinaigré.",
+    "Tournedos Rossini": "Tournedos Rossini",
+    "Beef, duck liver escalope, truffle.": "Boeuf, escalope de foie de canard, truffe.",
+    "PASTA": "PÂTES",
+    "Spaghetti Seafood": "Spaghetti aux fruits de mer",
+    "Rich and hearty meat sauce simmered to perfection with tomatoes and aromatic herbs.": "Sauce à la viande riche et copieuse mijotée à la perfection avec des tomates et des herbes aromatiques.",
+    "Gnocchi à la Sorentina": "Gnocchi à la sorrentina",
+    "A creamy garlic-infused sauce, tender salmon, and fresh garnishes like parsley and lemon combine perfectly.": "Une sauce crémeuse à l'ail, saumon tendre, et des garnitures fraîches comme le persil et le citron.",
+    "Spaghetti Carbonara": "Spaghetti Carbonara",
+    "A creamy sauce made with eggs, Parmesan cheese, pancetta, and black pepper, creating a rich and comforting flavor.": "Une sauce crémeuse à base d'œufs, de parmesan, de pancetta et de poivre noir, créant une saveur riche et réconfortante.",
+    "Penne al Pesto": "Penne au pesto",
+    "Basil pesto, garlic, Parmesan, and pine nuts in a flavorful, creamy sauce.": "Pesto de basilic, ail, parmesan et pignons de pin dans une sauce crémeuse et savoureuse.",
+    "Make a Reservation": "Faire une réservation",
+  "Book a table at our restaurant to enjoy an unforgettable dining experience. We look forward to serving you.": "Réservez une table dans notre restaurant pour profiter d'une expérience culinaire inoubliable. Nous avons hâte de vous servir.",
+  "Name": "Nom",
+  "Phone": "Téléphone",
+  "Number of People": "Nombre de personnes",
+  "Reservation sent successfully!": "Réservation envoyée avec succès!",
+  "An error occurred. Please try again.": "Une erreur est survenue. Veuillez réessayer.",
+  "Reserve": "Réserver"
 
   }

@@ -2,8 +2,10 @@ import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 import './Reservation.css';
 import showAlert from './showAlert';
+import { useTranslation } from 'react-i18next';
 
 function Reservation() {
+  const { t } = useTranslation();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -39,7 +41,7 @@ function Reservation() {
       process.env.REACT_APP_EMAILJS_PUBLIC_KEY
     )
     .then((result) => {
-      showAlert("Reservation sent successfully!", "success");
+      showAlert(t("Reservation sent successfully!"), "success");
 
       setFormData({
         name: '',
@@ -52,25 +54,25 @@ function Reservation() {
     })
     .catch((error) => {
       console.error("EmailJS Error:", error);
-      showAlert('An error occurred. Please try again.', 'error');
+      showAlert(t("An error occurred. Please try again."), "error");
     });
   };
 
   return (
     <div className="reservation-page">
       <div className="reservation-container">
-        <h2 className="reservation-title">Make a Reservation</h2>
+        <h2 className="reservation-title">{t("Make a Reservation")}</h2>
         <p className="reservation-subtitle">
-          Book a table at our restaurant to enjoy an unforgettable dining experience. We look forward to serving you.
+          {t("Book a table at our restaurant to enjoy an unforgettable dining experience. We look forward to serving you.")}
         </p>
         <form className="reservation-form" onSubmit={handleSubmit}>
-          <input type="text" name="name" placeholder="Name" value={formData.name} onChange={handleChange} required />
-          <input type="email" name="email" placeholder="Email" value={formData.email} onChange={handleChange} required />
-          <input type="tel" name="phone" placeholder="Phone" value={formData.phone} onChange={handleChange} required />
+          <input type="text" name="name" placeholder={t("Name")} value={formData.name} onChange={handleChange} required />
+          <input type="email" name="email" placeholder={t("Email")} value={formData.email} onChange={handleChange} required />
+          <input type="tel" name="phone" placeholder={t("Phone")} value={formData.phone} onChange={handleChange} required />
           <input type="date" name="date" value={formData.date} onChange={handleChange} required />
           <input type="time" name="time" value={formData.time} onChange={handleChange} required />
-          <input type="number" name="people" placeholder="Number of People" value={formData.people} onChange={handleChange} required min="1" />
-          <button type="submit">Reserve</button>
+          <input type="number" name="people" placeholder={t("Number of People")} value={formData.people} onChange={handleChange} required min="1" />
+          <button type="submit">{t("Reserve")}</button>
         </form>
       </div>
     </div>
