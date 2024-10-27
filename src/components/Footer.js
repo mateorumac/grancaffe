@@ -1,33 +1,35 @@
 import React from 'react';
 import { FaFacebookF, FaInstagram, FaTripadvisor } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import { useTranslation, Trans } from 'react-i18next';
 import './Footer.css';
 
 function Footer() {
+  const { t } = useTranslation();
+
   return (
     <footer className="footer">
       <div className="footer-content">
         <div className="footer-section">
-          <h4>About Us</h4>
+          <h4><Trans>About Us</Trans></h4>
           <p>
-            Learn more about our restaurant, our story, and our dedication to providing the best dining experience.
+            <Trans>Learn more about our restaurant, our story, and our dedication to providing the best dining experience.</Trans>
           </p>
           <p>
-            <strong>Working Hours:</strong> <br />
-            Mon - Thu: 08:00 - 20:00 <br />
-            Fri: 08:00 - 21:00 <br></br>
-            Sat: 10:00 - 21:00
+            <strong><Trans>Working Hours:</Trans></strong> <br />
+            <Trans>Mon - Thu: 08:00 - 20:00</Trans> <br />
+            <Trans>Fri: 08:00 - 21:00</Trans> <br />
+            <Trans>Sat: 10:00 - 21:00</Trans>
           </p>
         </div>
         <div className="footer-section">
-          <h4>Contact Us</h4>
-          <p>Email: grancaffe.mc@gmail.com</p>
-          <p>Phone: +377 6 07 93 96 82<br></br>
+          <h4><Trans>Contact Us</Trans></h4>
+          <p><Trans>Email:</Trans> grancaffe.mc@gmail.com</p>
+          <p><Trans>Phone:</Trans> +377 6 07 93 96 82<br></br>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +377 97 97 78 88</p>
-          
         </div>
         <div className="footer-section">
-          <h4>Follow Us</h4>
+          <h4><Trans>Follow Us</Trans></h4>
           <div className="social-icons">
             <a href="https://www.facebook.com/gcrestaurantmonaco/" target="_blank" rel="noopener noreferrer">
               <FaFacebookF />
@@ -39,11 +41,11 @@ function Footer() {
               <FaTripadvisor />
             </a>
           </div>
-          <Link to="/reservation" className="footer-book-button">Book Now</Link>
+          <Link to="/reservation" className="footer-book-button"><Trans>Book Now</Trans></Link>
         </div>
       </div>
       <div className="footer-bottom">
-        &copy; {new Date().getFullYear()} Gran Caffè | All rights reserved.
+        &copy; {new Date().getFullYear()} Gran Caffè | <Trans>All rights reserved.</Trans>
       </div>
     </footer>
   );

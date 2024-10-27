@@ -14,17 +14,29 @@ function Header() {
   const navigate = useNavigate();
 
   const changeLanguage = (lang) => {
-    i18n.changeLanguage(lang);
+    if (lang === 'en') {
+      i18n.changeLanguage('en'); 
+    } else {
+      i18n.changeLanguage(lang);
+    }
     setIsDropdownOpen(false);
   };
 
+  // Close dropdown if clicked outside
   useEffect(() => {
-    if (isDropdownOpen && buttonRef.current && dropdownRef.current) {
-      const buttonRect = buttonRef.current.getBoundingClientRect();
-      dropdownRef.current.style.top = `${buttonRect.bottom + 10}px`;
-      dropdownRef.current.style.left = `${buttonRect.left}px`;
-    }
-  }, [isDropdownOpen]);
+    const handleClickOutside = (event) => {
+      if (
+        dropdownRef.current &&
+        !dropdownRef.current.contains(event.target) &&
+        buttonRef.current &&
+        !buttonRef.current.contains(event.target)
+      ) {
+        setIsDropdownOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
 
   return (
     <header className="header">
@@ -33,19 +45,18 @@ function Header() {
           <img src={logo} alt="Restaurant Logo" />
         </Link>
         <ul className={`nav-links ${isMenuOpen ? 'open' : ''}`}>
-          <li><Link to="/">{t('Home')}</Link></li>
-          <li><Link to="/about">{t('About Us')}</Link></li>
-          <li><Link to="/menu">{t('Menu')}</Link></li> 
-          <li><Link to="/gallery">{t('Gallery')}</Link></li>
-          <li><Link to="/contact">{t('Contact')}</Link></li>
+          <li><Link to="/" onClick={() => setIsMenuOpen(false)}>{t('Home')}</Link></li>
+          <li><Link to="/about" onClick={() => setIsMenuOpen(false)}>{t('About Us')}</Link></li>
+          <li><Link to="/menu" onClick={() => setIsMenuOpen(false)}>{t('Menu')}</Link></li> 
+          <li><Link to="/gallery" onClick={() => setIsMenuOpen(false)}>{t('Gallery')}</Link></li>
+          <li><Link to="/contact" onClick={() => setIsMenuOpen(false)}>{t('Contact')}</Link></li>
         </ul>
         <button
           className="book-button"
           onClick={() => navigate('/reservation')}>
           {t('Book Now')}
         </button>
-        {/* Language Dropdown with Icon */}
-        <div className="language-selector">
+        <div className="icons-group">
           <button
             ref={buttonRef}
             onClick={() => setIsDropdownOpen((prev) => !prev)}
@@ -59,13 +70,13 @@ function Header() {
               <button onClick={() => changeLanguage('it')}>Italiano</button>
             </div>
           )}
+          <button className="menu-toggle" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+            <FaBars />
+          </button>
         </div>
-        {/* Hamburger Menu Icon for Mobile */}
-        <button className="menu-toggle" onClick={() => setIsMenuOpen(!isMenuOpen)}>
-          <FaBars />
-        </button>
       </nav>
     </header>
   );
 }
+
 export default Header;

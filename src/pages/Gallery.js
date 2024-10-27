@@ -1,5 +1,5 @@
-// Gallery.js
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import GalleryItem from './GalleryItem';
 import './Gallery.css';
 import pizza from '../assets/gallery/pizza.jpeg';
@@ -16,28 +16,30 @@ import fish2 from '../assets/gallery/fish2.jpeg';
 import fish3 from '../assets/gallery/fish3.jpeg';
 import galleryImage from '../assets/gallery/galleryImage.jpeg';
 
-const galleryData = [
-    { src: pizza, title: 'Classic Pizza', description: 'Stone-baked pizza with fresh toppings and mozzarella.' },
-    { src: pizza2, title: 'Margherita Pizza', description: 'Traditional Margherita with rich tomato and basil.' },
-    { src: bruschetta, title: 'Bruschetta', description: 'Toasted bread topped with fresh tomatoes and basil.' },
-    { src: gnocchi, title: 'Gnocchi', description: 'Pillowy potato gnocchi with savory sauce.' },
-    { src: pasta, title: 'Spaghetti Carbonara', description: 'Classic pasta with pancetta, eggs, and Parmesan.' },
-    { src: pasta2, title: 'Penne Arrabbiata', description: 'Spicy penne pasta in a tangy tomato sauce.' },
-    { src: fish1, title: 'Grilled Sea Bass', description: 'Sea bass grilled to perfection with herbs.' },
-    { src: fish2, title: 'Salmon Fillet', description: 'Succulent salmon with a crispy skin finish.' },
-    { src: fish3, title: 'Seafood Platter', description: 'A mix of fresh, grilled seafood delights.' },
-    { src: cocktail1, title: 'Negroni', description: 'Classic Italian cocktail with a bitter twist.' },
-    { src: cocktail2, title: 'Aperol Spritz', description: 'Refreshing Aperol Spritz with a hint of citrus.' },
-    { src: cocktail3, title: 'Espresso Martini', description: 'Smooth and bold, the perfect pick-me-up.' },
-];
-
 const Gallery = () => {
+    const { t } = useTranslation();
+
+    const galleryData = [
+        { src: pizza, title: t('Classic Pizza'), description: t('Stone-baked pizza with fresh toppings and mozzarella.') },
+        { src: pizza2, title: t('Margherita Pizza'), description: t('Traditional Margherita with rich tomato and basil.') },
+        { src: bruschetta, title: t('Bruschetta'), description: t('Toasted bread topped with fresh tomatoes and basil.') },
+        { src: gnocchi, title: t('Gnocchi'), description: t('Pillowy potato gnocchi with savory sauce.') },
+        { src: pasta, title: t('Spaghetti Carbonara'), description: t('Classic pasta with pancetta, eggs, and Parmesan.') },
+        { src: pasta2, title: t('Penne Arrabbiata'), description: t('Spicy penne pasta in a tangy tomato sauce.') },
+        { src: fish1, title: t('Grilled Sea Bass'), description: t('Sea bass grilled to perfection with herbs.') },
+        { src: fish2, title: t('Salmon Fillet'), description: t('Succulent salmon with a crispy skin finish.') },
+        { src: fish3, title: t('Seafood Platter'), description: t('A mix of fresh, grilled seafood delights.') },
+        { src: cocktail1, title: t('Negroni'), description: t('Classic Italian cocktail with a bitter twist.') },
+        { src: cocktail2, title: t('Aperol Spritz'), description: t('Refreshing Aperol Spritz with a hint of citrus.') },
+        { src: cocktail3, title: t('Espresso Martini'), description: t('Smooth and bold, the perfect pick-me-up.') },
+    ];
+
     return (
         <div className="gallery-page">
             <div className="gallery-header">
                 <div className="header-text">
-                    <h1>Gallery</h1>
-                    <p>Experience culinary excellence with our exquisite dishes and irresistible cakes, each crafted with passion and attention to detail.</p>
+                    <h1>{t('Gallery')}</h1>
+                    <p>{t('Experience culinary excellence with our exquisite dishes and irresistible cakes, each crafted with passion and attention to detail.')}</p>
                 </div>
                 <img src={galleryImage} alt="Gallery Header" className="header-image" />
             </div>
@@ -57,4 +59,3 @@ const Gallery = () => {
 };
 
 export default Gallery;
-

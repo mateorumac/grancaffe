@@ -274,11 +274,10 @@ body {
 .specials-content button:hover {
   background-color: #b58447;
 }
-/* Responsive Design for Smaller Screens */
 
 @media (max-width: 1024px) {
   .meal-grid {
-    grid-template-columns: repeat(2, 1fr); 
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -289,13 +288,52 @@ body {
   }
 
   .hero-image img {
-    width: 100%;
-    max-height: 400px; 
+    max-height: 200px;
   }
 
-  .hero-text {
+  .hero-text h4 {
+    font-size: 1.3em;
+    margin-bottom: 8px;
+  }
+
+  .hero-text h1 {
+    font-size: 1.8em;
+    margin-bottom: 8px;
+  }
+
+  .hero-text p {
+    font-size: 0.9em;
+    line-height: 1.5;
+  }
+
+  .hero-reversed {
+    flex-direction: column-reverse;
+    padding: 20px;
+  }
+
+  .hero-reversed .hero-text {
     text-align: center;
     padding: 10px;
+    padding-left: 0;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .hero-reversed .hero-text h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+
+  .hero-reversed .hero-text h4 {
+    font-size: 1.2em;
+    margin-bottom: 8px;
+    color: var(--gold); 
+  }
+
+  .hero-reversed .hero-text p {
+    font-size: 1em;
+    line-height: 1.5;
+    margin-bottom: 15px;
   }
 
   .features {
@@ -304,33 +342,147 @@ body {
   }
 
   .feature {
-    border-right: none;
+    border-right: none; 
     margin-bottom: 20px;
   }
 
-  .meal-grid {
-    grid-template-columns: 1fr; 
+  .feature:not(:last-child) {
+    border-right: none;
+    padding-right: 0;
+  }
+
+  .story-section {
+    text-align: center;
+    padding: 20px;
+    margin: 0 auto;
+  }
+
+  .story-section h2 {
+    font-size: 2em;
+  }
+
+  .story-section p {
+    font-size: 1em;
+    line-height: 1.5;
   }
 
   .specials {
-    padding: 60px 0;
+    height: 500px;
+    padding: 40px 0;
   }
 
   .specials-content {
-    max-width: 80%;
-    margin-left: 10%;
-    padding: 20px;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 15px;
+  }
+
+  .specials-content h2 {
+    font-size: 2.5em;
+  }
+
+  .specials-content h4 {
+    font-size: 1.2em; 
+    margin-bottom: 0;
+  }
+
+  .specials-content p {
+    font-size: 1em;
+  }
+
+  .specials-content button {
+    padding: 10px 25px;
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-image img {
+    max-height: 250px;
+  }
+
+  .hero-text {
+    text-align: center;
+    padding: 10px;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .hero-text h4 {
+    font-size: 1.3em;
+  }
+
+  .hero-text h1 {
+    font-size: 1.8em;
+  }
+
+  .hero-text p {
+    font-size: 0.9em;
+  }
+
+  .hero-reversed {
+    flex-direction: column-reverse;
+    padding: 15px;
+  }
+
+  .hero-reversed .hero-text {
+    text-align: center;
+    padding: 10px;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .hero-reversed .hero-text h1 {
+    font-size: 1.8em;
+    margin-bottom: 8px;
+  }
+
+  .hero-reversed .hero-text h4 {
+    font-size: 1em;
+    margin-bottom: 5px;
+  }
+
+  .hero-reversed .hero-text p {
+    font-size: 0.9em;
+    line-height: 1.4;
+    text-align: center;
+  }
+
+  .features {
+    padding: 15px;
+  }
+
+  .feature p {
+    font-size: 0.85em;
+  }
+
+  .feature:not(:last-child) {
+    border-right: none;
+    padding-right: 0;
+  }
+  .meal img {
+    height: 250px;
+  }
+
+  .specials {
+    height: 400px;
   }
 
   .specials-content h2 {
     font-size: 2em;
   }
 
+  .specials-content h4 {
+    font-size: 1em;
+    margin-bottom: -25px;
+  }
+
   .specials-content p {
-    font-size: 0.9em;
+    font-size: 0.85em;
   }
 
   .specials-content button {
-    padding: 10px 20px;
+    padding: 8px 18px;
+    font-size: 0.8em;
   }
 }

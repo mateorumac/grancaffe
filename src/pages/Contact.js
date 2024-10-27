@@ -1,25 +1,74 @@
-import React from 'react';
-import './Contact.css';
-import { FaPhoneAlt, FaMapMarkerAlt, FaRegClock, FaEnvelope } from 'react-icons/fa';
+import React from "react";
+import { useTranslation } from "react-i18next";
+import "./Contact.css";
+import showAlert from '../components/showAlert';
+import {
+  FaPhoneAlt,
+  FaMapMarkerAlt,
+  FaRegClock,
+  FaEnvelope,
+} from "react-icons/fa";
+import emailjs from "emailjs-com";
 
 function Contact() {
+  const { t } = useTranslation();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_xhfgwmr",
+        "template_6u6sg6o",
+        e.target,
+        "yUqhtuWZO4g8ZWi75"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          showAlert(t("Your message has been sent successfully!"), "success");
+        },
+        (error) => {
+          console.log(error.text);
+          showAlert(t("There was an error sending your message. Please try again."), "error");
+        }
+      );
+
+    e.target.reset();
+  };
+
   return (
     <div className="contact-page">
       <div className="contact-content">
         <div className="contact-info">
-          <h4>Here For You</h4>
-          <h2>Write to Us</h2>
-          <form className="contact-form">
+          <h4>{t("Here For You")}</h4>
+          <h2>{t("Write to Us")}</h2>
+          <form className="contact-form" onSubmit={sendEmail}>
             <div className="form-row">
-              <input type="text" placeholder="First Name" required />
-              <input type="text" placeholder="Last Name" required />
+              <input
+                type="text"
+                name="firstName"
+                placeholder={t("First Name")}
+                required
+              />
+              <input
+                type="text"
+                name="lastName"
+                placeholder={t("Last Name")}
+                required
+              />
             </div>
             <div className="form-row">
-              <input type="text" placeholder="Phone Number" required />
-              <input type="email" placeholder="Email" required />
+              <input
+                type="text"
+                name="phone"
+                placeholder={t("Phone Number")}
+                required
+              />
+              <input type="email" name="email" placeholder={t("Email")} required />
             </div>
-            <textarea placeholder="Message" required></textarea>
-            <button type="submit">Send</button>
+            <textarea name="message" placeholder={t("Message")} required></textarea>
+            <button type="submit">{t("Send")}</button>
           </form>
         </div>
         <div className="map-container">
@@ -37,28 +86,34 @@ function Contact() {
       <div className="contact-details">
         <div className="detail-item">
           <FaRegClock className="detail-icon" />
-          <h4>Working Hours</h4>
-          <p>Mon - Thu: 08:00 - 20:00 <br />
-            Fri: 08:00 - 21:00 <br />
-            Sat: 10:00 - 21:00</p>
+          <h4>{t("Working Hours")}</h4>
+          <p>
+            {t("Mon - Thu")}: 08:00 - 20:00 <br />
+            {t("Fri")}: 08:00 - 21:00 <br />
+            {t("Sat")}: 10:00 - 21:00
+          </p>
         </div>
         <div className="detail-item">
           <FaPhoneAlt className="detail-icon" />
-          <h4>Call Us</h4>
-          <p>+377 6 07 93 96 82<br/> +377 97 97 78 88</p>
+          <h4>{t("Call Us")}</h4>
+          <p>
+            +377 6 07 93 96 82
+            <br /> +377 97 97 78 88
+          </p>
         </div>
         <div className="detail-item">
           <FaMapMarkerAlt className="detail-icon" />
-          <h4>Address</h4>
+          <h4>{t("Address")}</h4>
           <p>Rue Grimaldi 57, Monaco</p>
         </div>
         <div className="detail-item">
           <FaEnvelope className="detail-icon" />
-          <h4>Email</h4>
+          <h4>{t("Email")}</h4>
           <p>grancaffe.mc@gmail.com</p>
         </div>
       </div>
     </div>
   );
 }
+
 export default Contact;

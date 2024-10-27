@@ -1,5 +1,5 @@
 import React from 'react';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import './AboutUs.css';
 import abthero from '../assets/abthero.jpeg'; 
 import abt2 from '../assets/abt2.jpeg'; 
@@ -18,9 +18,9 @@ function AboutUs() {
     <section className="about-hero">
         <img src={abthero} alt="Hero" className="hero-image" />
         <div className="hero-text">
-            <h2>{t('Behind the Sauce')}</h2>
-            <h1>{t('Gran Caffe')}</h1>
-            <p>{t('Restaurant & Lounge Bar Since 1945')}</p>
+            <h2><Trans>Behind the Sauce</Trans></h2>
+            <h1><Trans>Gran Caffe</Trans></h1>
+            <p><Trans>Restaurant & Lounge Bar Since 1945</Trans></p>
         </div>
     </section>
 
@@ -28,15 +28,15 @@ function AboutUs() {
         <div className="content-section">
             <img src={abt2} alt="Italian Coffee and Desserts" className="content-image" />
             <div className="content-text">
-                <h3>{t('WARM AND WELCOMING')}</h3>
-                <p>{t("Welcome to Gran Caffè, a cherished gem for locals and travelers alike. Step into our world and experience the essence of Italy with every sip of our Italian coffee and each bite of our homemade desserts, paired with delightful breakfast specialties.")}</p>
+                <h3><Trans>WARM AND WELCOMING</Trans></h3>
+                <p><Trans>Welcome to Gran Caffè, a cherished gem for locals and travelers alike. Step into our world and experience the essence of Italy with every sip of our Italian coffee and each bite of our homemade desserts, paired with delightful breakfast specialties.</Trans></p>
             </div>
         </div>
 
         <div className="content-section reverse">
             <div className="content-text">
-                <h3>{t('DAYTIME DELIGHTS')}</h3>
-                <p>{t("As the day unfolds, our kitchen fills with the aroma of freshly prepared dishes crafted by our talented chef. Enjoy every meal, infused with Italian flavors and passion.")}</p>
+                <h3><Trans>DAYTIME DELIGHTS</Trans></h3>
+                <p><Trans>As the day unfolds, our kitchen fills with the aroma of freshly prepared dishes crafted by our talented chef. Enjoy every meal, infused with Italian flavors and passion.</Trans></p>
             </div>
             <img src={abt6} alt="Chef preparing meals" className="content-image" />
         </div>
@@ -44,58 +44,56 @@ function AboutUs() {
         <div className="content-section">
             <img src={abt3} alt="Evening Atmosphere" className="content-image" />
             <div className="content-text">
-                <h3>{t('EVENINGS AT GRAN CAFFE')}</h3>
-                <p>{t("As twilight descends, the atmosphere transforms into a lively space filled with energy, laughter, and the sounds of glasses clinking. Here, locals and travelers come together, creating connections and unforgettable memories.")}</p>
+                <h3><Trans>EVENINGS AT GRAN CAFFE</Trans></h3>
+                <p><Trans>As twilight descends, the atmosphere transforms into a lively space filled with energy, laughter, and the sounds of glasses clinking. Here, locals and travelers come together, creating connections and unforgettable memories.</Trans></p>
             </div>
         </div>
     </section>
 
-      {/* Amenities Section */}
-      <section className="about-amenities">
+    <section className="about-amenities">
         <div className="amenity-item">
           <FaHeart className="amenity-icon" />
-          <p>{t("Your landmark in the city")}</p>
+          <p><Trans>Your landmark in the city</Trans></p>
         </div>
         <div className="amenity-item">
           <FaStar className="amenity-icon" />
-          <p>{t("Our chef creates an exquisite range of delicious dishes and desserts")}</p>
+          <p><Trans>Our chef creates an exquisite range of delicious dishes and desserts</Trans></p>
         </div>
         <div className="amenity-item">
           <FaCoffee className="amenity-icon" />
-          <p>{t("Aromatic coffee and chef's dishes")}</p>
+          <p><Trans>Aromatic coffee and chef's dishes</Trans></p>
         </div>
         <div className="amenity-item">
           <FaSmile className="amenity-icon" />
-          <p>{t("Unique Italian apero style and atmosphere")}</p>
+          <p><Trans>Unique Italian apero style and atmosphere</Trans></p>
         </div>
-      </section>
+    </section>
 
-      {/* Cooking Section with Left-Aligned Text */}
-      <section className="cooking-section">
+    <section className="cooking-section">
         <div className="cooking-content">
           <div className="cooking-text">
-            <h2>{t('WE COOK FOR YOU EVERY DAY')}</h2>
-            <p>{t('Experience the joy of culinary surprises at our restaurant, where we serve daily dishes inspired by recipes from around the world. Come and discover the delightful creations we have prepared for you today!')}</p>
-            <button onClick={() => window.location.href='/menu'}>{t('View Our Menu')}</button>
+            <h2><Trans>WE COOK FOR YOU EVERY DAY</Trans></h2>
+            <p><Trans>Experience the joy of culinary surprises at our restaurant, where we serve daily dishes inspired by recipes from around the world. Come and discover the delightful creations we have prepared for you today!</Trans></p>
+            <button onClick={() => window.location.href='/menu'}><Trans>View Our Menu</Trans></button>
           </div>
           <img src={abtcook} alt="Daily Specials" className="cooking-image" />
         </div>
-      </section>
+    </section>
 
-      <section className="atmosphere-section">
-    <div className="atmosphere-text">
-        <h2>{t('WE FOCUS ON NEW TASTE SENSATIONS AND A PLEASANT ATMOSPHERE')}</h2>
-        <p>{t("We guarantee delicious cocktails, beers, and a unique atmosphere.")}</p>
-        <p>{t("In our restaurant, you can unwind after a hard day with our fantastic cocktails and beers. In addition to the original and unique cuisine, friendly staff and a wonderful atmosphere await you.")}</p>
-    </div>
-    
-    <div className="atmosphere-images">
-        <img src={abt4} alt="Cocktails" className="atmosphere-image" />
-        <img src={abt5} alt="Atmosphere" className="atmosphere-image" />
-    </div>
-</section>
+    <section className="atmosphere-section">
+        <div className="atmosphere-text">
+            <h2><Trans>WE FOCUS ON NEW TASTE SENSATIONS AND A PLEASANT ATMOSPHERE</Trans></h2>
+            <p><Trans>We guarantee delicious cocktails, beers, and a unique atmosphere.</Trans></p>
+            <p><Trans>In our restaurant, you can unwind after a hard day with our fantastic cocktails and beers. In addition to the original and unique cuisine, friendly staff and a wonderful atmosphere await you.</Trans></p>
+        </div>
+        
+        <div className="atmosphere-images">
+            <img src={abt4} alt="Cocktails" className="atmosphere-image" />
+            <img src={abt5} alt="Atmosphere" className="atmosphere-image" />
+        </div>
+    </section>
 
-<section
+    <section
         className="about-call-to-action"
         style={{
           backgroundImage: `url(${abtcta})`,
@@ -103,12 +101,12 @@ function AboutUs() {
           backgroundPosition: 'center'
         }}>
           <div className="cta-content">
-    <h2>{t('WE’RE PROUD TO BE A CHERISHED')}<br />{t(' DESTINATION FOR MONACO GRAND')}<br />{t('PRIX ENTHUSIASTS')}</h2>
-    <p>{t("Offering a quintessential Monaco experience that captures")}<br />{t("the heart and soul of this vibrant principality.")}<br />{t(" Join us at Gran Caffè and embark on a journey of taste, tradition,")}<br />{t(" and togetherness. We can't wait to welcome you into our world.")}</p>
-    <button>{t('Book a Table')}</button>
+            <h2><Trans>WE’RE PROUD TO BE A CHERISHED</Trans><br /><Trans>DESTINATION FOR MONACO GRAND</Trans><br /><Trans>PRIX ENTHUSIASTS</Trans></h2>
+            <p><Trans>Offering a quintessential Monaco experience that captures</Trans><br /><Trans>the heart and soul of this vibrant principality.</Trans><br /><Trans>Join us at Gran Caffè and embark on a journey of taste, tradition,</Trans><br /><Trans>and togetherness. We can't wait to welcome you into our world.</Trans></p>
+            <button><Trans>Book a Table</Trans></button>
         </div>
-</section>
-    </div>
+    </section>
+</div>
   );
 }
 
