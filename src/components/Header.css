@@ -59,7 +59,6 @@
     background-color: transparent;
     border: 2px solid var(--gold);
     padding: 8px 16px;
-    border-radius: 5px;
     cursor: pointer;
     display: flex;
     align-items: center;

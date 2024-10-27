@@ -106,9 +106,9 @@ function Home() {
           <h4>We Believe</h4>
           <h2>Food is Important</h2>
           <p>
-            Lorem ipsum dolor sit amet conse ctetur adipiscing elit the
-            stibulum sit aet purus eu lectus tristique aliquam best donec
-            maximus lacus nllec aroma pastol.
+          At Gran Caffe, we know that every meal is an opportunity to create memories and savor authentic flavors.
+           Join us for an experience where each dish is crafted with passion, bringing the essence of Italy to your table. 
+           Taste, connect, and make moments that last.
           </p>
           <button onClick={() => window.location.href='/reservation'}>Book a Table</button>
         </div>

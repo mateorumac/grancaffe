@@ -18,6 +18,7 @@ function AboutUs() {
     <section className="about-hero">
         <img src={abthero} alt="Hero" className="hero-image" />
         <div className="hero-text">
+            <h2>{t('Behind the Sauce')}</h2>
             <h1>{t('Gran Caffe')}</h1>
             <p>{t('Restaurant & Lounge Bar Since 1945')}</p>
         </div>

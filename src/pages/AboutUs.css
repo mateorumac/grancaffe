@@ -7,7 +7,6 @@
     --grainy-overlay: rgba(0, 0, 0, 0.05);
 }
 
-/* Main About Us Page Styling */
 .about-us {
     font-family: Arial, sans-serif;
 }
@@ -34,20 +33,40 @@
     position: absolute;
     color: var(--white);
     text-align: center;
-    font-size: 1.5em;
     max-width: 90%;
     z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.about-hero .hero-text h2 {
+    font-size: 2em;
+    color: var(--light-gray);
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 0;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
 }
 
 .about-hero .hero-text h1 {
-    font-size: 3.5em;
+    font-size: 6em;
+    font-weight: 700;
     color: var(--gold);
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    margin: 5px 0;
+    margin-left: 30px;
 }
 
 .about-hero .hero-text p {
-    font-size: 1.2em;
+    font-size: 1.3em;
     color: var(--white);
-    margin-top: 15px;
+    font-weight: 300;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    max-width: 80%;
+    margin-top: 5px;
 }
 
 /* Content Sections */
@@ -156,7 +175,6 @@
     padding: 12px 30px;
     font-size: 1em;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
 }
@@ -180,7 +198,6 @@
     margin-bottom: 120px;
 }
 
-/* Left Column for Text */
 .atmosphere-text {
     flex: 1;
     margin-top: 100px;
@@ -202,7 +219,6 @@
     line-height: 1.6; 
 }
 
-/* Right Column for Images */
 .atmosphere-images {
     flex: 1;
     margin-top: 100px;
@@ -220,7 +236,6 @@
     object-fit: cover;
 }
 
-/* Call to Action Section */
 .about-call-to-action {
     width: 100vw;
     position: relative;
@@ -238,7 +253,6 @@
     transform: translateX(-50px); 
 }
 
-/* Grainy Overlay Effect */
 .about-call-to-action::before {
     content: "";
     position: absolute;
@@ -254,7 +268,6 @@
     z-index: 1; 
 }
 
-/* Text Styling */
 .about-call-to-action h2 {
     font-size: 2.5em;
     font-weight: 700;
@@ -291,27 +304,200 @@
 }
 
 .cta-content{
-    background-color: var(--black); /* Black background for visibility */
+    background-color: var(--black); 
     padding: 40px 60px;
     margin-right: 50px;
     text-align: right;
     max-width: 800px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
+
 /* Responsive Design */
+/* For Tablets and Laptops (up to 1200px) */
+@media (max-width: 1200px) {
+    
+    .about-hero {
+        height: 600px;
+    }
+
+    .about-hero .hero-text h1 {
+        font-size: 3em;
+    }
+
+    .about-hero .hero-text p {
+        font-size: 1.1em;
+    }
+
+    .about-content .content-section,
+    .about-content .content-section.reverse {
+        flex-direction: column; 
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .content-section .content-text {
+        margin: 0 auto;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .content-section img {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .atmosphere-section {
+        gap: 40px;
+        padding: 20px;
+        margin-top: 30px; 
+        margin-bottom: 30px;
+    }
+
+    .about-amenities {
+        gap: 30px;
+        padding: 40px 20px;
+    }
+
+    .cooking-section .cooking-content {
+        gap: 50px; 
+    }
+
+    .about-call-to-action {
+        height: 500px;
+        padding: 20px 40px;
+    }
+
+    .about-call-to-action h2 {
+        font-size: 2.2em;
+    }
+
+    .about-call-to-action p {
+        font-size: 1.2em;
+        max-width: 80%;
+    }
+
+    .cta-content {
+        padding: 30px 40px;
+        max-width: 90%;
+    }
+}
+
+/* For Tablets (up to 992px) */
+@media (max-width: 992px) {
+    
+    .about-content .content-section,
+    .about-content .content-section.reverse {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .content-section .content-text {
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .content-section img {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .about-amenities {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .cooking-section .cooking-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .cooking-section .cooking-image {
+        order: -1;
+        margin-bottom: 20px;
+    }
+
+    .about-call-to-action {
+        padding: 20px;
+        height: auto;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-call-to-action h2 {
+        font-size: 2em;
+    }
+
+    .about-call-to-action p {
+        font-size: 1.1em;
+    }
+
+    .cta-content {
+        padding: 20px 30px;
+        max-width: 90%;
+        margin-right: 0;
+    }
+}
+
+/* For Mobile Devices (up to 768px) */
 @media (max-width: 768px) {
+    
+    .about-hero {
+        height: 500px;
+    }
+
     .about-hero .hero-text h1 {
         font-size: 2.5em;
+    }
+
+    .about-hero .hero-text p {
+        font-size: 1em;
     }
 
     .about-content .content-section,
     .about-content .content-section.reverse {
         flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 
-    .about-content .content-image {
+    .content-section .content-text {
+        margin: 0 auto;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .content-section img,
+    .cooking-section .cooking-image {
         width: 100%;
+        margin-top: 20px;
+    }
+
+    .about-amenities {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .cooking-section .cooking-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .cooking-section .cooking-image {
+        order: -1;
         margin-bottom: 20px;
+    }
+
+    .about-call-to-action {
+        height: auto;
+        padding: 20px;
+        align-items: center;
+        text-align: center;
     }
 
     .about-call-to-action h2 {
@@ -320,5 +506,105 @@
 
     .about-call-to-action p {
         font-size: 1em;
+        max-width: 90%;
+    }
+
+    .cta-content {
+        padding: 20px;
+        margin-right: 0;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    body, html {
+        overflow-x: hidden; 
+    }
+    .about-hero {
+        height: 400px;
+    }
+
+    .about-hero .hero-text h1 {
+        font-size: 1.8em;
+    }
+
+    .about-hero .hero-text p {
+        font-size: 0.9em;
+    }
+
+    .about-content .content-section,
+    .about-content .content-section.reverse {
+        flex-direction: column;
+        gap: 10px; 
+        padding: 10px 0;
+    }
+
+    .content-section .content-text {
+        padding: 10px;
+        font-size: 0.9em;
+        text-align: center;
+    }
+
+    .content-section img,
+    .cooking-section .cooking-image {
+        width: 100%;
+        max-width: 300px; 
+    }
+
+    .atmosphere-section {
+        margin-top: -70px;
+        margin-bottom: 10px;
+    }
+
+    .about-amenities {
+        padding: 20px 10px;
+        gap: 10px;
+        margin-top: -40px;
+        margin-bottom: 20px;
+    }
+
+    .amenity-item p {
+        font-size: 0.9em; 
+    }
+
+    .cooking-section .cooking-content {
+        padding: 20px 10px;
+    }
+
+    .cooking-text h2 {
+        font-size: 1.8em;
+    }
+
+    .cooking-text p {
+        font-size: 0.9em;
+    }
+
+    .cooking-text button {
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
+
+    .about-call-to-action {
+        width: 100%; 
+        margin-left:35px ;
+        height: auto;
+        padding: 15px;
+        align-items: center;
+        text-align: center;
+        overflow: hidden; 
+    }
+
+    .about-call-to-action h2 {
+        font-size: 1.6em;
+    }
+
+    .about-call-to-action p {
+        font-size: 0.9em;
+    }
+
+    .cta-content {
+        padding: 15px;
+        max-width: 90%;
+        text-align: right;
     }
 }
