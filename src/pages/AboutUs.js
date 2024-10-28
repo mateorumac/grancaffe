@@ -123,7 +123,7 @@ function AboutUs() {
         <div className="cta-content">
           <h2><Trans>WE’RE PROUD TO BE A CHERISHED</Trans><br /><Trans>DESTINATION FOR MONACO GRAND</Trans><br /><Trans>PRIX ENTHUSIASTS</Trans></h2>
           <p><Trans>Offering a quintessential Monaco experience that captures</Trans><br /><Trans>the heart and soul of this vibrant principality.</Trans><br /><Trans>Join us at Gran Caffè and embark on a journey of taste, tradition,</Trans><br /><Trans>and togetherness. We can't wait to welcome you into our world.</Trans></p>
-          <button><Trans>Book a Table</Trans></button>
+          <button onClick={() => window.location.href='/reservation'}><Trans>Book a Table</Trans></button>
         </div>
       </section>
     </div>
