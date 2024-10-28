@@ -29,6 +29,7 @@ function Footer() {
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +377 97 97 78 88</p>
         </div>
         <div className="footer-section">
+          <div className="flwus">
           <h4><Trans>Follow Us</Trans></h4>
           <div className="social-icons">
             <a href="https://www.facebook.com/gcrestaurantmonaco/" target="_blank" rel="noopener noreferrer">
@@ -42,6 +43,7 @@ function Footer() {
             </a>
           </div>
           <Link to="/reservation" className="footer-book-button"><Trans>Book Now</Trans></Link>
+          </div>
         </div>
       </div>
       <div className="footer-bottom">

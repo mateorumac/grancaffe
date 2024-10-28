@@ -257,7 +257,6 @@ body {
   font-weight: bold;
 }
 
-/* Menu Button */
 .menu-button {
   margin-top: 50px;
   padding: 12px 30px;
@@ -430,16 +429,16 @@ body {
   }
 
   .features {
-    flex-direction: column; /* Stack features vertically */
+    flex-direction: column; 
     align-items: center;
     padding: 20px;
     margin-top: 20px;
   }
 
   .feature {
-    padding: 20px 0; /* Add padding around each feature */
-    border-right: none; /* Remove borders in mobile view */
-    max-width: 100%; /* Ensure full width in mobile */
+    padding: 20px 0; 
+    border-right: none; 
+    max-width: 100%; 
   }
 
   .feature-icon {
@@ -456,7 +455,7 @@ body {
     font-size: 0.9em;
     line-height: 1.5;
     margin: 0 auto;
-    text-align: center; /* Center text */
+    text-align: center; 
   }
 
   .feature:not(:last-child) {
@@ -590,7 +589,7 @@ body {
   .feature p {
     font-size: 0.85em;
     max-width: 220px;
-    text-align: center; /* Ensure consistent centering */
+    text-align: center; 
   }
 
   .feature:not(:last-child) {

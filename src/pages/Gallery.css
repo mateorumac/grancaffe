@@ -152,7 +152,7 @@
         font-size: 1em;
     }
     .gallery-grid {
-        grid-template-columns: 1fr; /* Single column on mobile */
+        grid-template-columns: 1fr; 
     }
     .gallery-item {
         height: 200px;

@@ -53,7 +53,6 @@ function Home() {
   </div>
 </section>
 
-      {/* Features Section */}
       <section className="features">
         <div className="feature">
           <GiCoffeeCup className="feature-icon" />
@@ -77,41 +76,41 @@ function Home() {
   <h2><Trans>Great Flavors</Trans></h2>
   <div className="meal-grid">
     <div className="meal">
-      <img src={hero3} alt={t("Black Olive Pizza")} />
-      <h4><Trans>Black Olive Pizza</Trans></h4>
+      <img src={hero3} alt={t("Mediterranean Mezze Platter")} />
+      <h4><Trans>Mediterranean Mezze Platter</Trans></h4>
       <p>
         <Trans>
-          Lorem ipsum dolor sit amet elit the estibulum sit aet purus eu lectus tristique aliquam best.
+        A delightful assortment of Mediterranean appetizers featuring fresh bruschetta, stuffed pastries, cured meats, and mini toasts.
         </Trans>
       </p>
       <span>$25</span>
     </div>
     <div className="meal">
-      <img src={feat2} alt={t("Caesar Salad")} />
-      <h4><Trans>Caesar Salad</Trans></h4>
+      <img src={feat2} alt={t("Sesame-Crusted Tuna Salad")} />
+      <h4><Trans>Sesame-Crusted Tuna Salad</Trans></h4>
       <p>
         <Trans>
-          Lorem ipsum dolor sit amet elit the estibulum sit aet purus eu lectus tristique aliquam best.
+        Slices of seared sesame-crusted tuna atop a bed of fresh greens, garnished with sprouts and served with a savory soy dipping sauce.
         </Trans>
       </p>
       <span>$15</span>
     </div>
     <div className="meal">
-      <img src={feat3} alt={t("Balsamic Bruschetta")} />
-      <h4><Trans>Balsamic Bruschetta</Trans></h4>
+      <img src={feat3} alt={t("Rustic Mushroom & Basil Pizza")} />
+      <h4><Trans>Rustic Mushroom & Basil Pizza</Trans></h4>
       <p>
         <Trans>
-          Lorem ipsum dolor sit amet elit the estibulum sit aet purus eu lectus tristique aliquam best.
+        A thin, wood-fired pizza topped with savory mushrooms, fresh basil, black olives, and a hint of garlic.
         </Trans>
       </p>
       <span>$12</span>
     </div>
     <div className="meal">
-      <img src={feat4} alt={t("Italian Pancakes")} />
-      <h4><Trans>Italian Pancakes</Trans></h4>
+      <img src={feat4} alt={t("Tropical Pineapple Fizz")} />
+      <h4><Trans>Tropical Pineapple Fizz</Trans></h4>
       <p>
         <Trans>
-          Lorem ipsum dolor sit amet elit the estibulum sit aet purus eu lectus tristique aliquam best.
+        A refreshing tropical drink with pineapple juice, a splash of citrus, and a garnish of fresh mint.
         </Trans>
       </p>
       <span>$22</span>
@@ -121,7 +120,7 @@ function Home() {
     <Trans>View Full Menu</Trans>
   </button>
 </section>
- {/* Specials Section */}
+
  <section className="specials" style={{
         backgroundImage: `url(${specialsImage})`,
         backgroundSize: 'cover',

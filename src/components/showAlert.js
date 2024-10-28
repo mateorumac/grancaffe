@@ -1,4 +1,3 @@
-// showAlert.js
 function showAlert(message, type = 'info') {
     const alertContainer = document.createElement('div');
     alertContainer.className = `alert alert-${type}`;

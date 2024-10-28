@@ -82,33 +82,56 @@
   display: flex;
   align-items: center;
   margin-left: 10px;
+  position: relative;
 }
 
 .dropdown-menu {
   position: absolute;
   background-color: var(--white);
-  border: 1px solid var(--gold);
-  border-radius: 5px;
+  border-radius: 12px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
   display: flex;
   flex-direction: column;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   z-index: 1000;
-  min-width: 120px;
+  min-width: 150px;
+  animation: fade-in 0.3s ease forwards;
+  overflow: hidden;
 }
 
 .dropdown-menu button {
   background: none;
   border: none;
-  padding: 10px 15px;
+  padding: 12px 20px;
   color: var(--black);
   text-align: left;
   cursor: pointer;
-  font-size: 0.9em;
-  transition: background-color 0.3s;
+  font-size: 1em;
+  font-family: 'Roboto', sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+.dropdown-menu button:not(:last-child) {
+  border-bottom: 1px solid var(--gold); 
+  opacity: 0.8;
+}
+
+.dropdown-menu button:focus,
+.dropdown-menu button:active,
 .dropdown-menu button:hover {
-  background-color: #d3d3d3;
+  background-color: var(--gold); 
+  color: var(--white); 
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .menu-toggle {
@@ -172,7 +195,6 @@
       margin-top: 15px;
   }
 
-  /* Center and Style Book Now Button */
   .book-button {
       font-size: 1em;
       padding: 8px 16px;
@@ -185,7 +207,6 @@
       margin-top: -10px;
   }
 
-  /* Group Language and Menu Icons */
   .icons-group {
       display: flex;
       align-items: center;
@@ -196,21 +217,18 @@
       position: relative; 
   }
 
-  /* Style for Language Icon */
   .language-icon {
       font-size: 1.5em;
       cursor: pointer;
       padding: 5px;
   }
 
-  /* Style for Menu Toggle Icon */
   .menu-toggle {
       font-size: 1.5em;
       margin-top: 3.5px;
       cursor: pointer;
   }
 
-  /* Dropdown Menu Position */
   .dropdown-menu {
     position: fixed; 
     top: 85px; 
@@ -328,7 +346,7 @@
     border: 1px solid var(--gold);
     border-radius: 5px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    width: max-content;
+    width: 120px;
     z-index: 1000;
   }
 
