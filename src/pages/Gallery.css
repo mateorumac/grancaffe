@@ -132,6 +132,82 @@
     margin: 5px 0 0;
 }
 
+.gallery-item img {
+    transition: transform 0.4s ease, filter 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+}
+
+.gallery-item .overlay {
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.gallery-item:hover .overlay {
+    opacity: 1;
+}
+
+.gallery-item {
+    opacity: 0;
+    transform: scale(0.95);
+    animation: fadeInScale 0.6s ease forwards;
+}
+
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.header-image-container {
+    position: relative;
+    overflow: hidden;
+    height: 500px;
+    transform: translateY(0);
+    transition: transform 0.2s ease-out;
+}
+
+.gallery-page:hover .header-image-container {
+    transform: translateY(-5%);
+}
+
+.header-text h1, .header-text p {
+    opacity: 0;
+    transform: translateX(-20px);
+    animation: slideInLeft 0.6s ease-out forwards;
+}
+
+.header-text h1 {
+    animation-delay: 0.2s;
+}
+
+.header-text p {
+    animation-delay: 0.4s;
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.gallery-grid, .header-text, .gallery-item {
+    transition: all 0.3s ease;
+}
+
 /* For Laptops (up to 1200px) */
 @media (max-width: 1200px) {
     .gallery-page {

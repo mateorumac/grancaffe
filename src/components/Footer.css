@@ -84,6 +84,16 @@
   margin-top: 20px;
 }
 
+
+.footer-section p:hover,
+.footer-section a:hover {
+    color: #b58447;
+    transform: scale(1.02);
+}
+.social-icons a:hover {
+  color: #b58447;
+  transform: scale(1.1) translateY(-3px);
+}
 @media (max-width: 1024px) {
   .footer-content {
     flex-direction: column;

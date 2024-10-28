@@ -68,7 +68,24 @@
     max-width: 80%;
     margin-top: 5px;
 }
-
+.hero-text {
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+    animation-delay: 0.3s;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .hero-image {
+    background-attachment: fixed;
+    background-position: center;
+  }
 /* Content Sections */
 .about-content {
     display: flex;
@@ -117,6 +134,39 @@
     line-height: 1.6;
 }
 
+.content-section {
+    opacity: 0;
+    transform: translateX(-20px);
+    animation: slideInLeft 0.8s ease-out forwards;
+  }
+  
+  .content-section.reverse {
+    transform: translateX(20px);
+    animation: slideInRight 0.8s ease-out forwards;
+  }
+  
+  @keyframes slideInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideInRight {
+    from {
+      opacity: 0;
+      transform: translateX(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
 /* Amenities Section */
 .about-amenities {
     display: flex;
@@ -143,6 +193,19 @@
     color: var(--black);
     font-weight: 500;
 }
+
+.amenity-icon:hover {
+    animation: bounce 0.5s ease-in-out;
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
 
 /* Cooking Section */
 .cooking-section .cooking-content {
@@ -240,6 +303,22 @@
     object-fit: cover;
 }
 
+.atmosphere-image {
+    opacity: 0;
+    transform: scale(0.95);
+    animation: fadeScaleIn 0.7s ease forwards;
+  }
+  
+  @keyframes fadeScaleIn {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
 .about-call-to-action {
     width: 100vw;
     position: relative;
@@ -315,7 +394,51 @@
     max-width: 800px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
+.about-call-to-action button:hover {
+    box-shadow: 0 0 10px var(--gold), 0 0 20px var(--gold);
+  }
 
+  .cta-content h2,
+  .cta-content p {
+    opacity: 0;
+    animation: staggerFadeIn 0.7s ease forwards;
+  }
+  
+  .cta-content h2 {
+    animation-delay: 0.2s;
+  }
+  
+  .cta-content p {
+    animation-delay: 0.4s;
+  }
+  
+  @keyframes staggerFadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* General Hover Effects for Images */
+.content-section img,
+.cooking-section .cooking-image,
+.atmosphere-image {
+    transition: transform 0.3s ease, filter 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Zoom-In Effect on Hover */
+.content-section img:hover,
+.cooking-section .cooking-image:hover,
+.atmosphere-image:hover {
+    transform: scale(1.05); 
+    filter: brightness(1.1); 
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); 
+    border-radius: 10px; 
+}
 /* Responsive Design */
 /* For Tablets and Laptops (up to 1200px) */
 @media (max-width: 1200px) {

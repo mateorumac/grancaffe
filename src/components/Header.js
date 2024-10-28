@@ -22,7 +22,6 @@ function Header() {
     setIsDropdownOpen(false);
   };
 
-  // Close dropdown if clicked outside
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (

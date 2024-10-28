@@ -85,6 +85,22 @@ body {
   background-color: #b58447;
 }
 
+.hero-image,
+.hero-text-inner {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* Reversed Hero Section */
 .hero-reversed {
   display: flex;
@@ -197,6 +213,11 @@ body {
   padding-right: 30px; 
 }
 
+.feature-icon:hover {
+  transform: rotate(15deg) scale(1.1);
+  transition: transform 0.3s ease;
+}
+
 /* featured meals section */
 .feature-meals {
   text-align: center;
@@ -270,6 +291,14 @@ body {
 
 .menu-button:hover {
   background-color: #b58447;
+}
+
+.meal img {
+  transition: transform 0.3s ease;
+}
+
+.meal:hover img {
+  transform: scale(1.05);
 }
 
 /* Specials Section */
@@ -347,6 +376,23 @@ body {
 
 .specials-content button:hover {
   background-color: #b58447;
+}
+
+.specials-content button {
+  animation: pulse 1.5s infinite;
+}
+
+button:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
 }
 
 @media (max-width: 1024px) {
