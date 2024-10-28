@@ -13,7 +13,7 @@ function Footer() {
         <div className="footer-section">
           <h4><Trans>About Us</Trans></h4>
           <p>
-            <Trans>Learn more about our restaurant, our story, and our dedication to providing the best dining experience.</Trans>
+            <Trans>Experience the essence of Italian cuisine, crafted with passion and served with warmth.</Trans>
           </p>
           <p>
             <strong><Trans>Working Hours:</Trans></strong> <br />

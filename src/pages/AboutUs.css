@@ -179,6 +179,10 @@
     transition: background-color 0.3s;
 }
 
+.cooking-text button:hover{
+    background-color: #b58447;
+}
+
 .cooking-section .cooking-image {
     flex: 1;
     max-width: 600px;
