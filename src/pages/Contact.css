@@ -205,8 +205,16 @@
     text-align: center;
   }
 
-  .map-container {
-    height: 450px; 
+  .map-container iframe {
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
+    margin-top: 20px; 
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.15);
+  }
+
+  .map-container{
+    min-width: 300px;
   }
 }
 
@@ -232,7 +240,15 @@
     margin-bottom: 25px; 
   }
 
-  .map-container {
-    height: 450px;
-}
+  .map-container iframe {
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
+    margin-top: 20px; 
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.15);
+  }
+
+  .map-container{
+    min-width: 300px;
+  }
 }

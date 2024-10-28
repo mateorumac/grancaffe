@@ -445,9 +445,11 @@
     }
 }
 
-/* For Mobile Devices (up to 768px) */
 @media (max-width: 768px) {
-    
+    body, html {
+        overflow-x: hidden;
+    }
+
     .about-hero {
         height: 500px;
     }
@@ -463,45 +465,94 @@
     .about-content .content-section,
     .about-content .content-section.reverse {
         flex-direction: column;
-        align-items: center;
-        text-align: center;
+        gap: 10px;
+        padding: 20px 0;
     }
 
     .content-section .content-text {
-        margin: 0 auto;
+        order: -1;
         padding: 20px;
+        font-size: 1em;
         text-align: center;
     }
 
     .content-section img,
     .cooking-section .cooking-image {
         width: 100%;
+        max-width: 400px;
         margin-top: 20px;
     }
 
-    .about-amenities {
+    .atmosphere-section {
         flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+
+    .atmosphere-text {
+        order: -1;
+        margin-top: 0;
+        text-align: center;
+        padding-right: 0;
+    }
+
+    .atmosphere-images {
+        order: 1;
+        flex-direction: column;
+        align-items: center;
         gap: 20px;
+        margin-top: 10px;
+    }
+
+    .atmosphere-images .atmosphere-image:first-child {
+        width: 85%;
+        max-width: 350px;
+    }
+
+    .about-amenities {
+        padding: 30px 15px;
+        gap: 15px;
+        flex-direction: column;
         align-items: center;
         text-align: center;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+
+    .amenity-item p {
+        font-size: 1em;
     }
 
     .cooking-section .cooking-content {
         flex-direction: column;
+        padding: 30px 15px;
         align-items: center;
         text-align: center;
     }
 
-    .cooking-section .cooking-image {
-        order: -1;
-        margin-bottom: 20px;
+    .cooking-text h2 {
+        font-size: 2em;
+    }
+
+    .cooking-text p {
+        font-size: 1em;
+    }
+
+    .cooking-text button {
+        padding: 12px 25px;
+        font-size: 1em;
     }
 
     .about-call-to-action {
+        width: 100%;
+        margin-left: 35px;
         height: auto;
         padding: 20px;
         align-items: center;
         text-align: center;
+        overflow: hidden;
     }
 
     .about-call-to-action h2 {
@@ -510,20 +561,21 @@
 
     .about-call-to-action p {
         font-size: 1em;
-        max-width: 90%;
     }
 
     .cta-content {
         padding: 20px;
-        margin-right: 0;
-        max-width: 100%;
+        max-width: 90%;
+        text-align: right;
     }
 }
 
+
 @media (max-width: 480px) {
     body, html {
-        overflow-x: hidden; 
+        overflow-x: hidden;
     }
+
     .about-hero {
         height: 400px;
     }
@@ -539,11 +591,12 @@
     .about-content .content-section,
     .about-content .content-section.reverse {
         flex-direction: column;
-        gap: 10px; 
+        gap: 10px;
         padding: 10px 0;
     }
 
     .content-section .content-text {
+        order: -1;
         padding: 10px;
         font-size: 0.9em;
         text-align: center;
@@ -552,27 +605,57 @@
     .content-section img,
     .cooking-section .cooking-image {
         width: 100%;
-        max-width: 300px; 
+        max-width: 300px;
+        margin-top: 20px;
     }
 
     .atmosphere-section {
-        margin-top: -70px;
-        margin-bottom: 10px;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-top: 20px; 
+        margin-bottom: 30px; 
+    }
+
+    .atmosphere-text {
+        order: -1;
+        margin-top: 0;
+        text-align: center;
+        padding-right: 0;
+    }
+
+    .atmosphere-images {
+        order: 1;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        margin-top: 10px;
+    }
+
+    .atmosphere-images .atmosphere-image:first-child {
+        width: 80%;
+        max-width: 250px;
     }
 
     .about-amenities {
         padding: 20px 10px;
         gap: 10px;
-        margin-top: -40px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 5px;
         margin-bottom: 20px;
     }
 
     .amenity-item p {
-        font-size: 0.9em; 
+        font-size: 0.9em;
     }
 
     .cooking-section .cooking-content {
+        flex-direction: column;
         padding: 20px 10px;
+        align-items: center;
+        text-align: center;
     }
 
     .cooking-text h2 {
@@ -589,13 +672,13 @@
     }
 
     .about-call-to-action {
-        width: 100%; 
-        margin-left:35px ;
+        width: 100%;
+        margin-left: 35px;
         height: auto;
         padding: 15px;
         align-items: center;
         text-align: center;
-        overflow: hidden; 
+        overflow: hidden;
     }
 
     .about-call-to-action h2 {
