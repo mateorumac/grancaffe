@@ -41,7 +41,13 @@ const Gallery = () => {
                     <h1>{t('Gallery')}</h1>
                     <p>{t('Experience culinary excellence with our exquisite dishes and irresistible cakes, each crafted with passion and attention to detail.')}</p>
                 </div>
-                <img src={galleryImage} alt="Gallery Header" className="header-image" />
+                <div className="header-image-container"> 
+        <img src={galleryImage} alt="Gallery Header" className="header-image" />
+        <div className="overlay">
+            <h3>{t('Beef tataki with Asian sauce')}</h3>
+            <p>{t('Heart of rump steak, Asian sauce, sesame with vinegared rice.')}</p>
+        </div>
+    </div>
             </div>
             
             <div className="gallery-grid">
