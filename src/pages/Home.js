@@ -16,12 +16,12 @@ function Home() {
 
   return (
     <div className="home">
-      {/* Original Hero Section */}
       <section className="hero-split">
   <div className="hero-image">
-    <img src={hero1} alt="Chef preparing food" />
+    <img src={hero1} alt="A Delicious dessert" />
   </div>
   <div className="hero-text">
+  <div className="hero-text-inner">
     <h4><Trans>Taste the cuisine of the world</Trans></h4>
     <h1><Trans>Fresh Cuisine</Trans></h1>
     <p>
@@ -30,10 +30,12 @@ function Home() {
       </Trans>
     </p>
   </div>
+  </div>
 </section>
 
 <section className="hero-split hero-reversed">
   <div className="hero-text">
+  <div className="hero-text-inner">
     <h4><Trans>The Story of</Trans></h4>
     <h1><Trans>Our Restaurant</Trans></h1>
     <p>
@@ -44,6 +46,7 @@ function Home() {
     <button onClick={() => window.location.href='/about'}>
       <Trans>Learn More</Trans>
     </button>
+  </div>
   </div>
   <div className="hero-image">
     <img src={hero2} alt="Delicious dish on display" />
