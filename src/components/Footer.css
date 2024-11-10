@@ -64,7 +64,7 @@
 .social-icons {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 15px;
   margin-top: 10px;
 }
 
@@ -103,10 +103,46 @@
     grid-template-columns: 1fr;
   }
 
+  .footer-section h4 {
+    font-size: 1.1em;
+  }
+
+  .footer-section p,
+  .footer-section a {
+    font-size: 0.9em;
+  }
+
   .footer-book-button {
     width: 80%;
     max-width: 250px;
     margin: 10px auto 0;
     padding: 10px 20px;
+  }
+
+  .footer-bottom {
+    font-size: 0.8em;
+  }
+
+  .social-icons a {
+    font-size: 1.4em; 
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-section h4 {
+    font-size: 1em;
+  }
+
+  .footer-section p,
+  .footer-section a {
+    font-size: 0.85em;
+  }
+
+  .footer-bottom {
+    font-size: 0.75em;
+  }
+
+  .social-icons a {
+    font-size: 1.4em; 
   }
 }

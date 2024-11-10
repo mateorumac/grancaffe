@@ -292,30 +292,107 @@
     font-size: 1em;
     padding: 12px;
   }
+  .react-datepicker {
+    max-width: 300px;
+    position: relative;
+  }
+  .custom-select__control {
+    font-size: 0.9em;
+  }
 }
 
 @media (max-width: 768px) {
-  .reservation-page {
-    padding: 10px 0;
-    min-height: 70vh;
+  @media (max-width: 768px) {
+    .reservation-page {
+      padding: 10px 0;
+      min-height: 70vh;
+    }
+    .reservation-container {
+      padding: 20px;
+      max-width: 90%;
+    }
+    .reservation-title {
+      font-size: 1.6em;
+    }
+    .reservation-subtitle {
+      font-size: 0.9em;
+      margin-bottom: 20px;
+    }
+    .reservation-form input,
+    .reservation-form button,
+    .custom-date-picker,
+    .custom-select__control {
+      font-size: 0.9em;
+      padding: 10px;
+    }
+    .react-datepicker {
+      width: 100%;
+      max-width: 300px;
+      position: relative;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+    }
+    .custom-header {
+      font-size: 1em;
+      padding: 8px;
+    }
+    .custom-nav-button {
+      width: 25px;
+      height: 25px;
+      font-size: 1em;
+    }
   }
-  .reservation-container {
-    padding: 20px;
-    max-width: 90%;
-  }
-  .reservation-title {
-    font-size: 1.6em;
-  }
-  .reservation-subtitle {
-    font-size: 0.9em;
-    margin-bottom: 20px;
-  }
-  .reservation-form input,
-  .reservation-form button,
-  .custom-date-picker,
+  
+  @media (max-width: 480px) {
+    .reservation-page {
+      padding: 15px 0;
+    }
+    .reservation-title {
+      font-size: 1.5em;
+    }
+    .reservation-subtitle {
+      font-size: 0.85em;
+    }
+    .reservation-container {
+      padding: 15px;
+    }
+    .reservation-form input,
+    .reservation-form button,
+    .custom-date-picker,
+    .custom-select__control {
+      font-size: 0.85em;
+      padding: 8px;
+    }
+    .react-datepicker {
+      width: 100%;
+      max-width: 280px;
+      position: relative;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+    }
+    .custom-header {
+      font-size: 0.9em;
+      padding: 6px;
+    }
+    .custom-nav-button {
+      width: 22px;
+      height: 22px;
+      font-size: 0.9em;
+    }
+    .react-datepicker__day-name,
+    .react-datepicker__day {
+      font-size: 0.8em;
+      padding: 6px;
+    }
+  }  
   .custom-select__control {
+    padding: 8px;
     font-size: 0.9em;
-    padding: 10px;
+  }
+  .custom-select__menu {
+    font-size: 0.9em;
   }
 }
 
@@ -338,5 +415,37 @@
   .custom-select__control {
     font-size: 0.85em;
     padding: 8px;
+  }
+  .react-datepicker {
+    width: 100%;
+    max-width: 324px;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .custom-header {
+    font-size: 0.9em;
+    padding: 8px;
+  }
+  .custom-nav-button {
+    width: 24px;
+    height: 24px;
+    font-size: 0.9em;
+  }
+  .react-datepicker__day-name,
+  .react-datepicker__day {
+    font-size: 0.8em;
+    padding: 6px;
+  }
+  .custom-select__control {
+    font-size: 0.85em;
+    padding: 8px;
+  }
+  .custom-select__menu {
+    padding: 5px;
+    width: 90%;
+    max-width: 320px;
   }
 }
