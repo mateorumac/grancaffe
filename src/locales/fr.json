@@ -146,12 +146,13 @@
     "Penne al Pesto": "Penne au pesto",
     "Basil pesto, garlic, Parmesan, and pine nuts in a flavorful, creamy sauce.": "Pesto de basilic, ail, parmesan et pignons de pin dans une sauce crémeuse et savoureuse.",
     "Make a Reservation": "Faire une réservation",
-  "Book a table at our restaurant to enjoy an unforgettable dining experience. We look forward to serving you.": "Réservez une table dans notre restaurant pour profiter d'une expérience culinaire inoubliable. Nous avons hâte de vous servir.",
+  "Book a table at our restaurant & lounge bar to enjoy an unforgettable experience with exquisite dining, refreshing cocktails, and a vibrant atmosphere. We look forward to welcoming you.": "Réservez une table dans notre restaurant et lounge bar pour profiter d'une expérience inoubliable avec une cuisine exquise, des cocktails rafraîchissants et une ambiance vibrante. Nous avons hâte de vous accueillir.",
   "Name": "Nom",
   "Phone": "Téléphone",
+  "Select a Date": "Sélectionnez une date",
+  "Select Time": "Sélectionnez l'heure",
   "Number of People": "Nombre de personnes",
   "Reservation sent successfully!": "Réservation envoyée avec succès!",
   "An error occurred. Please try again.": "Une erreur est survenue. Veuillez réessayer.",
   "Reserve": "Réserver"
-
   }

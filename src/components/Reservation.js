@@ -7,6 +7,7 @@ import DatePicker, { registerLocale } from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import { format } from 'date-fns';
 import { enGB } from 'date-fns/locale';
+import Select from 'react-select';
 
 // Register locale to start the week on Monday
 registerLocale('en-GB', enGB);
@@ -23,7 +24,7 @@ function Reservation() {
   });
 
   const handleDateChange = (date) => {
-    const day = date.getDay(); // 0 for Sunday
+    const day = date.getDay(); // 0 for Sunday, 6 for Saturday
     if (day === 0) {
       showAlert(t("The restaurant is closed on Sundays. Please select another date."), "error");
     } else {
@@ -31,8 +32,26 @@ function Reservation() {
     }
   };
 
-  const handleTimeChange = (e) => {
-    setFormData({ ...formData, time: e.target.value });
+  const getAvailableTimes = () => {
+    const selectedDay = formData.date ? formData.date.getDay() : null;
+
+    // Saturday restricted hours (10 AM to 8 PM)
+    if (selectedDay === 6) {
+      return Array.from({ length: 11 }, (_, i) => 10 + i).map(hour => ({
+        value: `${hour.toString().padStart(2, '0')}:00`,
+        label: `${hour.toString().padStart(2, '0')}:00`
+      }));
+    }
+
+    // Weekdays full range from 08:00 to 22:00
+    return Array.from({ length: 15 }, (_, i) => 8 + i).map(hour => ({
+      value: `${hour.toString().padStart(2, '0')}:00`,
+      label: `${hour.toString().padStart(2, '0')}:00`
+    }));
+  };
+
+  const handleTimeChange = (selectedOption) => {
+    setFormData({ ...formData, time: selectedOption ? selectedOption.value : '' });
   };
 
   const handleSubmit = (e) => {
@@ -75,7 +94,7 @@ function Reservation() {
       <div className="reservation-container">
         <h2 className="reservation-title">{t("Make a Reservation")}</h2>
         <p className="reservation-subtitle">
-          {t("Book a table at our restaurant to enjoy an unforgettable dining experience. We look forward to serving you.")}
+          {t("Book a table at our restaurant & lounge bar to enjoy an unforgettable experience with exquisite dining, refreshing cocktails, and a vibrant atmosphere. We look forward to welcoming you.")}
         </p>
         <form className="reservation-form" onSubmit={handleSubmit}>
           <input type="text" name="name" placeholder={t("Name")} value={formData.name} onChange={(e) => setFormData({ ...formData, name: e.target.value })} required />
@@ -93,49 +112,37 @@ function Reservation() {
             calendarStartDay={1}
             filterDate={(date) => date.getDay() !== 0}
             popperPlacement="bottom-start"
-            renderCustomHeader={({
-              date,
-              changeYear,
-              changeMonth,
-              decreaseMonth,
-              increaseMonth,
-              prevMonthButtonDisabled,
-              nextMonthButtonDisabled,
-            }) => (
+            renderCustomHeader={({ date, changeYear, changeMonth, decreaseMonth, increaseMonth, prevMonthButtonDisabled, nextMonthButtonDisabled }) => (
               <div className="custom-header">
                 <button
                   onClick={decreaseMonth}
                   disabled={prevMonthButtonDisabled}
                   className="custom-nav-button"
                 >
-                &#10094; {/* Left arrow character */}
-              </button>
+                  &#10094; {/* Left arrow character */}
+                </button>
                 <span className="current-month-year">
-              {format(date, "MMMM yyyy")}
+                  {format(date, "MMMM yyyy")}
                 </span>
-              <button
-                onClick={increaseMonth}
-                disabled={nextMonthButtonDisabled}
-                className="custom-nav-button"
-              >
-                &#10095; {/* Right arrow character */}
-              </button>
+                <button
+                  onClick={increaseMonth}
+                  disabled={nextMonthButtonDisabled}
+                  className="custom-nav-button"
+                >
+                  &#10095; {/* Right arrow character */}
+                </button>
               </div>
             )}
           />
-          <select
-            value={formData.time}
+          <Select
+            options={getAvailableTimes()}
+            placeholder={t("Select Time")}
+            value={getAvailableTimes().find(option => option.value === formData.time)}
             onChange={handleTimeChange}
-            className="custom-time-picker"
+            classNamePrefix="custom-select"
+            isClearable
             required
-          >
-            <option value="">{t("Select Time")}</option>
-            {Array.from({ length: 15 }, (_, i) => i + 8).map(hour => (
-              <option key={hour} value={`${hour.toString().padStart(2, '0')}:00`}>
-                {`${hour.toString().padStart(2, '0')}:00`}
-              </option>
-            ))}
-          </select>
+          />
           <input type="number" name="people" placeholder={t("Number of People")} value={formData.people} onChange={(e) => setFormData({ ...formData, people: e.target.value })} required min="1" />
           <button type="submit">{t("Reserve")}</button>
         </form>
