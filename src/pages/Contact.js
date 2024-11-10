@@ -88,9 +88,8 @@ function Contact() {
           <FaRegClock className="detail-icon" />
           <h4>{t("Working Hours")}</h4>
           <p>
-            {t("Mon - Thu")}: 08:00 - 20:00 <br />
-            {t("Fri")}: 08:00 - 21:00 <br />
-            {t("Sat")}: 10:00 - 21:00
+            {t("Mon - Fri")}: 08:00 - 22:00 <br />
+            {t("Sat")}: 10:00 - 20:00
           </p>
         </div>
         <div className="detail-item">

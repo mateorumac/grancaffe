@@ -7,8 +7,7 @@ import feat2 from '../assets/feat2.jpeg';
 import feat3 from '../assets/feat3.jpeg';
 import feat4 from '../assets/feat4.jpeg';
 import specialsImage from '../assets/specials.jpeg';
-import { GiCoffeeCup, GiForkKnifeSpoon } from 'react-icons/gi';
-import { FaBirthdayCake } from 'react-icons/fa';
+import { GiCoffeeCup, GiForkKnifeSpoon, GiCupcake } from 'react-icons/gi';
 import { Trans, useTranslation } from 'react-i18next';
 
 function Home() {
@@ -60,9 +59,9 @@ function Home() {
           <p>{t('We offer only the best coffee, sourced from the finest beans.')}</p>
         </div>
         <div className="feature">
-          <FaBirthdayCake className="feature-icon" />
-          <h3>{t('Iconic Cakes')}</h3>
-          <p>{t('Our cakes are made with love for you.')}</p>
+          <GiCupcake className="feature-icon" />
+          <h3>{t('Iconic Desserts')}</h3>
+          <p>{t('Our desserts are made with love for you.')}</p>
         </div>
         <div className="feature">
           <GiForkKnifeSpoon className="feature-icon" />

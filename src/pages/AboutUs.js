@@ -43,7 +43,7 @@ function AboutUs() {
         <div className="hero-text">
           <h2><Trans>Behind the Sauce</Trans></h2>
           <h1><Trans>Gran Caffe</Trans></h1>
-          <p><Trans>Restaurant & Lounge Bar Since 1945</Trans></p>
+          <p><Trans>Restaurant & Lounge Bar Since 2014</Trans></p>
         </div>
       </section>
 
@@ -84,7 +84,7 @@ function AboutUs() {
         </div>
         <div className="amenity-item">
           <FaCoffee className="amenity-icon" />
-          <p><Trans>Aromatic coffee and chef's dishes</Trans></p>
+          <p><Trans>Aromatic coffee</Trans></p>
         </div>
         <div className="amenity-item">
           <FaSmile className="amenity-icon" />
