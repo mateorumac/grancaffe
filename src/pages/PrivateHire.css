@@ -1,0 +1,204 @@
+.private-hire {
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  /* Card Layout */
+  @keyframes appear {
+    from {
+      opacity: 0;
+      transform: translateY(20px); 
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .private-hire-card {
+    display: flex;
+    align-items: stretch; 
+    justify-content: center;
+    max-width: 1600px; 
+    margin: 60px auto;
+    border-radius: 8px;
+    overflow: hidden; 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    opacity: 0; 
+    animation: appear 0.6s ease-out forwards; 
+    animation-delay: 0.2s;
+  }
+  
+  .card-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px; 
+    background-color: #fff;
+    text-align: center; 
+  }
+  
+  .card-text h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: #b58447;
+  }
+  
+  .card-text p {
+    font-size: 1.3em;
+    margin-bottom: 20px;
+  }
+  
+  .email-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #b58447;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .email-button:hover {
+    background-color: #a3733c;
+  }
+  
+  .card-image {
+    flex: 1;
+  }
+  
+  .card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+  }
+  
+  /* Details Section */
+  .private-hire-details {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 20px;
+    text-align: center;
+    opacity: 0;
+    animation: appear 0.6s ease-out forwards;
+    animation-delay: 0.5s;
+  }
+  
+  .private-hire-details h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #b58447;
+  }
+  
+  .details-content {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+  
+  .detail-item {
+    max-width: 250px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .detail-item:hover {
+    transform: translateY(-10px);
+  }
+  
+  .detail-icon {
+    font-size: 2.5em;
+    color: #b58447;
+    margin-bottom: 5px;
+  }
+  
+  .detail-item p {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  /* Responsive Design */
+  /* Tablet View */
+@media (max-width: 768px) {
+    .private-hire-card {
+      flex-direction: column;
+    }
+  
+    .card-text h1 {
+      font-size: 2.2em;
+    }
+  
+    .card-text p {
+      font-size: 1em;
+    }
+  
+    .email-button {
+      padding: 10px 20px;
+    }
+  
+    .private-hire-details h2 {
+      font-size: 2em;
+    }
+  
+    .details-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .detail-item {
+      max-width: 100%;
+      padding: 15px;
+    }
+  }
+  
+  /* Mobile View */
+  @media (max-width: 480px) {
+    .private-hire-card {
+      flex-direction: column;
+    }
+  
+    .card-text h1 {
+      font-size: 1.8em;
+    }
+  
+    .card-text p {
+      font-size: 0.9em;
+    }
+  
+    .email-button {
+      padding: 8px 16px;
+    }
+  
+    .private-hire-details h2 {
+      font-size: 1.8em;
+    }
+  
+    .details-content {
+      flex-direction: column;
+      gap: 15px;
+    }
+    
+    .detail-icon {
+        font-size: 2.5em; 
+        color: #b58447;
+        margin-bottom: 1px;
+        margin-top: 23px;
+      }
+    .detail-item {
+      max-width: 85%;
+      padding: 12px;
+    }
+  
+    .detail-item p {
+      font-size: 1.1em;
+    }
+  }
+  

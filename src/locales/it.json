@@ -38,9 +38,9 @@
   "Mozzarella, tomato sauce, smoked ham, mushrooms, black olives": "Mozzarella, salsa di pomodoro, prosciutto affumicato, funghi, olive nere",
   "Pineapple Fizz": "Pineapple Fizz",
   "Pineapple juice, S&S, Top lemon soda": "Succo di ananas, S&S, soda al limone",
-  "For Hire": "In Affitto",
+  "Private Hire": "Noleggio Privato",
   "Events": "Eventi",
-    "View Full Menu": "Visualizza il menu completo",
+    "Full Menu": "Menu Completo",
     "We Believe": "Crediamo",
     "Food is Important": "Il cibo è importante",
     "At Gran Caffe, we know that every meal is an opportunity to create memories and savor authentic flavors. Join us for an experience where each dish is crafted with passion, bringing the essence of the Mediterranean to your table. Taste, connect, and make moments that last.": 
@@ -163,5 +163,11 @@
   "Number of People": "Numero di persone",
   "Reservation sent successfully!": "Prenotazione inviata con successo!",
   "An error occurred. Please try again.": "Si è verificato un errore. Per favore riprova.",
-  "Reserve": "Prenota"
+  "Reserve": "Prenota",
+  "privateHire.availability": "Gran Caffè è disponibile per noleggi privati o parziali. <br></br> Contattaci per discutere le tue esigenze.",
+  "Email Us!": "Mandaci un'email!",
+  "Why Choose Us?": "Perché Scegliere Noi?",
+  "Perfect for birthdays and special celebrations with friends and family.": "Perfetto per compleanni e celebrazioni speciali con amici e famiglia.",
+  "Ideal for corporate events, offering an exclusive setting and tailored services.": "Ideale per eventi aziendali, offrendo un ambiente esclusivo e servizi personalizzati.",
+  "Enjoy access to our Mediterranean-inspired dishes and crafted cocktails.": "Goditi i nostri piatti ispirati al Mediterraneo e i nostri cocktail artigianali."
 }

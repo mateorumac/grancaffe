@@ -9,6 +9,8 @@ import Gallery from './pages/Gallery';
 import Contact from './pages/Contact';
 import Menu from './pages/Menu';
 import Reservation from './components/Reservation';
+import PrivateHire from './pages/PrivateHire';
+import Events from './pages/Events';
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/menu" element={<Menu />} />
+        <Route path="/private-hire" element={<PrivateHire />} />
+        <Route path="/events" element={<Events />} />
         <Route path="/reservation" element={<Reservation />} />
       </Routes>
       <Footer />
