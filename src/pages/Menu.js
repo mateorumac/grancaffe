@@ -17,6 +17,7 @@ import mojito from "../assets/menu/mojito.jpg";
 import sexonthebeach from "../assets/menu/sexonthebeach.jpeg";
 import caipiroskafraise from "../assets/menu/caipiroskafraise.jpeg";
 import virgincolada from "../assets/menu/virgincolada.jpeg";
+import menu from "../assets/menu/menu.pdf";
 
 const Menu = () => {
     const { t } = useTranslation();
@@ -37,28 +38,28 @@ const Menu = () => {
               <h4 className="item-name"><Trans>Semi-cooked tuna in a sesame crust</Trans></h4>
               <p className="item-description"><Trans>Sashimi tuna, sesame seeds, spinach sprouts, served with vinegared rice.</Trans></p>
             </div>
-            <span className="item-price">$28</span>
+            <span className="item-price">€28</span>
           </div>
           <div className="menu-item">
             <div>
               <h4 className="item-name"><Trans>Beef tartare</Trans></h4>
               <p className="item-description"><Trans>Tender chicken accompanied by grilled seasonal vegetables for a healthy and tasty dish.</Trans></p>
             </div>
-            <span className="item-price">$24</span>
+            <span className="item-price">€24</span>
           </div>
           <div className="menu-item">
             <div>
               <h4 className="item-name"><Trans>Beef tataki with Asian sauce</Trans></h4>
               <p className="item-description"><Trans>Heart of rump steak, Asian sauce, sesame with vinegared rice.</Trans></p>
             </div>
-            <span className="item-price">$28</span>
+            <span className="item-price">€28</span>
           </div>
           <div className="menu-item">
             <div>
               <h4 className="item-name"><Trans>Tournedos Rossini</Trans></h4>
               <p className="item-description"><Trans>Beef, duck liver escalope, truffle.</Trans></p>
             </div>
-            <span className="item-price">$32</span>
+            <span className="item-price">€32</span>
           </div>
         </div>
       </div>
@@ -72,28 +73,28 @@ const Menu = () => {
               <h4 className="item-name"><Trans>Spaghetti Seafood</Trans></h4>
               <p className="item-description"><Trans>Rich and hearty meat sauce simmered to perfection with tomatoes and aromatic herbs.</Trans></p>
             </div>
-            <span className="item-price">$26</span>
+            <span className="item-price">€26</span>
           </div>
           <div className="menu-item">
             <div>
               <h4 className="item-name"><Trans>Gnocchi à la Sorentina</Trans></h4>
               <p className="item-description"><Trans>A creamy garlic-infused sauce, tender salmon, and fresh garnishes like parsley and lemon combine perfectly.</Trans></p>
             </div>
-            <span className="item-price">$22</span>
+            <span className="item-price">€22</span>
           </div>
           <div className="menu-item">
             <div>
               <h4 className="item-name"><Trans>Spaghetti Carbonara</Trans></h4>
               <p className="item-description"><Trans>A creamy sauce made with eggs, Parmesan cheese, pancetta, and black pepper, creating a rich and comforting flavor.</Trans></p>
             </div>
-            <span className="item-price">$20</span>
+            <span className="item-price">€20</span>
           </div>
           <div className="menu-item">
             <div>
               <h4 className="item-name"><Trans>Penne al Pesto</Trans></h4>
               <p className="item-description"><Trans>Basil pesto, garlic, Parmesan, and pine nuts in a flavorful, creamy sauce.</Trans></p>
             </div>
-            <span className="item-price">$19</span>
+            <span className="item-price">€19</span>
           </div>
         </div>
         <div className="right-section-reversed">
@@ -119,28 +120,28 @@ const Menu = () => {
               <h4 className="item-name"><Trans>Moelleux au chocolat</Trans></h4>
               <p className="item-description"><Trans>Rich chocolate cookie infused with crunchy hazelnuts.</Trans></p>
             </div>
-            <span className="item-price">$10</span>
+            <span className="item-price">€10</span>
           </div>
           <div className="menu-item">
             <div>
               <h4 className="item-name"><Trans>French toast with vanilla ice cream and salted butter caramel</Trans></h4>
               <p className="item-description"><Trans>Classic cheesecake with a smooth and creamy texture.</Trans></p>
             </div>
-            <span className="item-price">$8</span>
+            <span className="item-price">€8</span>
           </div>
           <div className="menu-item">
             <div>
               <h4 className="item-name"><Trans>Lemon pie</Trans></h4>
               <p className="item-description"><Trans>Decadent chocolate cake layered with raspberry filling.</Trans></p>
             </div>
-            <span className="item-price">$8</span>
+            <span className="item-price">€8</span>
           </div>
           <div className="menu-item">
             <div>
               <h4 className="item-name"><Trans>Hawaiian fresh fruit</Trans></h4>
               <p className="item-description"><Trans>Heavenly combination of chocolate and vanilla flavors in a moist cake.</Trans></p>
             </div>
-            <span className="item-price">$8</span>
+            <span className="item-price">€8</span>
           </div>
         </div>
       </div>
@@ -154,28 +155,28 @@ const Menu = () => {
               <h4 className="item-name"><Trans>Mojito</Trans></h4>
               <p className="item-description"><Trans>A refreshing mix of rum, mint leaves, lime, and soda.</Trans></p>
             </div>
-            <span className="item-price">$12</span>
+            <span className="item-price">€12</span>
           </div>
           <div className="menu-item">
             <div>
               <h4 className="item-name"><Trans>Sex on the Beach</Trans></h4>
               <p className="item-description"><Trans>Vodka, peach schnapps, cranberry juice, and orange juice.</Trans></p>
             </div>
-            <span className="item-price">$10</span>
+            <span className="item-price">€10</span>
           </div>
           <div className="menu-item">
             <div>
               <h4 className="item-name"><Trans>Caipiroska Fraise</Trans></h4>
               <p className="item-description"><Trans>A twist on the classic caipiroska with fresh strawberries and lime.</Trans></p>
             </div>
-            <span className="item-price">$11</span>
+            <span className="item-price">€11</span>
           </div>
           <div className="menu-item">
             <div>
               <h4 className="item-name"><Trans>Virgin Colada</Trans></h4>
               <p className="item-description"><Trans>A tropical, non-alcoholic delight with coconut and pineapple.</Trans></p>
             </div>
-            <span className="item-price">$8</span>
+            <span className="item-price">€8</span>
           </div>
         </div>
         <div className="right-section-reversed">
@@ -184,6 +185,11 @@ const Menu = () => {
           <img src={caipiroskafraise} alt="caipiroska fraise" className="menu-image" />
           <img src={virgincolada} alt="virgin colada" className="menu-image" />
         </div>
+      </div>
+      <div className="full-menu-button-container">
+      <a href={menu} target="_blank" rel="noopener noreferrer" className="full-menu-button">
+        <Trans>Full Menu</Trans>
+        </a>
       </div>
     </div>
   );

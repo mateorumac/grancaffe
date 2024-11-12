@@ -1,3 +1,40 @@
+body {
+  background-color: #f5f5f5;
+}
+
+/* LINES */
+.main-container {
+  position: relative;
+  padding: 0;
+  margin: 0 150px; 
+}
+
+/* Left-side double lines */
+.main-container::before {
+  content: '';
+  position: absolute;
+  top: 40px;
+  bottom: 0;
+  left: 40px; 
+  width: 8px;
+  background-color: #b58447;
+  box-shadow: 40px 0 0 #b58447, 
+              10px 0px 15px rgba(0, 0, 0, 0.3); 
+}
+
+/* Right-side double lines */
+.main-container::after {
+  content: '';
+  position: absolute;
+  top: 40px;
+  bottom: 0;
+  right: 40px; 
+  width: 8px;
+  background-color: #b58447;
+  box-shadow: -40px 0 0 #b58447, 
+              -10px 0px 15px rgba(0, 0, 0, 0.3); 
+}
+
 .container {
   display: flex;
   flex-direction: row;
@@ -39,7 +76,7 @@
 .menu-section-title {
   font-size: 24px;
   font-weight: bold;
-  color: #111;
+  color: #b58447;
   text-align: left;
   margin: 0;
 }
@@ -120,6 +157,28 @@
 .menu-image:hover {
   transform: scale(1.05) rotate(1deg);
 }
+
+.full-menu-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.full-menu-button {
+  padding: 12px 24px;
+  background-color: var(--gold);
+  color: var(--white);
+  font-size: 1.1em;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.full-menu-button:hover {
+  background-color: #b58447;
+  transform: scale(1.05);
+}
+
 
 
 /* Laptop View (up to 1200px) */
