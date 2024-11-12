@@ -195,6 +195,12 @@ body {
   .menu-item {
     padding-bottom: 8px;
   }
+
+  .main-container::before,
+  .main-container::after {
+    left: 30px;
+    right: 30px;
+  }
 }
 
 /* Tablet View (up to 768px) */
@@ -227,6 +233,15 @@ body {
 
   .item-description {
     font-size: 13px;
+  }
+
+  .main-container {
+    margin: 0 20px;
+  }
+
+  .main-container::before,
+  .main-container::after {
+    display: none;
   }
 }
 
@@ -287,5 +302,14 @@ body {
 
   .item-description {
     font-size: 12px;
+  }
+
+  .main-container {
+    margin: 0 10px;
+  }
+
+  .main-container::before,
+  .main-container::after {
+    display: none;
   }
 }
