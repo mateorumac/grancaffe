@@ -5,6 +5,14 @@
     "Gallery": "Galerie",
     "Contact": "Contact",
     "Book Now": "Réservez maintenant",
+    "Experience Monaco's Finest Cuisine & Lounge": "Découvrez la meilleure cuisine et lounge de Monaco",
+   "hero.intro": "Niché au cœur de Monaco, notre restaurant et lounge offre une expérience culinaire inégalée avec des plats inspirés de la Méditerranée <br></br> dans une ambiance élégante et accueillante, surplombant la magnifique Riviera.",
+    "Indulge in our seasonal menu crafted with the finest ingredients, alongside our signature cocktails and an exceptional selection of wines.": 
+      "Savourez notre menu saisonnier élaboré avec les meilleurs ingrédients, accompagné de nos cocktails signature et d'une sélection exceptionnelle de vins.",
+    "Elevate your experience with exclusive private dining and event services, perfect for creating unforgettable memories in an elegant setting.": 
+      "Élevez votre expérience avec des services de restauration privée et d'événements exclusifs, parfaits pour créer des souvenirs inoubliables dans un cadre élégant.",
+    "Reserve Your Experience": "Réservez votre expérience",
+    "Join Our Exclusive Events": "Rejoignez nos événements exclusifs",
       "Taste the cuisine of the world": "Goûtez la cuisine du monde",
       "Fresh Cuisine": "Cuisine fraîche",
       "We are not afraid to experiment. Our chef combines carefully selected ingredients and serves them on your plate in an extraordinary way.": 
@@ -21,23 +29,22 @@
       "Delicious Food": "Nourriture délicieuse",
       "Original cuisine at will.": "Cuisine originale à volonté.",
       "Discover Our": "Découvrez nos",
-      "Great Flavors": "Grands goûts",
-      "Mediterranean Mezze Platter": "Plateau de Mezze Méditerranéen",
-    "A delightful assortment of Mediterranean appetizers featuring fresh bruschetta, stuffed pastries, cured meats, and mini toasts.": "Un assortiment délicieux d'entrées méditerranéennes avec de la bruschetta fraîche, des pâtisseries farcies, des charcuteries et des mini-toasts.",
-
-    "Sesame-Crusted Tuna Salad": "Salade de Thon en Croûte de Sésame",
-    "Slices of seared sesame-crusted tuna atop a bed of fresh greens, garnished with sprouts and served with a savory soy dipping sauce.": "Tranches de thon poêlé en croûte de sésame sur un lit de légumes frais, garnies de pousses et servies avec une sauce soja savoureuse.",
-
-    "Rustic Mushroom & Basil Pizza": "Pizza Rustique aux Champignons et Basilic",
-    "A thin, wood-fired pizza topped with savory mushrooms, fresh basil, black olives, and a hint of garlic.": "Une pizza fine cuite au feu de bois, garnie de champignons savoureux, de basilic frais, d'olives noires et d'une touche d'ail.",
-
-    "Tropical Pineapple Fizz": "Fizz Tropical à l'Ananas",
-    "A refreshing tropical drink with pineapple juice, a splash of citrus, and a garnish of fresh mint.": "Une boisson tropicale rafraîchissante avec du jus d'ananas, une touche d'agrumes et une garniture de menthe fraîche.",
+      "Great Flavors": "Grands Saveurs",
+      "Porcini Flan with Truffle Cheese Sauce": "Flan de Cèpes avec Sauce au Fromage et Truffe",
+  "Eggs, cream, porcini mushrooms, truffle, cheese": "Œufs, crème, cèpes, truffe, fromage",
+  "SEARED TUNA WITH A SESAME CRUST": "Thon Poêlé avec Croûte de Sésame",
+  "Sashimi tuna, sesame seeds, spinach sprouts, with vinegared rice": "Thon sashimi, graines de sésame, pousses d'épinards, avec riz vinaigré",
+  "REINE PIZZA": "Pizza Reine",
+  "Mozzarella, tomato sauce, smoked ham, mushrooms, black olives": "Mozzarella, sauce tomate, jambon fumé, champignons, olives noires",
+  "Pineapple Fizz": "Pineapple Fizz",
+  "Pineapple juice, S&S, Top lemon soda": "Jus d'ananas, S&S, soda citron en topping",
+  "For Hire": "À Louer",
+  "Events": "Événements",
       "View Full Menu": "Voir le menu complet",
       "We Believe": "Nous croyons",
       "Food is Important": "La nourriture est importante",
-      "At Gran Caffe, we know that every meal is an opportunity to create memories and savor authentic flavors. Join us for an experience where each dish is crafted with passion, bringing the essence of Italy to your table. Taste, connect, and make moments that last.": 
-        "Au Gran Caffe, nous savons que chaque repas est une occasion de créer des souvenirs et de savourer des saveurs authentiques. Rejoignez-nous pour une expérience où chaque plat est conçu avec passion, apportant l'essence de l'Italie à votre table. Goûtez, connectez-vous et créez des moments qui durent.",
+      "At Gran Caffe, we know that every meal is an opportunity to create memories and savor authentic flavors. Join us for an experience where each dish is crafted with passion, bringing the essence of the Mediterranean to your table. Taste, connect, and make moments that last.": 
+        "Au Gran Caffè, nous savons que chaque repas est une occasion de créer des souvenirs et de savourer des saveurs authentiques. Rejoignez-nous pour une expérience où chaque plat est élaboré avec passion, apportant l'essence de la Méditerranée à votre table. Goûtez, connectez-vous et créez des moments qui durent.",
       "Book a Table": "Réserver une table",
   "Experience the essence of Italian and French cuisine, crafted with passion and served with warmth.": "Découvrez l'essence de la cuisine italienne et française, élaborée avec passion et servie avec chaleur.",
   "Working Hours:": "Heures d'ouverture:",
@@ -51,7 +58,7 @@
   "All rights reserved.": "Tous droits réservés.",
   "Behind the Sauce": "Derrière la Sauce",
     "Gran Caffe": "Gran Caffè",
-    "Restaurant & Lounge Bar Since 1945": "Restaurant & Lounge Bar depuis 1945",
+    "hero.since2014": "Restaurant & Lounge Bar depuis 2014",
     "WARM AND WELCOMING": "Chaleureux et accueillant",
     "Welcome to Gran Caffè, a cherished gem for locals and travelers alike. Step into our world and experience the essence of Italy with every sip of our Italian coffee and each bite of our homemade desserts, paired with delightful breakfast specialties.": 
       "Bienvenue au Gran Caffè, un joyau apprécié des habitants et des voyageurs. Entrez dans notre monde et découvrez l'essence de l'Italie avec chaque gorgée de notre café italien et chaque bouchée de nos desserts maison, accompagnés de spécialités de petit-déjeuner.",

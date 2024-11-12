@@ -5,6 +5,14 @@
     "Gallery": "Galleria",
     "Contact": "Contatti",
     "Book Now": "Prenota ora",
+    "Experience Monaco's Finest Cuisine & Lounge": "Vivi la migliore cucina e lounge di Monaco",
+  "hero.intro": "Situato nel cuore di Monaco, il nostro ristorante e lounge offre un'esperienza culinaria senza pari con piatti ispirati al Mediterraneo <br></br> in un ambiente elegante e accogliente, affacciato sulla splendida Riviera.",
+  "Indulge in our seasonal menu crafted with the finest ingredients, alongside our signature cocktails and an exceptional selection of wines.": 
+    "Concediti il nostro menu stagionale creato con ingredienti di alta qualità, insieme ai nostri cocktail esclusivi e una selezione eccezionale di vini.",
+  "Elevate your experience with exclusive private dining and event services, perfect for creating unforgettable memories in an elegant setting.": 
+    "Arricchisci la tua esperienza con servizi di ristorazione privata ed eventi esclusivi, perfetti per creare ricordi indimenticabili in un ambiente elegante.",
+  "Reserve Your Experience": "Prenota la tua esperienza",
+  "Join Our Exclusive Events": "Partecipa ai nostri eventi esclusivi",
     "Taste the cuisine of the world": "Assapora la cucina del mondo",
     "Fresh Cuisine": "Cucina fresca",
     "We are not afraid to experiment. Our chef combines carefully selected ingredients and serves them on your plate in an extraordinary way.": 
@@ -20,24 +28,23 @@
     "Our cakes are made with love for you.": "Le nostre torte sono fatte con amore per te.",
     "Delicious Food": "Cibo delizioso",
     "Original cuisine at will.": "Cucina originale a volontà.",
-    "Discover Our": "Scopri i nostri",
-    "Great Flavors": "Grandi sapori",
-    "Mediterranean Mezze Platter": "Piatto Mezze Mediterraneo",
-    "A delightful assortment of Mediterranean appetizers featuring fresh bruschetta, stuffed pastries, cured meats, and mini toasts.": "Un delizioso assortimento di antipasti mediterranei con bruschetta fresca, pasticcini ripieni, salumi e mini toast.",
-    
-    "Sesame-Crusted Tuna Salad": "Insalata di Tonno in Crosta di Sesamo",
-    "Slices of seared sesame-crusted tuna atop a bed of fresh greens, garnished with sprouts and served with a savory soy dipping sauce.": "Fette di tonno scottato in crosta di sesamo su un letto di verdure fresche, guarnite con germogli e servite con una salsa di soia saporita.",
-
-    "Rustic Mushroom & Basil Pizza": "Pizza Rustica con Funghi e Basilico",
-    "A thin, wood-fired pizza topped with savory mushrooms, fresh basil, black olives, and a hint of garlic.": "Una pizza sottile, cotta a legna, condita con funghi saporiti, basilico fresco, olive nere e un tocco di aglio.",
-
-    "Tropical Pineapple Fizz": "Fizz Tropicale all'Ananas",
-    "A refreshing tropical drink with pineapple juice, a splash of citrus, and a garnish of fresh mint.": "Una bevanda tropicale rinfrescante con succo d'ananas, un tocco di agrumi e una guarnizione di menta fresca.",
+    "Discover Our": "Scopri i Nostri",
+    "Great Flavors": "Grandi Sapori",
+    "Porcini Flan with Truffle Cheese Sauce": "Flan di Porcini con Salsa al Formaggio e Tartufo",
+  "Eggs, cream, porcini mushrooms, truffle, cheese": "Uova, panna, funghi porcini, tartufo, formaggio",
+  "SEARED TUNA WITH A SESAME CRUST": "Tonno Scottato con Crosta di Sesamo",
+  "Sashimi tuna, sesame seeds, spinach sprouts, with vinegared rice": "Tonno sashimi, semi di sesamo, germogli di spinaci, con riso condito",
+  "REINE PIZZA": "Pizza Regina",
+  "Mozzarella, tomato sauce, smoked ham, mushrooms, black olives": "Mozzarella, salsa di pomodoro, prosciutto affumicato, funghi, olive nere",
+  "Pineapple Fizz": "Pineapple Fizz",
+  "Pineapple juice, S&S, Top lemon soda": "Succo di ananas, S&S, soda al limone",
+  "For Hire": "In Affitto",
+  "Events": "Eventi",
     "View Full Menu": "Visualizza il menu completo",
     "We Believe": "Crediamo",
     "Food is Important": "Il cibo è importante",
-    "At Gran Caffe, we know that every meal is an opportunity to create memories and savor authentic flavors. Join us for an experience where each dish is crafted with passion, bringing the essence of Italy to your table. Taste, connect, and make moments that last.": 
-      "Al Gran Caffe, sappiamo che ogni pasto è un'opportunità per creare ricordi e assaporare sapori autentici. Unisciti a noi per un'esperienza in cui ogni piatto è creato con passione, portando l'essenza dell'Italia alla tua tavola. Gusta, connettiti e crea momenti che durano.",
+    "At Gran Caffe, we know that every meal is an opportunity to create memories and savor authentic flavors. Join us for an experience where each dish is crafted with passion, bringing the essence of the Mediterranean to your table. Taste, connect, and make moments that last.": 
+      "Al Gran Caffè, sappiamo che ogni pasto è un'opportunità per creare ricordi e assaporare sapori autentici. Unisciti a noi per un'esperienza in cui ogni piatto è preparato con passione, portando l'essenza del Mediterraneo alla tua tavola. Assapora, connettiti e crea momenti che durano.",
     "Book a Table": "Prenota un tavolo",
   "Experience the essence of Italian and French cuisine, crafted with passion and served with warmth.": "Scopri l'essenza della cucina italiana e francese, creata con passione e servita con calore.",
   "Working Hours:": "Orari di apertura:",
@@ -51,7 +58,7 @@
   "All rights reserved.": "Tutti i diritti riservati.",
   "Behind the Sauce": "Dietro la Salsa",
     "Gran Caffe": "Gran Caffè",
-    "Restaurant & Lounge Bar Since 1945": "Ristorante e Lounge Bar dal 1945",
+    "hero.since2014": "Ristorante & Lounge Bar dal 2014",
     "WARM AND WELCOMING": "Caldo e accogliente",
     "Welcome to Gran Caffè, a cherished gem for locals and travelers alike. Step into our world and experience the essence of Italy with every sip of our Italian coffee and each bite of our homemade desserts, paired with delightful breakfast specialties.": 
       "Benvenuti al Gran Caffè, un gioiello apprezzato da locali e viaggiatori. Entra nel nostro mondo e vivi l'essenza dell'Italia con ogni sorso del nostro caffè italiano e ogni morso dei nostri dolci fatti in casa, abbinati a specialità per colazione.",

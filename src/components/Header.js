@@ -48,7 +48,10 @@ function Header() {
           <li><Link to="/about" onClick={() => setIsMenuOpen(false)}>{t('About Us')}</Link></li>
           <li><Link to="/menu" onClick={() => setIsMenuOpen(false)}>{t('Menu')}</Link></li> 
           <li><Link to="/gallery" onClick={() => setIsMenuOpen(false)}>{t('Gallery')}</Link></li>
+          <li><Link to="/events" onClick={() => setIsMenuOpen(false)}>{t('Events')}</Link></li>
+          <li><Link to="/contact" onClick={() => setIsMenuOpen(false)}>{t('For Hire')}</Link></li>
           <li><Link to="/contact" onClick={() => setIsMenuOpen(false)}>{t('Contact')}</Link></li>
+
         </ul>
         <button
           className="book-button"

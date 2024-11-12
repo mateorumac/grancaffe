@@ -43,7 +43,7 @@ function AboutUs() {
         <div className="hero-text">
           <h2><Trans>Behind the Sauce</Trans></h2>
           <h1><Trans>Gran Caffe</Trans></h1>
-          <p><Trans>Restaurant & Lounge Bar Since 2014</Trans></p>
+          <p><Trans i18nKey="hero.since2014">Restaurant & Lounge Bar Since 2014</Trans></p>
         </div>
       </section>
 
