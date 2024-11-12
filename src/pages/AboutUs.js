@@ -9,6 +9,7 @@ import abt4 from '../assets/abt4.jpeg';
 import abt5 from '../assets/abt5.jpeg';
 import abt6 from '../assets/abt6.jpeg';
 import abtcta from '../assets/abtcta.jpg';
+import yacht from '../assets/yacht.jpg';
 import { FaHeart, FaStar, FaCoffee, FaSmile } from 'react-icons/fa';
 
 function AboutUs() {
@@ -52,14 +53,20 @@ function AboutUs() {
           <img src={abt2} alt="Italian Coffee and Desserts" className="content-image" />
           <div className="content-text">
             <h3><Trans>WARM AND WELCOMING</Trans></h3>
-            <p><Trans>Welcome to Gran Caffè, a cherished gem for locals and travelers alike. Step into our world and experience the essence of Italy with every sip of our Italian coffee and each bite of our homemade desserts, paired with delightful breakfast specialties.</Trans></p>
+            <p>
+              <Trans>
+                Welcome to Gran Caffè, a cherished gem for locals and travelers alike. Step into our world and experience
+                the essence of Italy with every sip of our Italian coffee and each bite of our homemade desserts, paired 
+                with delightful breakfast specialties.
+              </Trans>
+            </p>
           </div>
         </div>
 
         <div className="content-section reverse" ref={(el) => (sectionsRef.current[2] = el)}>
           <div className="content-text">
             <h3><Trans>DAYTIME DELIGHTS</Trans></h3>
-            <p><Trans>As the day unfolds, our kitchen fills with the aroma of freshly prepared dishes crafted by our talented chef. Enjoy every meal, infused with Italian flavors and passion.</Trans></p>
+            <p><Trans>As the day unfolds, our kitchen fills with the aroma of freshly prepared dishes crafted by our talented chef. Our menu is a celebration of Mediterranean and Italian flavors, making Gran Caffè not just a favorite spot for locals, but also a welcoming haven for those seeking a taste of home away from home.</Trans></p>
           </div>
           <img src={abt6} alt="Chef preparing meals" className="content-image" />
         </div>
@@ -104,16 +111,26 @@ function AboutUs() {
       </section>
 
       <section className="atmosphere-section" ref={(el) => (sectionsRef.current[6] = el)}>
+      <div className="atmosphere-images">
+          <img src={abt4} alt="Cocktails" className="atmosphere-image" />
+          <img src={abt5} alt="Atmosphere" className="atmosphere-image" />
+        </div>
         <div className="atmosphere-text">
           <h2><Trans>WE FOCUS ON NEW TASTE SENSATIONS AND A PLEASANT ATMOSPHERE</Trans></h2>
           <p><Trans>We guarantee delicious cocktails, beers, and a unique atmosphere.</Trans></p>
           <p><Trans>In our restaurant, you can unwind after a hard day with our fantastic cocktails and beers. In addition to the original and unique cuisine, friendly staff and a wonderful atmosphere await you.</Trans></p>
         </div>
-        <div className="atmosphere-images">
-          <img src={abt4} alt="Cocktails" className="atmosphere-image" />
-          <img src={abt5} alt="Atmosphere" className="atmosphere-image" />
-        </div>
+        
       </section>
+
+      <section className="yacht-community" ref={(el) => (sectionsRef.current[7] = el)}>
+  <div className="yacht-text">
+    <h2><Trans>FAVORITE CREW BAR</Trans></h2>
+    <p><Trans>Gran Caffè has become a favorite destination for yacht and sailboat crews, offering a warm and inviting atmosphere that feels like a home away from home. Join us to experience Mediterranean flavors and a place where the yachting community gathers, unwinds, and connects.</Trans></p>
+  </div>
+  <img src={yacht} alt="Yacht Community" className="yacht-image" />
+</section>
+
 
       <section className="about-call-to-action" style={{
           backgroundImage: `url(${abtcta})`,

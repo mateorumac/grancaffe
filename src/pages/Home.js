@@ -54,7 +54,7 @@ function Home() {
 
       <section className="hero-split">
   <div className="hero-image">
-    <img src={hero1} alt="A Delicious dessert" />
+    <img src={hero2} alt="A Delicious dessert" />
   </div>
   <div className="hero-text">
   <div className="hero-text-inner">
@@ -85,7 +85,7 @@ function Home() {
   </div>
   </div>
   <div className="hero-image">
-    <img src={hero2} alt="Delicious dish on display" />
+    <img src={hero1} alt="Delicious dish on display" />
   </div>
 </section>
 
