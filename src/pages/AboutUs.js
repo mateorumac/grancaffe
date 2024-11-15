@@ -1,9 +1,11 @@
 import React, { useEffect, useRef } from 'react';
 import { useTranslation, Trans } from 'react-i18next';
 import './AboutUs.css';
-import abthero from '../assets/abthero.jpeg'; 
+import abthero from '../assets/gcaffe.jpeg'; 
 import abt2 from '../assets/abt2.jpeg'; 
 import abt3 from '../assets/abt3.jpeg'; 
+import ambfine from '../assets/ambient/ambfine.jpeg';
+import amb2 from '../assets/ambient/amb2.jpeg';
 import abtcook from '../assets/abtcook.jpeg';
 import abt4 from '../assets/abt4.jpeg';
 import abt5 from '../assets/abt5.jpeg';
@@ -50,7 +52,7 @@ function AboutUs() {
 
       <section className="about-content">
         <div className="content-section" ref={(el) => (sectionsRef.current[1] = el)}>
-          <img src={abt2} alt="Italian Coffee and Desserts" className="content-image" />
+          <img src={ambfine} alt="Italian Coffee and Desserts" className="content-image" />
           <div className="content-text">
             <h3><Trans>WARM AND WELCOMING</Trans></h3>
             <p>
@@ -68,11 +70,11 @@ function AboutUs() {
             <h3><Trans>DAYTIME DELIGHTS</Trans></h3>
             <p><Trans>As the day unfolds, our kitchen fills with the aroma of freshly prepared dishes crafted by our talented chef. Our menu is a celebration of Mediterranean and Italian flavors, making Gran Caffè not just a favorite spot for locals, but also a welcoming haven for those seeking a taste of home away from home.</Trans></p>
           </div>
-          <img src={abt6} alt="Chef preparing meals" className="content-image" />
+          <img src={abt2} alt="Chef preparing meals" className="content-image" />
         </div>
 
         <div className="content-section" ref={(el) => (sectionsRef.current[3] = el)}>
-          <img src={abt3} alt="Evening Atmosphere" className="content-image" />
+          <img src={amb2} alt="Evening Atmosphere" className="content-image"/>
           <div className="content-text">
             <h3><Trans>EVENINGS AT GRAN CAFFE</Trans></h3>
             <p><Trans>As twilight descends, the atmosphere transforms into a lively space filled with energy, laughter, and the sounds of glasses clinking. Here, locals and travelers come together, creating connections and unforgettable memories.</Trans></p>

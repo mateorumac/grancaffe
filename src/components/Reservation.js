@@ -35,19 +35,28 @@ function Reservation() {
   const getAvailableTimes = () => {
     const selectedDay = formData.date ? formData.date.getDay() : null;
 
-    // Saturday restricted hours (10 AM to 8 PM)
+    const generateTimeOptions = (startHour, endHour) => {
+      const times = [];
+      for (let hour = startHour; hour <= endHour; hour++) {
+        const isLastHour = hour === endHour;
+        const minutesArray = isLastHour ? [0] : [0, 15, 30, 45]; 
+        for (let minutes of minutesArray) {
+          const timeValue = `${hour.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}`;
+          times.push({
+            value: timeValue,
+            label: timeValue,
+          });
+        }
+      }
+      return times;
+    };
+    
+
     if (selectedDay === 6) {
-      return Array.from({ length: 11 }, (_, i) => 10 + i).map(hour => ({
-        value: `${hour.toString().padStart(2, '0')}:00`,
-        label: `${hour.toString().padStart(2, '0')}:00`
-      }));
+      return generateTimeOptions(10, 20); // Saturday: 10:00 AM to 8:00 PM
     }
 
-    // Weekdays full range from 08:00 to 22:00
-    return Array.from({ length: 15 }, (_, i) => 8 + i).map(hour => ({
-      value: `${hour.toString().padStart(2, '0')}:00`,
-      label: `${hour.toString().padStart(2, '0')}:00`
-    }));
+    return generateTimeOptions(8, 22); // Weekdays: 8:00 AM to 10:00 PM
   };
 
   const handleTimeChange = (selectedOption) => {
@@ -143,7 +152,7 @@ function Reservation() {
             isClearable
             required
           />
-          <input type="number" name="people" placeholder={t("Number of People")} value={formData.people} onChange={(e) => setFormData({ ...formData, people: e.target.value })} required min="1" />
+          <input type="number" name="people" placeholder={t("Number of Guests")} value={formData.people} onChange={(e) => setFormData({ ...formData, people: e.target.value })} required min="1" />
           <button type="submit">{t("Reserve")}</button>
         </form>
       </div>

@@ -54,7 +54,7 @@
 .about-hero .hero-text h1 {
     font-size: 6em;
     font-weight: 700;
-    color: var(--gold);
+    color: #b58447;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
     margin: 5px 0;
     margin-left: 30px;
@@ -444,7 +444,7 @@
 /*YACHT SECTION*/
 .yacht-community {
     display: flex;
-    flex-direction: row; /* Ensures text is on the left, image on the right */
+    flex-direction: row; 
     align-items: center;
     gap: 80px;
     max-width: 1400px;
@@ -485,101 +485,120 @@
   }
   
 /* Responsive Design */
-/* For Tablets and Laptops (up to 1200px) */
-@media (max-width: 1200px) {
-    
+@media (max-width: 1366px) {
     .about-hero {
-        height: 600px;
+        height: 650px;
     }
 
     .about-hero .hero-text h1 {
-        font-size: 3em;
+        font-size: 4em;
     }
 
     .about-hero .hero-text p {
-        font-size: 1.1em;
+        font-size: 1.2em;
+        line-height: 1.6;
     }
 
-    .about-content .content-section,
-    .about-content .content-section.reverse {
-        flex-direction: column; 
-        align-items: center;
-        text-align: center;
-        gap: 20px;
+    .about-content {
+        gap: 40px;
+        padding: 20px 30px;
     }
 
-    .content-section .content-text {
-        margin: 0 auto;
-        padding: 20px;
-        text-align: center;
+    .content-section {
+        gap: 60px;
     }
 
     .content-section img {
-        max-width: 100%;
-        margin: 0 auto;
+        max-width: 400px;
     }
 
-    .atmosphere-section {
-        gap: 40px;
-        padding: 20px;
-        margin-top: 30px; 
-        margin-bottom: 30px;
-    }
-
-    .about-amenities {
-        gap: 30px;
-        padding: 40px 20px;
-    }
-
-    .cooking-section .cooking-content {
-        gap: 50px; 
-    }
-
-    .yacht-community {
-        gap: 40px;
-        padding: 20px;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-      }
-      
-      .yacht-content {
-        padding: 20px;
-      }
-    
-      .yacht-text h2 {
-        font-size: 2em;
-      }
-    
-      .yacht-text p {
-        font-size: 1em;
-      }
-    
-      .yacht-image {
-        max-width: 100%;
-        margin: 20px 0;
-      }
-
-    .about-call-to-action {
-        height: 500px;
-        padding: 20px 40px;
-    }
-
-    .about-call-to-action h2 {
+    .content-section .content-text h3 {
         font-size: 2.2em;
     }
 
+    .content-section .content-text p {
+        font-size: 1em;
+        line-height: 1.8;
+    }
+
+    .about-amenities {
+        gap: 40px;
+        padding: 40px 20px;
+    }
+
+    .amenity-item p {
+        font-size: 1.1em;
+    }
+
+    .cooking-section .cooking-content {
+        gap: 50px;
+    }
+
+    .cooking-text h2 {
+        font-size: 2.2em;
+    }
+
+    .cooking-text p {
+        font-size: 1.1em;
+    }
+
+    .cooking-text button {
+        padding: 14px 30px;
+        font-size: 1em;
+    }
+
+    .atmosphere-section {
+        gap: 60px;
+    }
+
+    .atmosphere-text h2 {
+        font-size: 2.2em;
+    }
+
+    .atmosphere-text p {
+        font-size: 1.1em;
+    }
+
+    .atmosphere-images {
+        gap: 30px;
+    }
+
+    .yacht-community {
+        gap: 60px;
+    }
+
+    .yacht-text h2 {
+        font-size: 2.2em;
+    }
+
+    .yacht-text p {
+        font-size: 1.1em;
+    }
+
+    .yacht-image {
+        max-width: 500px;
+    }
+
+    .about-call-to-action {
+        height: 550px;
+        padding: 40px;
+    }
+
+    .about-call-to-action h2 {
+        font-size: 2.5em;
+    }
+
     .about-call-to-action p {
-        font-size: 1.2em;
-        max-width: 80%;
+        font-size: 1.3em;
+        line-height: 1.8;
     }
 
     .cta-content {
-        padding: 30px 40px;
-        max-width: 90%;
+        padding: 40px 50px;
+        max-width: 700px;
     }
-
 }
+
 
 /* For Tablets (up to 992px) */
 @media (max-width: 992px) {

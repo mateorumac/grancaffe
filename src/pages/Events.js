@@ -1,10 +1,10 @@
-// src/pages/Events.js
 import React from 'react';
 import './Events.css';
-import { Trans } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import jazzNightImg from '../assets/jazz.jpg'; 
 
 function Events() {
+  const { t } = useTranslation();
   return (
     <div className="events-page">
       <section className="events-hero">
