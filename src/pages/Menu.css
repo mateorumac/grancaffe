@@ -222,13 +222,13 @@ body {
 }
 
 /* Custom View for 771px to 1366px */
-@media (min-width: 771px) and (max-width: 1366px) {
+@media (min-width: 1068px) and (max-width: 1366px) {
   .main-container::before {
-    left: -40px; 
+    left: -10px; 
   }
 
   .main-container::after {
-    right: -40px; 
+    right: -10px; 
   }
 
   .main-container {
@@ -237,7 +237,7 @@ body {
 }
 
 /* Tablet View (up to 768px) */
-@media (max-width: 768px) {
+@media (max-width: 1067px) {
   .container,
   .container.reversed {
     flex-direction: column;
