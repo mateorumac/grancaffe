@@ -182,7 +182,7 @@ body {
 .hero-text-inner {
   padding-left: 70px;
   padding-right: 70px;
-  text-align: left;
+  text-align: center;
 }
 
 .hero-text-inner h4 {
@@ -827,12 +827,13 @@ button:hover {
 @media (max-width: 480px) {
 
   .hero {
-    height: 800px;
+    height: 700px;
     margin-bottom: 20px;
   }
   
   .hero-text-container {
     padding: 10px;
+    height: 650px;
   }
   
   .hero-heading {
@@ -919,6 +920,9 @@ button:hover {
 
   .features {
     padding: 15px;
+    margin-top: 30px;
+    margin-bottom: 8px;
+    gap: 40px;
   }
 
   .feature-icon {

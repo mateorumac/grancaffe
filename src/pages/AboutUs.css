@@ -834,7 +834,6 @@
     }
 }
 
-
 @media (max-width: 480px) {
     body, html {
         overflow-x: hidden;
@@ -844,12 +843,22 @@
         height: 400px;
     }
 
+    .about-hero .hero-text {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
     .about-hero .hero-text h1 {
-        font-size: 1.8em;
+        font-size: 2em;
+        text-align: center;
+        margin-left: 0;
     }
 
     .about-hero .hero-text p {
-        font-size: 0.9em;
+        font-size: 1.2em;
+        text-align: center;
+        margin: 10px auto;
     }
 
     .about-content .content-section,
@@ -862,7 +871,7 @@
     .content-section .content-text {
         order: -1;
         padding: 10px;
-        font-size: 0.9em;
+        font-size: 1em;
         text-align: center;
     }
 
@@ -877,8 +886,8 @@
         flex-direction: column;
         align-items: center;
         gap: 10px;
-        margin-top: 20px; 
-        margin-bottom: 30px; 
+        margin-top: 20px;
+        margin-bottom: 30px;
     }
 
     .atmosphere-text {
@@ -903,16 +912,16 @@
 
     .about-amenities {
         padding: 20px 10px;
-        gap: 10px;
+        gap: 70px;
         flex-direction: column;
         align-items: center;
         text-align: center;
-        margin-top: 5px;
-        margin-bottom: 20px;
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
 
     .amenity-item p {
-        font-size: 0.9em;
+        font-size: 1em;
     }
 
     .cooking-section .cooking-content {
@@ -923,16 +932,16 @@
     }
 
     .cooking-text h2 {
-        font-size: 1.8em;
+        font-size: 1.6em;
     }
 
     .cooking-text p {
-        font-size: 0.9em;
+        font-size: 1em;
     }
 
     .cooking-text button {
-        padding: 10px 20px;
-        font-size: 0.9em;
+        padding: 12px 25px;
+        font-size: 1em;
     }
 
     .yacht-community {
@@ -941,29 +950,28 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
-      }
-    
-      .yacht-text h2 {
-        font-size: 1.7em;
-      }
-    
-      .yacht-text p {
-        font-size: 0.9em;
-      }
-    
-      .yacht-image {
+    }
+
+    .yacht-text h2 {
+        font-size: 1.6em;
+    }
+
+    .yacht-text p {
+        font-size: 1em;
+    }
+
+    .yacht-image {
         max-width: 90%;
         margin: 10px 0;
-      }
+    }
 
     .about-call-to-action {
-        width: 100%;
-        margin-left: 35px;
+        width: 95%;
         height: auto;
-        padding: 15px;
+        padding: 20px;
         align-items: center;
         text-align: center;
-        overflow: hidden;
+        margin-left: 39px;
     }
 
     .about-call-to-action h2 {
@@ -972,14 +980,15 @@
     }
 
     .about-call-to-action p {
-        font-size: 0.9em;
+        font-size: 1em;
         text-align: center;
-        margin-left: 30px;
+        margin: 10px auto;
     }
 
     .cta-content {
         padding: 15px;
         max-width: 90%;
         text-align: center;
+        margin: 0 auto;
     }
 }
