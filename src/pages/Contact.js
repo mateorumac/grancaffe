@@ -84,33 +84,46 @@ function Contact() {
         </div>
       </div>
       <div className="contact-details">
-        <div className="detail-item">
-          <FaRegClock className="detail-icon" />
-          <h4>{t("Working Hours")}</h4>
-          <p>
-            {t("Mon - Fri")}: 08:00 - 22:00 <br />
-            {t("Sat")}: 10:00 - 20:00
-          </p>
-        </div>
-        <div className="detail-item">
-          <FaPhoneAlt className="detail-icon" />
-          <h4>{t("Call Us")}</h4>
-          <p>
-            +377 6 07 93 96 82
-            <br /> +377 97 97 78 88
-          </p>
-        </div>
-        <div className="detail-item">
-          <FaMapMarkerAlt className="detail-icon" />
-          <h4>{t("Address")}</h4>
-          <p>Rue Grimaldi 57, Monaco</p>
-        </div>
-        <div className="detail-item">
-          <FaEnvelope className="detail-icon" />
-          <h4>{t("Email")}</h4>
-          <p>grancaffe.mc@gmail.com</p>
-        </div>
-      </div>
+  <div className="detail-item">
+    <FaRegClock className="detail-icon" />
+    <h4>{t("Working Hours")}</h4>
+    <p>
+      {t("Mon - Fri")}: 08:00 - 22:00 <br />
+      {t("Sat")}: 10:00 - 20:00
+    </p>
+  </div>
+  <div className="detail-item">
+    <FaPhoneAlt className="detail-icon" />
+    <h4>{t("Call Us")}</h4>
+    <p>
+      +377 6 07 93 96 82
+      <br /> +377 97 97 78 88
+    </p>
+  </div>
+  <div className="detail-item">
+  <a
+    href="https://www.google.com/maps/place/Rue+Grimaldi+57,+Monaco/"
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{ color: "inherit", textDecoration: "none", display: "block" }}
+  >
+    <FaMapMarkerAlt className="detail-icon" />
+    <h4>{t("Address")}</h4>
+    <p>Rue Grimaldi 57, Monaco</p>
+  </a>
+  </div>
+  <div className="detail-item">
+  <a
+    href="mailto:grancaffe.mc@gmail.com"
+    style={{ color: "inherit", textDecoration: "none", display: "block" }}
+  >
+    <FaEnvelope className="detail-icon" />
+    <h4>{t("Email")}</h4>
+    <p>grancaffe.mc@gmail.com</p>
+  </a>
+</div>
+</div>
+
     </div>
   );
 }

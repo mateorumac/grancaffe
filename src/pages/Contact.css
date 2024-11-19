@@ -71,7 +71,6 @@
   padding: 10px 25px;
   font-size: 1em;
   border: none;
-  border-radius: 5px;
   outline: none;
   align-self: flex-start;
   background-color: var(--gold);
@@ -330,21 +329,18 @@
   .contact-form button {
       margin-bottom: 25px;
   }
-
-  .map-container {
-      max-width: 100%;
-      height: 350px;
-      overflow: hidden;
-  }
-
-  .map-container iframe {
-      width: 100%;
-      height: 350px;
-      border: none;
-      display: block;
-      margin: 0;
-      padding: 0;
-  }
+    .map-container {
+        width: 100%;
+        height: 350px;
+        margin: 0 auto;
+        display: block;
+    }
+    
+    .map-container iframe {
+        width: 100%;
+        height: 100%;
+    }
+    
 
   .contact-form {
       align-items: center;

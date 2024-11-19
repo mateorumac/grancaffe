@@ -21,7 +21,7 @@ function PrivateHire() {
           <h1><Trans>Private Hire</Trans></h1>
           <p><Trans i18nKey="privateHire.availability">Gran Caffè is available for private or partial hire.<br></br> Please contact us to discuss your needs.</Trans></p>
           <button
-            onClick={() => window.location.href = 'mailto:mateorumac@gmail.com'}
+            onClick={() => window.location.href = 'mailto:grancaffe.mc@gmail.com'}
             className="email-button"
           >
             <Trans>Email Us!</Trans>
