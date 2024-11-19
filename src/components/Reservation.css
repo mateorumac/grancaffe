@@ -455,7 +455,7 @@
 
 @media (max-width: 480px) {
   .reservation-page {
-    padding: 15px 0;
+    padding: 5px 15px;
   }
   .reservation-title {
     font-size: 1.5em;
@@ -498,7 +498,7 @@
   }
   .custom-select__control {
     font-size: 0.85em;
-    padding: 8px;
+    padding: 1px;
   }
   .custom-select__menu {
     padding: 5px;
