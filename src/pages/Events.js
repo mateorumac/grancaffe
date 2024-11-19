@@ -2,6 +2,7 @@ import React from 'react';
 import './Events.css';
 import { useTranslation, Trans } from 'react-i18next';
 import jazzNightImg from '../assets/jazz.jpg'; 
+import halloweenImg from '../assets/halloween.jpeg'; 
 
 function Events() {
   const { t } = useTranslation();
@@ -40,8 +41,8 @@ function Events() {
         {/* Halloween Event */}
         <div className="event-item">
           <div className="date-badge">Oct 31</div>
-          <div className="event-image-placeholder">
-            <p><Trans>Image coming soon</Trans></p>
+          <div className="event-image">
+            <img src={halloweenImg} alt="Halloween party" />
           </div>
           <div className="event-details">
             <h2><Trans>Halloween Party</Trans></h2>
