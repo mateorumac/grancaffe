@@ -89,7 +89,8 @@ function Contact() {
     <h4>{t("Working Hours")}</h4>
     <p>
       {t("Mon - Fri")}: 08:00 - 22:00 <br />
-      {t("Sat")}: 10:00 - 20:00
+      {t("Sat")}: 10:00 - 20:00 <br />
+      {t("Sun")}: {t("Closed")}
     </p>
   </div>
   <div className="detail-item">

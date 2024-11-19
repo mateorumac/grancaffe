@@ -20,6 +20,7 @@ function Footer() {
           <h4><Trans>Working Hours</Trans></h4>
           <p><Trans>Mon - Fri: 08:00 - 22:00</Trans></p>
           <p><Trans>Sat: 10:00 - 20:00</Trans></p>
+          <p><Trans>Sun: Closed</Trans></p>
         </div>
         <div className="footer-section">
           <h4><Trans>Contact Us</Trans></h4>
