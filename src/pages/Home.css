@@ -589,12 +589,24 @@ button:hover {
   }
 
   .meal-grid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
   }
 
   .meal img {
     height: 400px;
+  }
+
+  .meal h4 {
+    font-size: 0.9em;
+  }
+
+  .meal p {
+    font-size: 0.8em;
+  }
+
+  .meal span {
+    font-size: 0.9em;
   }
 
   .specials {
@@ -606,6 +618,10 @@ button:hover {
     max-width: 400px;
   }
 
+  .specials-content h4 {
+    margin-bottom: -40px;
+  }
+  
   .specials-content h2 {
     font-size: 3em;
   }

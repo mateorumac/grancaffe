@@ -277,8 +277,8 @@
   }
 
   .reservation-container {
-    padding: 40px;
-    max-width: 60%;
+    padding: 30px;
+    max-width: 35%;
   }
 
   .reservation-title {
@@ -286,7 +286,7 @@
   }
 
   .reservation-subtitle {
-    font-size: 1.1em;
+    font-size: 1em;
     margin-bottom: 30px;
   }
 
@@ -294,7 +294,7 @@
   .reservation-form button,
   .custom-date-picker,
   .custom-select__control {
-    font-size: 1.1em;
+    font-size: 1em;
     padding: 15px;
   }
 
@@ -305,7 +305,7 @@
   }
 
   .custom-header {
-    font-size: 1.2em;
+    font-size: 1.1em;
     padding: 10px;
   }
 
@@ -333,7 +333,7 @@
   }
   .reservation-container {
     padding: 30px;
-    max-width: 80%;
+    max-width: 50%;
   }
   .reservation-title {
     font-size: 1.8em;
