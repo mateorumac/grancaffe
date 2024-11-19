@@ -50,16 +50,16 @@ function PrivateHire() {
         </div>
       </section>
       <section className="ambient-images">
-        <div className="image-grid">
-          <img src={ambientImg1} alt="Ambient 1" className="ambient-image small" />
-          <img src={ambientImg2} alt="Ambient 2" className="ambient-image large" />
-          <img src={ambientImg3} alt="Ambient 3" className="ambient-image medium" />
-          <img src={ambientImg4} alt="Ambient 4" className="ambient-image small" />
-          <img src={ambientImg7} alt="Ambient 7" className="ambient-image small" />
-          <img src={ambientImg5} alt="Ambient 5" className="ambient-image large" />
-          <img src={ambientImg6} alt="Ambient 6" className="ambient-image medium" />
-        </div>
-      </section>
+  <div className="image-grid">
+    <img src={ambientImg1} loading="lazy" alt="Elegant dining table setup with candles and cutlery" className="ambient-image small" />
+    <img src={ambientImg2} loading="lazy" alt="Cozy seating area with lush greenery and ambient lighting" className="ambient-image large" />
+    <img src={ambientImg3} loading="lazy" alt="Modern restaurant interior with artistic wall decor" className="ambient-image medium" />
+    <img src={ambientImg4} loading="lazy" alt="Outdoor patio seating with string lights and plants" className="ambient-image small" />
+    <img src={ambientImg7} loading="lazy" alt="Stylish wine glasses arranged on a rustic wooden table" className="ambient-image small" />
+    <img src={ambientImg5} loading="lazy" alt="Romantic candlelit dinner setup with elegant tableware" className="ambient-image large" />
+    <img src={ambientImg6} loading="lazy" alt="Close-up of a dining table with wine bottles and flowers" className="ambient-image medium" />
+  </div>
+</section>
     </div>
   );
 }

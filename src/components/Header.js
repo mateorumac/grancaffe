@@ -38,10 +38,10 @@ function Header() {
   }, []);
 
   return (
-    <header className="header">
+    <header className="header" aria-label="Main navigation">
       <nav className="navbar">
         <Link to="/" className="logo">
-          <img src={logo} alt="Restaurant Logo" />
+          <img src={logo} alt="Gran Caffe Restaurant Logo" />
         </Link>
         <ul className={`nav-links ${isMenuOpen ? 'open' : ''}`}>
           <li><Link to="/" onClick={() => setIsMenuOpen(false)}>{t('Home')}</Link></li>
@@ -59,12 +59,16 @@ function Header() {
           {t('Book Now')}
         </button>
         <div className="icons-group">
-          <button
-            ref={buttonRef}
-            onClick={() => setIsDropdownOpen((prev) => !prev)}
-            className="language-icon">
-            <FaGlobe />
-          </button>
+        <button
+          ref={buttonRef}
+          aria-haspopup="true"
+          aria-expanded={isDropdownOpen}
+          aria-label="Select language"
+          onClick={() => setIsDropdownOpen((prev) => !prev)}
+          className="language-icon"
+        >
+        <FaGlobe />
+        </button>
           {isDropdownOpen && (
             <div ref={dropdownRef} className="dropdown-menu">
               <button onClick={() => changeLanguage('en')}>English</button>

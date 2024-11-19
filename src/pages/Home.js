@@ -54,7 +54,7 @@ function Home() {
 
       <section className="hero-split">
   <div className="hero-image">
-    <img src={hero2} alt="A Delicious dessert" />
+    <img src={hero2} alt="Delicious Beef tataki with Asian sauce" />
   </div>
   <div className="hero-text">
   <div className="hero-text-inner">
@@ -85,7 +85,7 @@ function Home() {
   </div>
   </div>
   <div className="hero-image">
-    <img src={hero1} alt="Delicious dish on display" />
+    <img src={hero1} alt="A delicious Dessert on display" />
   </div>
 </section>
 
@@ -112,7 +112,7 @@ function Home() {
   <h2><Trans>Great Flavors</Trans></h2>
   <div className="meal-grid">
     <div className="meal">
-      <img src={hero3} alt={t("Porcini Flan with Truffle Cheese Sauce")} />
+      <img src={hero3} loading="lazy" alt={t("Porcini Flan with Truffle Cheese Sauce")} />
       <h4><Trans>Porcini Flan with Truffle Cheese Sauce</Trans></h4>
       <p>
         <Trans>
@@ -122,7 +122,7 @@ function Home() {
       <span>€22</span>
     </div>
     <div className="meal">
-      <img src={feat2} alt={t("SEARED TUNA WITH A SESAME CRUST")} />
+      <img src={feat2} loading="lazy" alt={t("SEARED TUNA WITH A SESAME CRUST")} />
       <h4><Trans>SEARED TUNA WITH A SESAME CRUST</Trans></h4>
       <p>
         <Trans>
@@ -132,7 +132,7 @@ function Home() {
       <span>€28</span>
     </div>
     <div className="meal">
-      <img src={feat3} alt={t("REINE PIZZA")} />
+      <img src={feat3} loading="lazy" alt={t("REINE PIZZA")} />
       <h4><Trans>REINE PIZZA</Trans></h4>
       <p>
         <Trans>
@@ -142,7 +142,7 @@ function Home() {
       <span>€22</span>
     </div>
     <div className="meal">
-      <img src={feat4} alt={t("Pineapple Fizz")} />
+      <img src={feat4} loading="lazy" alt={t("Pineapple Fizz")} />
       <h4><Trans>Pineapple Fizz</Trans></h4>
       <p>
         <Trans>

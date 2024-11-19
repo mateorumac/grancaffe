@@ -108,10 +108,10 @@ const Menu = () => {
       {/* Third Section: Desserts - Images on the left, text on the right */}
       <div className="container">
         <div className="left-section">
-          <img src={moelleux} alt="moelleux" className="menu-image" />
-          <img src={frenchtoast} alt="french toast" className="menu-image" />
-          <img src={lemonpie} alt="lemon pie" className="menu-image" />
-          <img src={freshfruit} alt="fresh fruit" className="menu-image" />
+          <img src={moelleux} loading="lazy" alt="moelleux" className="menu-image" />
+          <img src={frenchtoast} loading="lazy" alt="french toast" className="menu-image" />
+          <img src={lemonpie} loading="lazy" alt="lemon pie" className="menu-image" />
+          <img src={freshfruit} loading="lazy" alt="fresh fruit" className="menu-image" />
         </div>
         <div className="right-section">
           <h2 className="menu-section-title"><Trans>DESSERT</Trans></h2>
@@ -180,10 +180,10 @@ const Menu = () => {
           </div>
         </div>
         <div className="right-section-reversed">
-          <img src={mojito} alt="mojito" className="menu-image" />
-          <img src={sexonthebeach} alt="sex on the beach" className="menu-image" />
-          <img src={caipiroskafraise} alt="caipiroska fraise" className="menu-image" />
-          <img src={virgincolada} alt="virgin colada" className="menu-image" />
+          <img src={mojito} loading="lazy" alt="mojito" className="menu-image" />
+          <img src={sexonthebeach} loading="lazy" alt="sex on the beach" className="menu-image" />
+          <img src={caipiroskafraise} loading="lazy" alt="caipiroska fraise" className="menu-image" />
+          <img src={virgincolada} loading="lazy" alt="virgin colada" className="menu-image" />
         </div>
       </div>
       <div className="full-menu-button-container">

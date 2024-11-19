@@ -2,14 +2,12 @@ import React, { useEffect, useRef } from 'react';
 import { useTranslation, Trans } from 'react-i18next';
 import './AboutUs.css';
 import abthero from '../assets/gcaffe.jpeg'; 
-import abt2 from '../assets/abt2.jpeg'; 
-import abt3 from '../assets/abt3.jpeg'; 
+import abt2 from '../assets/abt2.jpeg';  
 import ambfine from '../assets/ambient/ambfine.jpeg';
 import amb2 from '../assets/ambient/amb2.jpeg';
 import abtcook from '../assets/abtcook.jpeg';
 import abt4 from '../assets/abt4.jpeg';
 import abt5 from '../assets/abt5.jpeg';
-import abt6 from '../assets/abt6.jpeg';
 import abtcta from '../assets/abtcta.jpg';
 import yacht from '../assets/yacht.jpg';
 import { FaHeart, FaStar, FaCoffee, FaSmile } from 'react-icons/fa';
@@ -52,7 +50,7 @@ function AboutUs() {
 
       <section className="about-content">
         <div className="content-section" ref={(el) => (sectionsRef.current[1] = el)}>
-          <img src={ambfine} alt="Italian Coffee and Desserts" className="content-image" />
+          <img src={ambfine} alt="A Minuty Prestige bottle of wine and a nice ambient background" className="content-image" />
           <div className="content-text">
             <h3><Trans>WARM AND WELCOMING</Trans></h3>
             <p>
@@ -70,11 +68,11 @@ function AboutUs() {
             <h3><Trans>DAYTIME DELIGHTS</Trans></h3>
             <p><Trans>As the day unfolds, our kitchen fills with the aroma of freshly prepared dishes crafted by our talented chef. Our menu is a celebration of Mediterranean and Italian flavors, making Gran Caffè not just a favorite spot for locals, but also a welcoming haven for those seeking a taste of home away from home.</Trans></p>
           </div>
-          <img src={abt2} alt="Chef preparing meals" className="content-image" />
+          <img src={abt2} loading="lazy" alt="Delicious Pasta with Tomato Sauce and Basilico" className="content-image" />
         </div>
 
         <div className="content-section" ref={(el) => (sectionsRef.current[3] = el)}>
-          <img src={amb2} alt="Evening Atmosphere" className="content-image"/>
+          <img src={amb2} loading="lazy" alt="Night time atmosphere at Gran Caffe" className="content-image"/>
           <div className="content-text">
             <h3><Trans>EVENINGS AT GRAN CAFFE</Trans></h3>
             <p><Trans>As twilight descends, the atmosphere transforms into a lively space filled with energy, laughter, and the sounds of glasses clinking. Here, locals and travelers come together, creating connections and unforgettable memories.</Trans></p>
@@ -108,14 +106,14 @@ function AboutUs() {
             <p><Trans>Experience the joy of culinary surprises at our restaurant, where we serve daily dishes inspired by recipes from around the world. Come and discover the delightful creations we have prepared for you today!</Trans></p>
             <button onClick={() => window.location.href='/menu'}><Trans>View Our Menu</Trans></button>
           </div>
-          <img src={abtcook} alt="Daily Specials" className="cooking-image" />
+          <img src={abtcook} loading="lazy" alt="A flavorful seafood dish featuring mussels, shrimp, and vibrant vegetables served on a decorative plate." className="cooking-image" />
         </div>
       </section>
 
       <section className="atmosphere-section" ref={(el) => (sectionsRef.current[6] = el)}>
       <div className="atmosphere-images">
-          <img src={abt4} alt="Cocktails" className="atmosphere-image" />
-          <img src={abt5} alt="Atmosphere" className="atmosphere-image" />
+          <img src={abt4} loading="lazy" alt="Two Cocktails on a countertop" className="atmosphere-image" />
+          <img src={abt5} loading="lazy" alt="A beautifully arranged charcuterie board with assorted cheeses, slices of prosciutto and cucumbers." className="atmosphere-image" />
         </div>
         <div className="atmosphere-text">
           <h2><Trans>WE FOCUS ON NEW TASTE SENSATIONS AND A PLEASANT ATMOSPHERE</Trans></h2>
@@ -130,10 +128,8 @@ function AboutUs() {
     <h2><Trans>FAVORITE CREW BAR</Trans></h2>
     <p><Trans>Gran Caffè has become a favorite destination for yacht and sailboat crews, offering a warm and inviting atmosphere that feels like a home away from home. Join us to experience Mediterranean flavors and a place where the yachting community gathers, unwinds, and connects.</Trans></p>
   </div>
-  <img src={yacht} alt="Yacht Community" className="yacht-image" />
+  <img src={yacht} loading="lazy" alt="Yacht Community relaxing in Monaco" className="yacht-image" />
 </section>
-
-
       <section className="about-call-to-action" style={{
           backgroundImage: `url(${abtcta})`,
           backgroundSize: 'cover',
@@ -148,5 +144,4 @@ function AboutUs() {
     </div>
   );
 }
-
 export default AboutUs;

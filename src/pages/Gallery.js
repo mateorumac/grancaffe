@@ -56,7 +56,8 @@ const Gallery = () => {
                         key={index} 
                         src={item.src} 
                         title={item.title} 
-                        description={item.description} 
+                        description={item.description}
+                        lazy={index >= 3} 
                     />
                 ))}
             </div>
