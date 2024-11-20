@@ -46,7 +46,7 @@ function Footer() {
         </div>
       </div>
       <div className="footer-bottom">
-        &copy; {new Date().getFullYear()} Gran Caffè | <Trans>All rights reserved.</Trans>
+        &copy; {new Date().getFullYear()} <Trans>Powered by: D&A SmartSolutions</Trans> | <Trans>All rights reserved.</Trans>
       </div>
     </footer>
   );

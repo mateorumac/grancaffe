@@ -10,6 +10,7 @@ import abt4 from '../assets/abt4.jpeg';
 import abt5 from '../assets/abt5.jpeg';
 import abtcta from '../assets/abtcta.jpg';
 import yacht from '../assets/yacht.jpg';
+import badge from '../assets/BEST_COFFEE.png';
 import { FaHeart, FaStar, FaCoffee, FaSmile } from 'react-icons/fa';
 
 function AboutUs() {
@@ -46,11 +47,14 @@ function AboutUs() {
           <h1><Trans>Gran Caffe</Trans></h1>
           <p><Trans i18nKey="hero.since2014">Restaurant & Lounge Bar Since 2014</Trans></p>
         </div>
+        <div className="hero-badge">
+      <img src={badge} alt="Best Café 2024" />
+    </div>
       </section>
 
       <section className="about-content">
         <div className="content-section" ref={(el) => (sectionsRef.current[1] = el)}>
-          <img src={ambfine} alt="A Minuty Prestige bottle of wine and a nice ambient background" className="content-image" />
+          <img src={amb2} alt="A Minuty Prestige bottle of wine and a nice ambient background" className="content-image" />
           <div className="content-text">
             <h3><Trans>WARM AND WELCOMING</Trans></h3>
             <p>
@@ -72,7 +76,7 @@ function AboutUs() {
         </div>
 
         <div className="content-section" ref={(el) => (sectionsRef.current[3] = el)}>
-          <img src={amb2} loading="lazy" alt="Night time atmosphere at Gran Caffe" className="content-image"/>
+          <img src={ambfine} loading="lazy" alt="Night time atmosphere at Gran Caffe" className="content-image"/>
           <div className="content-text">
             <h3><Trans>EVENINGS AT GRAN CAFFE</Trans></h3>
             <p><Trans>As twilight descends, the atmosphere transforms into a lively space filled with energy, laughter, and the sounds of glasses clinking. Here, locals and travelers come together, creating connections and unforgettable memories.</Trans></p>
