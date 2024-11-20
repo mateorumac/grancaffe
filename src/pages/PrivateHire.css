@@ -1,134 +1,119 @@
-.private-hire {
-    font-family: Arial, sans-serif;
-    color: #333;
-  }
-  
-  /* Card Layout */
-  @keyframes appear {
-    from {
-      opacity: 0;
-      transform: translateY(20px); 
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  .private-hire-card {
-    display: flex;
-    align-items: stretch; 
-    justify-content: center;
-    max-width: 1500px; 
-    margin: 60px auto;
-    border-radius: 8px;
-    overflow: hidden; 
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-    opacity: 0; 
-    animation: appear 0.6s ease-out forwards; 
-    animation-delay: 0.2s;
-    height: 550px;
-  }
-  
-  .card-text {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 40px; 
-    background-color: #fff;
-    text-align: center; 
-  }
-  
-  .card-text h1 {
-    font-size: 3em;
-    margin-bottom: 10px;
-    color: #b58447;
-  }
-  
-  .card-text p {
-    font-size: 1.3em;
-    margin-bottom: 20px;
-  }
-  
-  .email-button {
-    display: inline-block;
-    padding: 12px 36px;
-    background-color: #b58447;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    font-size: 1.2em;
-  }
-  
-  .email-button:hover {
-    background-color: #a3733c;
-  }
-  
-  .card-image {
-    flex: 1;
-  }
-  
-  .card-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
-  }
-  
-  /* Details Section */
-  .private-hire-details {
-    max-width: 1000px;
-    margin: 60px auto;
-    padding: 20px;
-    text-align: center;
-    opacity: 0;
-    animation: appear 0.6s ease-out forwards;
-    animation-delay: 0.5s;
-  }
-  
-  .private-hire-details h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    color: #b58447;
-  }
-  
-  .details-content {
-    display: flex;
-    justify-content: space-around;
-    gap: 20px;
-    flex-wrap: wrap;
-    margin-top: 30px;
-  }
-  
-  .detail-item {
-    max-width: 250px;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.3s ease;
-  }
-  
-  .detail-item:hover {
-    transform: translateY(-10px);
-  }
-  
-  .detail-icon {
-    font-size: 2.5em;
-    color: #b58447;
-    margin-bottom: 5px;
-  }
-  
-  .detail-item p {
-    font-size: 1.1em;
-    color: #555;
-    line-height: 1.6;
-  }
-  
-/*Ambient */
-.ambient-images {
+.private-hire-container {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Card Section */
+.private-hire-card {
+  display: flex;
+  align-items: stretch;
+  max-width: 1500px;
+  margin: 60px auto;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  height: 550px;
+}
+
+.private-hire-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding: 40px;
+  text-align: center;
+}
+
+.private-hire-text h1 {
+  font-size: 3em;
+  color: #b58447;
+  margin-bottom: 15px;
+}
+
+.private-hire-text p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.private-hire-email-button {
+  background-color: #b58447;
+  color: #fff;
+  padding: 12px 36px;
+  border: none;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.private-hire-email-button:hover {
+  background-color: #a3733c;
+}
+
+.private-hire-image {
+  flex: 1;
+}
+
+.private-hire-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Details Section */
+.private-hire-details {
+  max-width: 1200px;
+  margin: 100px auto;
+  text-align: center;
+}
+
+.private-hire-details h2 {
+  font-size: 2.5em;
+  color: #b58447;
+
+  margin-bottom: 40px;
+}
+
+.private-hire-details-grid {
+  display: flex;
+  justify-content: space-between; 
+  gap: 20px; 
+  flex-wrap: nowrap; 
+  align-items: stretch; 
+}
+
+.private-hire-detail-item {
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  text-align: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.private-hire-detail-item:hover {
+  transform: translateY(-5px); 
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); 
+}
+.private-hire-icon {
+  font-size: 3em; 
+  color: #b58447;
+  margin-bottom: 15px; 
+}
+
+.private-hire-detail-item p {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+/* Private Hire Grid */
+.private-hire-gallery {
   margin: 60px auto;
   padding: 20px;
   max-width: 1600px;
@@ -137,14 +122,14 @@
   align-items: center;
 }
 
-.image-grid {
+.private-hire-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: 300px;
   gap: 20px;
 }
 
-.ambient-image {
+.private-hire-image {
   position: relative;
   width: 100%;
   height: 100%;
@@ -154,7 +139,7 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.ambient-image::after {
+.private-hire-image::after {
   content: '';
   position: absolute;
   top: 0;
@@ -166,198 +151,211 @@
   transition: background 0.3s ease;
 }
 
-.ambient-image:hover::after {
+.private-hire-image:hover::after {
   background: rgba(0, 0, 0, 0.2);
 }
 
-.ambient-image.large {
+.private-hire-image.large {
   grid-column: span 2;
   grid-row: span 2;
 }
 
-.ambient-image.medium {
+.private-hire-image.medium {
   grid-column: span 1;
   grid-row: span 2;
 }
 
-.ambient-image.small {
+.private-hire-image.small {
   grid-column: span 1;
   grid-row: span 1;
 }
 
-.ambient-image:hover {
+.private-hire-image:hover {
   transform: scale(1.05);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
-
 /* Responsive Design */
-@media (max-width: 1366px) {
+@media (max-width: 1024px) {
   .private-hire-card {
-    max-width: 1200px;
-    margin: 40px auto;
-    height: 520px;
+    flex-direction: column;
+    height: auto;
   }
 
-  .card-text h1 {
-    font-size: 2.8em;
+  .private-hire-image {
+    order: -1;
   }
 
-  .card-text p {
-    font-size: 1.2em;
-  }
-
-  .email-button {
-    padding: 12px 30px;
-    font-size: 1.1em;
-  }
-
-  .private-hire-details {
-    max-width: 900px;
-    padding: 20px 30px;
-  }
-
-  .private-hire-details h2 {
-    font-size: 2.4em;
-  }
-
-  .details-content {
-    gap: 25px;
-  }
-
-  .detail-item {
-    max-width: 280px;
+  .private-hire-text {
     padding: 20px;
   }
 
-  .image-grid {
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 280px;
-    gap: 25px;
+  .private-hire-text h1 {
+    font-size: 2.5em;
   }
 
-  .ambient-image.large {
+  .private-hire-text p {
+    font-size: 1em;
+  }
+
+  .private-hire-email-button {
+    padding: 10px 30px;
+  }
+
+  .private-hire-details {
+    padding: 0 20px;
+  }
+
+  .private-hire-details h2 {
+    font-size: 2.2em;
+  }
+
+  .private-hire-details-grid {
+    flex-wrap: wrap;
+    gap: 20px;
+    flex-direction: column;
+  }
+
+  .private-hire-detail-item {
+    max-width: 100%;
+  }
+
+  .private-hire-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    gap: 15px;
+  }
+
+  .private-hire-image.large {
     grid-column: span 2;
-    grid-row: span 2;
+    grid-row: span 1;
   }
 
-  .ambient-image.medium {
-    grid-column: span 1;
-    grid-row: span 2;
-  }
-
-  .ambient-image.small {
+  .private-hire-image.medium,
+  .private-hire-image.small {
     grid-column: span 1;
     grid-row: span 1;
   }
 }
 
-/* Tablet View */
 @media (max-width: 768px) {
   .private-hire-card {
     flex-direction: column;
+    height: auto;
   }
 
-  .card-text h1 {
-    font-size: 2.2em;
+  .private-hire-image {
+    order: -1;
   }
 
-  .card-text p {
-    font-size: 1em;
+  .private-hire-text {
+    padding: 20px;
   }
 
-  .email-button {
-    padding: 10px 20px;
+  .private-hire-text h1 {
+    font-size: 2em;
+  }
+
+  .private-hire-text p {
+    font-size: 0.9em;
+  }
+
+  .private-hire-email-button {
+    padding: 8px 20px;
+  }
+
+  .private-hire-details {
+    padding: 0 20px;
   }
 
   .private-hire-details h2 {
     font-size: 2em;
   }
 
-  .details-content {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .detail-item {
-    max-width: 100%;
-    padding: 15px;
-  }
-
-  .image-grid {
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: 250px;
+  .private-hire-details-grid {
+    flex-wrap: wrap;
     gap: 20px;
+    flex-direction: column;
   }
 
-  .ambient-image.large {
+  .private-hire-detail-item {
+    max-width: 100%;
+  }
+
+  .private-hire-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    gap: 15px;
+  }
+
+  .private-hire-image.large {
     grid-column: span 2;
     grid-row: span 1;
   }
 
-  .ambient-image.medium {
-    grid-row: span 1;
-  }
-
-  .ambient-image.small {
+  .private-hire-image.medium,
+  .private-hire-image.small {
+    grid-column: span 1;
     grid-row: span 1;
   }
 }
 
-/* Mobile View */
 @media (max-width: 480px) {
   .private-hire-card {
     flex-direction: column;
+    height: auto;
+    padding: 0;
+    margin-top: 1px;
   }
 
-  .card-text h1 {
+  .private-hire-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .private-hire-text {
+    padding: 10px 20px;
+  }
+
+  .private-hire-text h1 {
     font-size: 1.8em;
   }
 
-  .card-text p {
-    font-size: 0.9em;
+  .private-hire-text p {
+    font-size: 0.8em;
   }
 
-  .email-button {
-    padding: 8px 16px;
+  .private-hire-email-button {
+    padding: 6px 18px;
+  }
+
+  .private-hire-details {
+    padding: 0 20px;
   }
 
   .private-hire-details h2 {
     font-size: 1.8em;
   }
 
-  .details-content {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .detail-icon {
-    font-size: 2.5em;
-    color: #b58447;
-    margin-bottom: 1px;
-    margin-top: 23px;
-  }
-
-  .detail-item {
-    max-width: 85%;
-    padding: 12px;
-  }
-
-  .detail-item p {
-    font-size: 1.1em;
-  }
-
-  .image-grid {
-    grid-template-columns: repeat(1, 1fr);
-    grid-auto-rows: 350px;
+  .private-hire-details-grid {
+    flex-wrap: wrap;
     gap: 20px;
+    flex-direction: column;
   }
 
-  .ambient-image.large,
-  .ambient-image.medium,
-  .ambient-image.small {
+  .private-hire-detail-item {
+    max-width: 100%;
+  }
+
+  .private-hire-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .private-hire-image.large,
+  .private-hire-image.medium,
+  .private-hire-image.small {
     grid-column: span 1;
     grid-row: span 1;
-    width: 100%;
-    height: 350px;
   }
 }

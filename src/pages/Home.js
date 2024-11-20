@@ -162,7 +162,7 @@ function Home() {
               <Trans>Spaghetti Seafood</Trans>
             </h4>
             <p>
-              <Trans>Rich and hearty meat sauce simmered to perfection with tomatoes and aromatic herbs</Trans>
+              <Trans>A mix of fresh seafood and al dente spaghetti in a rich tomato sauce with garlic, white wine, and herbs</Trans>
             </p>
             <span>€26</span>
           </div>
