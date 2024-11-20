@@ -39,7 +39,7 @@ function Reservation() {
       const times = [];
       for (let hour = startHour; hour <= endHour; hour++) {
         const isLastHour = hour === endHour;
-        const minutesArray = isLastHour ? [0] : [0, 15, 30, 45]; 
+        const minutesArray = isLastHour ? [0] : [0, 30]; 
         for (let minutes of minutesArray) {
           const timeValue = `${hour.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}`;
           times.push({
