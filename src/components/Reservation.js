@@ -144,14 +144,62 @@ function Reservation() {
             )}
           />
           <Select
-            options={getAvailableTimes()}
-            placeholder={t("Select Time")}
-            value={getAvailableTimes().find(option => option.value === formData.time)}
-            onChange={handleTimeChange}
-            classNamePrefix="custom-select"
-            isClearable
-            required
-          />
+  options={getAvailableTimes()}
+  placeholder={t("Select Time")}
+  value={getAvailableTimes().find(option => option.value === formData.time)}
+  onChange={handleTimeChange}
+  classNamePrefix="custom-select"
+  isClearable
+  required
+  styles={{
+    option: (provided, state) => {
+      const [hour, minute] = state.data.value.split(':').map(Number);
+      let backgroundColor;
+      if (hour >= 12 && hour < 15) {
+        backgroundColor = '#ffebcd'; // Light color for lunch
+      } else if (hour >= 18 && (hour < 20 || (hour === 20 && minute <= 30))) {
+        backgroundColor = '#ffe4e1'; // Light color for dinner
+      } else {
+        backgroundColor = '#fff'; // Default
+      }
+
+      return {
+        ...provided,
+        backgroundColor: state.isFocused ? '#ccc' : backgroundColor,
+        color: state.isFocused ? '#000' : '#333',
+        cursor: 'pointer',
+      };
+    },
+    control: (provided) => ({
+      ...provided,
+      borderColor: '#ddd',
+      boxShadow: 'none',
+    }),
+    menu: (provided) => ({
+      ...provided,
+      borderRadius: '8px',
+      boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)',
+    }),
+    placeholder: (provided) => ({
+      ...provided,
+      color: '#666',
+    }),
+  }}
+/>
+
+{/* Legend Component */}
+<div className="legend">
+  <div className="legend-item">
+    <span className="legend-color" style={{ backgroundColor: '#ffebcd' }}></span>
+    <span>{t("Lunch Time (12:00–15:00)")}</span>
+  </div>
+  <div className="legend-item">
+    <span className="legend-color" style={{ backgroundColor: '#ffe4e1' }}></span>
+    <span>{t("Dinner Time (18:00–20:30)")}</span>
+  </div>
+</div>
+
+
           <input type="number" name="people" placeholder={t("Number of Guests")} value={formData.people} onChange={(e) => setFormData({ ...formData, people: e.target.value })} required min="1" />
           <button type="submit">{t("Reserve")}</button>
         </form>

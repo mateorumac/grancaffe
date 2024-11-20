@@ -9,6 +9,7 @@ import feat3 from '../assets/feat/tournedos.webp';
 import feat4 from '../assets/feat/assiette gran caffe.webp';
 import specialsImage from '../assets/specials.jpeg';
 import { GiCoffeeCup, GiForkKnifeSpoon } from 'react-icons/gi';
+import badge from '../assets/BEST_COFFEE.png';
 import { FaCocktail } from 'react-icons/fa';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import { Trans, useTranslation } from 'react-i18next';
@@ -67,6 +68,9 @@ function Home() {
               </button>
             </div>
           </div>
+          <div className="hero-badge">
+      <img src={badge} alt="Best Café 2024" />
+    </div>
         </div>
       </section>
 

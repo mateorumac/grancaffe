@@ -23,6 +23,11 @@ const Menu = () => {
     const { t } = useTranslation();
   return (
     <div className="main-container">
+      <div className="kitchen-hours">
+        <h3>
+          <Trans>The kitchen is open daily from 12:00 to 20:30</Trans>
+        </h3>
+      </div>
       {/* First Section: Images on the left, text on the right */}
       <div className="container">
         <div className="left-section">

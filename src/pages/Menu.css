@@ -13,7 +13,7 @@ body {
 .main-container::before {
   content: '';
   position: absolute;
-  top: 40px;
+  top: 90px;
   bottom: 0;
   left: 40px; 
   width: 8px;
@@ -26,13 +26,29 @@ body {
 .main-container::after {
   content: '';
   position: absolute;
-  top: 40px;
+  top: 90px;
   bottom: 0;
   right: 40px; 
   width: 8px;
   background-color: #b58447;
   box-shadow: -40px 0 0 #b58447, 
               -10px 0px 15px rgba(0, 0, 0, 0.3); 
+}
+
+.kitchen-hours {
+  background-color: #b58447;
+  color: white;
+  text-align: center;
+  padding: 15px 20px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.kitchen-hours h3 {
+  margin: 0;
 }
 
 .container {
