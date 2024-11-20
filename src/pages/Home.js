@@ -3,10 +3,10 @@ import './Home.css';
 import heroimg from '../assets/heroimg.jpg';
 import hero1 from '../assets/ambient/amb1.jpeg';
 import hero2 from '../assets/hero2.jpeg';
-import hero3 from '../assets/hero3.jpeg';
-import feat2 from '../assets/feat2.jpeg';
-import feat3 from '../assets/feat3.jpeg';
-import feat4 from '../assets/feat4.jpeg';
+import feat1 from '../assets/feat/tartare.webp';
+import feat2 from '../assets/feat/Spaghetti seafood.webp';
+import feat3 from '../assets/feat/tournedos.webp';
+import feat4 from '../assets/feat/assiette gran caffe.webp';
 import specialsImage from '../assets/specials.jpeg';
 import { GiCoffeeCup, GiForkKnifeSpoon } from 'react-icons/gi';
 import { FaCocktail } from 'react-icons/fa';
@@ -53,14 +53,14 @@ function Home() {
             <div className="hero-buttons">
               <button
                 aria-label="Reserve Your Experience"
-                onClick={() => window.location.href('/reservation')}
+                onClick={() => (window.location.href = '/reservation')}
               >
                 <i className="fas fa-calendar-check"></i>
                 <Trans>Reserve Your Experience</Trans>
               </button>
               <button
                 aria-label="Join Our Exclusive Events"
-                onClick={() => window.location.href('/events')}
+                onClick={() => (window.location.href = '/events')}
               >
                 <i className="fas fa-glass-cheers"></i>
                 <Trans>Join Our Exclusive Events</Trans>
@@ -106,7 +106,7 @@ function Home() {
                 Discover a culinary journey with flavors from around the world,<br /> crafted with passion and expertise.
               </Trans>
             </p>
-            <button aria-label="Learn More about Our Restaurant" onClick={() => window.location.href('/about')}>
+            <button aria-label="Learn More about Our Restaurant" onClick={() => (window.location.href = '/about')}>
               <Trans>Learn More</Trans>
             </button>
           </div>
@@ -123,10 +123,10 @@ function Home() {
           <p>{t('We offer only the best coffee, sourced from the finest beans.')}</p>
         </div>
         <div className="feature">
-    <FaCocktail className="feature-icon" aria-label="Cocktail Icon" />
-    <h3>{t('Signature Cocktails')}</h3>
-    <p>{t('Our bartenders craft cocktails that delight the senses.')}</p>
-  </div>
+          <FaCocktail className="feature-icon" aria-label="Cocktail Icon" />
+          <h3>{t('Signature Cocktails')}</h3>
+          <p>{t('Our bartenders craft cocktails that delight the senses.')}</p>
+        </div>
         <div className="feature">
           <GiForkKnifeSpoon className="feature-icon" aria-label="Cutlery Icon" />
           <h3>{t('Delicious Food')}</h3>
@@ -143,66 +143,50 @@ function Home() {
         </h2>
         <div className="meal-grid">
           <div className="meal">
-            <img
-              src={hero3}
-              loading="lazy"
-              alt={t('Porcini Flan with Truffle Cheese Sauce')}
-            />
+            <img src={feat1} loading="lazy" alt={t('Beef tartare')} />
             <h4>
-              <Trans>Porcini Flan with Truffle Cheese Sauce</Trans>
+              <Trans>Beef tartare</Trans>
             </h4>
             <p>
-              <Trans>Eggs, cream, porcini mushrooms, truffle, cheese</Trans>
+              <Trans>Tender chicken accompanied by grilled seasonal vegetables</Trans>
             </p>
-            <span>€22</span>
+            <span>€24</span>
           </div>
           <div className="meal">
-            <img
-              src={feat2}
-              loading="lazy"
-              alt={t('SEARED TUNA WITH A SESAME CRUST')}
-            />
+            <img src={feat2} loading="lazy" alt={t('Spaghetti Seafood')} />
             <h4>
-              <Trans>SEARED TUNA WITH A SESAME CRUST</Trans>
+              <Trans>Spaghetti Seafood</Trans>
             </h4>
             <p>
-              <Trans>Sashimi tuna, sesame seeds, spinach sprouts, with vinegared rice</Trans>
+              <Trans>Rich and hearty meat sauce simmered to perfection with tomatoes and aromatic herbs</Trans>
             </p>
-            <span>€28</span>
+            <span>€26</span>
           </div>
           <div className="meal">
-            <img
-              src={feat3}
-              loading="lazy"
-              alt={t('REINE PIZZA')}
-            />
+            <img src={feat3} loading="lazy" alt={t('Tournedos Rossini')} />
             <h4>
-              <Trans>REINE PIZZA</Trans>
+              <Trans>Tournedos Rossini</Trans>
             </h4>
             <p>
-              <Trans>Mozzarella, tomato sauce, smoked ham, mushrooms, black olives</Trans>
+              <Trans>Beef, duck liver escalope, truffle</Trans>
             </p>
-            <span>€22</span>
+            <span>€32</span>
           </div>
           <div className="meal">
-            <img
-              src={feat4}
-              loading="lazy"
-              alt={t('Pineapple Fizz')}
-            />
+            <img src={feat4} loading="lazy" alt={t('Assiette gran caffe')} />
             <h4>
-              <Trans>Pineapple Fizz</Trans>
+              <Trans>Assiette gran caffe</Trans>
             </h4>
             <p>
-              <Trans>Pineapple juice, S&S, Top lemon soda</Trans>
+              <Trans>Daily Tapas suggestions from chef</Trans>
             </p>
-            <span>€12</span>
+            <span>€20</span>
           </div>
         </div>
         <button
           className="menu-button"
           aria-label="View Full Menu"
-          onClick={() => window.location.href('/menu')}
+          onClick={() => (window.location.href = '/menu')}
         >
           <Trans>View Full Menu</Trans>
         </button>
@@ -232,7 +216,7 @@ function Home() {
           </p>
           <button
             aria-label="Book a Table"
-            onClick={() => window.location.href('/reservation')}
+            onClick={() => (window.location.href = '/reservation')}
           >
             <Trans>Book a Table</Trans>
           </button>
