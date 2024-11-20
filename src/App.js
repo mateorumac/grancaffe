@@ -11,6 +11,7 @@ import Menu from './pages/Menu';
 import Reservation from './components/Reservation';
 import PrivateHire from './pages/PrivateHire';
 import Events from './pages/Events';
+import Careers from './pages/Careers'; 
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path="/private-hire" element={<PrivateHire />} />
         <Route path="/events" element={<Events />} />
         <Route path="/reservation" element={<Reservation />} />
+        <Route path="/careers" element={<Careers />} />
       </Routes>
       <Footer />
     </Router>
