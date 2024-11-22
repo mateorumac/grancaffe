@@ -1,55 +1,76 @@
 import React from "react";
 import "./Careers.css";
-import chefImage from "../assets/jobs/chef.webp"; 
+import chefImage from "../assets/jobs/chef.webp";
 import barmanImage from "../assets/jobs/barman.webp";
 import dishwasherImage from "../assets/jobs/dishwasher.webp";
+import { useTranslation, Trans } from "react-i18next";
 
 function Careers() {
+  const { t } = useTranslation();
+
   return (
     <div className="careers">
-      <h1 className="careers-heading">Work With Us</h1>
+      <h1 className="careers-heading"><Trans>Work With Us</Trans></h1>
       <p className="careers-description">
-        Join our team of passionate individuals dedicated to creating an unforgettable experience for our guests. 
-        We are looking for energetic, service-oriented professionals who love food and hospitality.
+        <Trans>
+          Join our team of passionate individuals dedicated to creating an
+          unforgettable experience for our guests. We are looking for energetic,
+          service-oriented professionals who love food and hospitality.
+        </Trans>
       </p>
       <div className="careers-cards">
         <div className="careers-card">
-          <img src={chefImage} alt="Chef and Assistant Chef" className="card-image" />
-          <h2 className="card-title">Chefs & Assistant Chefs</h2>
+          <img src={chefImage} alt={t("careers.chef.alt")} className="card-image" />
+          <h2 className="card-title"><Trans>Chefs & Assistant Chefs</Trans></h2>
           <p className="card-description">
-            Looking for talented individuals with a passion for culinary arts.
+            <Trans>
+              Looking for talented individuals with a passion for culinary arts.
+            </Trans>
           </p>
           <button
             className="apply-button"
-            onClick={() => window.location.href = "mailto:grancaffe.mc@gmail.com?subject=Application for Chefs & Assistant Chefs"}
+            onClick={() =>
+              window.location.href = "mailto:grancaffe.mc@gmail.com?subject=" +
+              encodeURIComponent(t("careers.chef.subject"))
+            }
           >
-            Apply Now
+            <Trans>Apply Now</Trans>
           </button>
         </div>
         <div className="careers-card">
-          <img src={barmanImage} alt="Barmans and Waiters" className="card-image" />
-          <h2 className="card-title">Barmans & Waiters/Waitresses</h2>
+          <img src={barmanImage} alt={t("careers.barman.alt")} className="card-image" />
+          <h2 className="card-title"><Trans>Barmans & Waiters/Waitresses</Trans></h2>
           <p className="card-description">
-            Join our front-of-house team to create memorable dining experiences.
+            <Trans>
+              Join our front-of-house team to create memorable dining experiences.
+            </Trans>
           </p>
           <button
             className="apply-button"
-            onClick={() => window.location.href = "mailto:grancaffe.mc@gmail.com?subject=Application for Barmans & Waiters/Waitresses"}
+            onClick={() =>
+              window.location.href = "mailto:grancaffe.mc@gmail.com?subject=" +
+              encodeURIComponent(t("careers.barman.subject"))
+            }
           >
-            Apply Now
+            <Trans>Apply Now</Trans>
           </button>
         </div>
         <div className="careers-card">
-          <img src={dishwasherImage} alt="Dishwasher" className="card-image" />
-          <h2 className="card-title">Dishwasher</h2>
+          <img src={dishwasherImage} alt={t("careers.dishwasher.alt")} className="card-image" />
+          <h2 className="card-title"><Trans>Dishwasher</Trans></h2>
           <p className="card-description">
-            Seeking detail-oriented individuals to maintain a spotless kitchen.
+            <Trans>
+              Seeking detail-oriented individuals to maintain a spotless kitchen.
+            </Trans>
           </p>
           <button
             className="apply-button"
-            onClick={() => window.location.href = "mailto:grancaffe.mc@gmail.com?subject=Application for Dishwasher (Plongeur)"}
+            onClick={() =>
+              window.location.href = "mailto:grancaffe.mc@gmail.com?subject=" +
+              encodeURIComponent(t("careers.dishwasher.subject"))
+            }
           >
-            Apply Now
+            <Trans>Apply Now</Trans>
           </button>
         </div>
       </div>

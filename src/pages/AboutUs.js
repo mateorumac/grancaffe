@@ -112,7 +112,7 @@ function AboutUs() {
           <div className="cooking-text">
             <h2><Trans>WE COOK FOR YOU EVERY DAY</Trans></h2>
             <p><Trans>Experience the joy of culinary surprises at our restaurant, where we serve daily dishes inspired by recipes from around the world.</Trans></p> <br></br>
-            <p><Trans>Our kitchen welcomes you daily with freshly inspired dishes from 12:00 to 20:30. <br></br>  Come and discover the delightful creations we have prepared for you today!</Trans></p>
+            <p><Trans i18nKey="kitchen.welcome">Our kitchen welcomes you daily with freshly inspired dishes from 12:00 to 20:30. <br></br>  Come and discover the delightful creations we have prepared for you today!</Trans></p>
             <button onClick={() => window.location.href='/menu'}><Trans>View Our Menu</Trans></button>
           </div>
           <img src={abtcook} loading="lazy" alt="A flavorful seafood dish featuring mussels, shrimp, and vibrant vegetables served on a decorative plate." className="cooking-image" />

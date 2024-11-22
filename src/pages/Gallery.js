@@ -29,12 +29,12 @@ const Gallery = () => {
 
     const galleryData = [
         { src: pizza, title: t('Pinsa Margarita'), description: t('Stone-baked pizza with fresh toppings and mozzarella.') },
-        { src: pizza2, title: t('Margherita Pizza'), description: t('Traditional Margherita with rich tomato and basil.') },
+        { src: pizza2, title: t('Pinsa with Black Olives'), description: t('Traditional Pinsa with rich tomato, olives and basil.') },
         { src: bruschetta, title: t('Vegetarian Pinsa'), description: t('Toasted bread topped with fresh tomatoes and basil.') },
         { src: pizzaDiavola, title: t('Pizza Diavola'), description: t('Spicy Diavola pizza with authentic flavors.') },
         { src: pizzaCheese, title: t('Pizza 4 Cheese'), description: t('Cheesy pizza baked with a golden crust.') },
         { src: gnocchi, title: t('Gnocchi a la Sorrentina'), description: t('Pillowy potato gnocchi with savory sauce.') },
-        { src: pasta, title: t('Penne al Pomooro'), description: t('Classic pasta with pancetta, eggs, and Parmesan.') },
+        { src: pasta, title: t('Penne al Pomooro'), description: t('Classic pasta with basil, tomato sauce and Parmesan.') },
         { src: pasta2, title: t('Spaghetti Carbonara'), description: t('Classic pasta with pancetta, eggs, and Parmesan.') },
         { src: penneSalmon, title: t('Penne Salmon'), description: t('Creamy salmon pasta cooked to perfection.') },
         { src: fish1, title: t('Grilled Sea Bass'), description: t('Sea bass grilled to perfection with herbs.') },
