@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Home.css';
 import heroimg from '../assets/heroimg.jpg';
 import hero1 from '../assets/ambient/amb1.jpeg';
@@ -16,6 +16,10 @@ import { Trans, useTranslation } from 'react-i18next';
 function Home() {
   const { t } = useTranslation();
 
+  useEffect(() => {
+    console.log("Website Provided by D&A SmartSolutions - Mateo Rumac");
+  }, []);
+    
   return (
     <div className="home">
       <section
